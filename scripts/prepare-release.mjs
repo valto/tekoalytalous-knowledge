@@ -10,7 +10,8 @@ const includedRoots = ["knowledge/", "docs/", "schemas/"];
 const includedFiles = ["README.md", "AUKTORITEETTI.md", "CONTRIBUTING.md", "LICENSE.md", "LICENSE-CODE"];
 
 function run(command, args, options = {}) {
-  return execFileSync(command, args, { cwd: root, encoding: "utf8", ...options }).trim();
+  const output = execFileSync(command, args, { cwd: root, encoding: "utf8", ...options });
+  return typeof output === "string" ? output.trim() : "";
 }
 
 async function sha256(path) {
