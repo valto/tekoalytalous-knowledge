@@ -1,0 +1,105 @@
+mallin_versio: "0.3"
+paivitetty: "2026-09-01"
+tarkoitus: "Suomalaisen tokenoperaattorin, tieto-operaattorin, yhdistelmäoperaattorin tai virtuaalioperaattorin toteutuskyvyn arviointi ilman automaattista paremmuusjärjestystä."
+asteikko:
+  0: "Ei näyttöä tai selvä este"
+  1: "Erittäin heikko lähtöasema"
+  2: "Osittainen kyvykkyys ja suuret puutteet"
+  3: "Uskottava lähtöasema, mutta olennaisia kehitystarpeita"
+  4: "Vahva lähtöasema"
+  5: "Poikkeuksellisen valmis kyvykkyys"
+luottamus:
+  A: "Vahva suora tai useasta lähteestä vahvistettu näyttö"
+  B: "Hyvä epäsuora näyttö tai yksi vahva lähde"
+  C: "Rajallinen näyttö tai analogia"
+  D: "Pääosin oletus"
+muuttujat:
+  - id: ASIAKAS
+    nimi: "Asiakaskanta ja jakelu"
+    paino_token: 8
+    paino_tieto: 10
+    paino_yhdistelma: 9
+    paino_virtuaali: 16
+  - id: KAPASITEETTI
+    nimi: "Laskentakapasiteetti, energiatehokkuus ja käyttöaste"
+    paino_token: 20
+    paino_tieto: 1
+    paino_yhdistelma: 9
+    paino_virtuaali: 2
+  - id: RAHOITUS
+    nimi: "Laitteisto- ja käyttöpääomarahoitus sekä jälleenmyyntipolku"
+    paino_token: 15
+    paino_tieto: 3
+    paino_yhdistelma: 8
+    paino_virtuaali: 5
+  - id: AVOIMET_MALLIT
+    nimi: "Avoimien mallien käyttöönotto, optimointi ja lisenssien hallinta"
+    paino_token: 14
+    paino_tieto: 2
+    paino_yhdistelma: 7
+    paino_virtuaali: 5
+  - id: TIETOYDIN
+    nimi: "Omistajakohtaisen tietoytimen jatkuvuus ja rakenne"
+    paino_token: 1
+    paino_tieto: 16
+    paino_yhdistelma: 9
+    paino_virtuaali: 8
+  - id: OMISTUS
+    nimi: "Tiedon omistus, valtuutukset ja käyttöoikeudet"
+    paino_token: 4
+    paino_tieto: 14
+    paino_yhdistelma: 9
+    paino_virtuaali: 8
+  - id: SIIRRETTAVYYS
+    nimi: "Avoimet standardit, vienti ja todellinen palveluntarjoajan vaihto"
+    paino_token: 5
+    paino_tieto: 13
+    paino_yhdistelma: 9
+    paino_virtuaali: 10
+  - id: TURVALLISUUS
+    nimi: "Tietoturva, auditointi ja vaatimustenmukaisuus"
+    paino_token: 9
+    paino_tieto: 11
+    paino_yhdistelma: 10
+    paino_virtuaali: 10
+  - id: TOIMIALA
+    nimi: "Toimiala-, alue- tai jäsenryhmäkohtainen palveluosaaminen"
+    paino_token: 5
+    paino_tieto: 8
+    paino_yhdistelma: 6
+    paino_virtuaali: 13
+  - id: OPEROINNIN_EROTTELU
+    nimi: "Laskennan ja tiedon tekninen, sopimuksellinen ja kaupallinen erottelu"
+    paino_token: 5
+    paino_tieto: 5
+    paino_yhdistelma: 10
+    paino_virtuaali: 8
+  - id: TUKI
+    nimi: "Jatkuva tuki, mittaus, laskutus ja häiriönhallinta"
+    paino_token: 8
+    paino_tieto: 7
+    paino_yhdistelma: 8
+    paino_virtuaali: 9
+  - id: INTEGRAATIO
+    nimi: "Integraatio- ja ohjelmistokyky"
+    paino_token: 6
+    paino_tieto: 10
+    paino_yhdistelma: 6
+    paino_virtuaali: 6
+arvioitavat_ryhmat:
+  - "Laskentakapasiteettiin keskittyvä uusi infrastruktuuriyhtiö"
+  - "Konesali-, pilvi- tai energiapalveluyhtiö"
+  - "Alueellinen tietoliikenneyhtiö tai niiden yhteenliittymä"
+  - "Tieto-, identiteetti-, integraatio- tai kyberturvallisuusyhtiö"
+  - "Toimialakohtainen ohjelmisto- tai palveluyhtiö"
+  - "Ammattilaisten tai asiakkaiden osuuskunta"
+  - "Valtakunnallinen teleoperaattori"
+  - "Julkisen ja yksityisen sektorin yhteinen toimija"
+erilliset_tulokset:
+  - "Kyky toteuttaa valittu perusrooli"
+  - "Strateginen sopivuus"
+  - "Todennäköisyys tulla markkinaan"
+  - "Mahdollinen kilpailuvoima"
+  - "Tarvittavan muutoksen suuruus"
+  - "Aika uskottavaan markkinoilletuloon"
+rajoitus: "Nimettyjä yrityksiä ei pisteytetä tässä versiossa. Jokainen piste vaatii perustelun, lähteen ja luottamusluokan. Painot eivät korvaa roolikohtaista laadullista arviota."

@@ -1,0 +1,30 @@
+name: Ilmoita korjaus tai vanhentunut tieto
+description: Kerro virheestä, ristiriidasta, puuttuvasta lähteestä tai vanhentuneesta tiedosta.
+title: "Korjaus: "
+labels: ["korjaus"]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Missä tieto on?
+      description: Lisää tiedoston tai sivun osoite.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Mikä pitäisi korjata?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Korjausta tukeva lähde
+      description: Lisää ensisijainen julkinen lähde aina kun mahdollista.
+  - type: checkboxes
+    id: public
+    attributes:
+      label: Julkisuus
+      options:
+        - label: Ilmoitus ei sisällä henkilötietoja, tunnuksia tai luottamuksellista aineistoa.
+          required: true

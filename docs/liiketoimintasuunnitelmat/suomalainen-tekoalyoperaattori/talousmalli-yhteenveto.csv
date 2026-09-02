@@ -1,0 +1,121 @@
+malli,tyyppi,skenaario,vuosi,kapasiteetti_tai_asiakkaat,liikevaihto_euroa,myyntikate_euroa,kayttokate_euroa,investointi_euroa,rahoituksen_vuosimaksu_euroa,kassavirta_rahoituksen_jalkeen_euroa,kumulatiivinen_kassa_euroa
+Pieni alueellinen tokenoperaattori,token,Heikko,1,32,198677,23276,-407974,1206000,206131,-975305,-975305
+Pieni alueellinen tokenoperaattori,token,Heikko,2,48,422784,142989,-466611,510400,305761,-874453,-1849758
+Pieni alueellinen tokenoperaattori,token,Heikko,3,72,762919,339803,-576197,739200,450053,-1174090,-3023847
+Pieni alueellinen tokenoperaattori,token,Heikko,4,96,1107292,549945,-691855,712800,589192,-1423606,-4447454
+Pieni alueellinen tokenoperaattori,token,Heikko,5,128,1525838,800271,-808229,915200,767839,-1759108,-6206562
+Pieni alueellinen tokenoperaattori,token,Perus,1,32,441504,259157,-145843,1110000,187392,-675235,-675235
+Pieni alueellinen tokenoperaattori,token,Perus,2,48,847688,552297,-19703,464000,277965,-390468,-1065703
+Pieni alueellinen tokenoperaattori,token,Perus,3,72,1463270,1014544,154544,672000,409139,-388995,-1454698
+Pieni alueellinen tokenoperaattori,token,Perus,4,96,2077171,1486786,320786,648000,535629,-344442,-1799140
+Pieni alueellinen tokenoperaattori,token,Perus,5,128,2825626,2060346,550346,832000,698035,-314089,-2113230
+Pieni alueellinen tokenoperaattori,token,Vahva,1,32,711925,518039,80639,1062000,178022,-429783,-429783
+Pieni alueellinen tokenoperaattori,token,Vahva,2,48,1298022,982165,364405,440800,264067,12178,-417605
+Pieni alueellinen tokenoperaattori,token,Vahva,3,72,2185445,1705772,776972,638400,388682,260610,-156995
+Pieni alueellinen tokenoperaattori,token,Vahva,4,96,3061830,2432607,1173327,615600,508847,541359,384365
+Pieni alueellinen tokenoperaattori,token,Vahva,5,128,4132477,3320484,1689684,790400,663133,868470,1252835
+Valtakunnallinen tokenoperaattori,token,Heikko,1,256,1681247,497058,-2439942,9884800,1539113,-7556015,-7556015
+Valtakunnallinen tokenoperaattori,token,Heikko,2,512,4068901,1690934,-3096266,7603200,3023258,-7640164,-15196179
+Valtakunnallinen tokenoperaattori,token,Heikko,3,896,7713958,3619735,-3510665,10982400,5167022,-10874167,-26070346
+Valtakunnallinen tokenoperaattori,token,Heikko,4,1408,12844588,6549111,-3476289,14080000,7915438,-14207727,-40278073
+Valtakunnallinen tokenoperaattori,token,Heikko,5,2048,18920389,10029877,-3658123,16896000,11213537,-18250860,-58528933
+Valtakunnallinen tokenoperaattori,token,Perus,1,256,3431117,2218243,-521757,9168000,1399194,-5354551,-5354551
+Valtakunnallinen tokenoperaattori,token,Perus,2,512,7893811,5439571,975571,6912000,2748416,-3155245,-8509796
+Valtakunnallinen tokenoperaattori,token,Perus,3,896,14599066,10371782,3723782,9984000,4697293,-2970311,-11480107
+Valtakunnallinen tokenoperaattori,token,Perus,4,1408,23903447,17405457,8057457,12800000,7195853,-1698396,-13178503
+Valtakunnallinen tokenoperaattori,token,Perus,5,2048,34876293,25716722,12956722,15360000,10194125,-309403,-13487905
+Valtakunnallinen tokenoperaattori,token,Vahva,1,256,5303935,4036485,1077285,8809600,1329234,-3613869,-3613869
+Valtakunnallinen tokenoperaattori,token,Vahva,2,512,11867628,9296140,4475020,6566400,2610995,550745,-3063124
+Valtakunnallinen tokenoperaattori,token,Vahva,3,896,21633696,17211733,10031893,9484800,4462428,3672505,609382
+Valtakunnallinen tokenoperaattori,token,Vahva,4,1408,35064248,28278409,18182569,12160000,6836060,8914509,9523890
+Valtakunnallinen tokenoperaattori,token,Vahva,5,2048,50861261,41317414,27536614,14592000,9684419,14933795,24457686
+Toimiala- tai osuuskuntapohjainen tieto-operaattori,palvelu,Heikko,1,21,108810,94186,-288314,275000,0,-288314,-563314
+Toimiala- tai osuuskuntapohjainen tieto-operaattori,palvelu,Heikko,2,56,376855,321985,-315015,0,0,-315015,-878329
+Toimiala- tai osuuskuntapohjainen tieto-operaattori,palvelu,Heikko,3,112,914861,771411,-268589,0,0,-268589,-1146918
+Toimiala- tai osuuskuntapohjainen tieto-operaattori,palvelu,Heikko,4,196,1879114,1573946,-159754,0,0,-159754,-1306673
+Toimiala- tai osuuskuntapohjainen tieto-operaattori,palvelu,Heikko,5,301,3344706,2782795,171795,0,0,171795,-1134877
+Toimiala- tai osuuskuntapohjainen tieto-operaattori,palvelu,Perus,1,30,177600,156288,-203712,250000,0,-203712,-453712
+Toimiala- tai osuuskuntapohjainen tieto-operaattori,palvelu,Perus,2,80,604080,525550,-74450,0,0,-74450,-528162
+Toimiala- tai osuuskuntapohjainen tieto-operaattori,palvelu,Perus,3,160,1452160,1248858,268858,0,0,268858,-259305
+Toimiala- tai osuuskuntapohjainen tieto-operaattori,palvelu,Perus,4,280,2982720,2550226,916226,0,0,916226,656921
+Toimiala- tai osuuskuntapohjainen tieto-operaattori,palvelu,Perus,5,430,5318400,4520640,2060640,0,0,2060640,2717561
+Toimiala- tai osuuskuntapohjainen tieto-operaattori,palvelu,Vahva,1,38,236208,210131,-178669,237500,0,-178669,-416169
+Toimiala- tai osuuskuntapohjainen tieto-operaattori,palvelu,Vahva,2,100,793447,698551,50551,0,0,50551,-365618
+Toimiala- tai osuuskuntapohjainen tieto-operaattori,palvelu,Vahva,3,200,1905960,1660472,602072,0,0,602072,236454
+Toimiala- tai osuuskuntapohjainen tieto-operaattori,palvelu,Vahva,4,350,3914820,3392583,1627863,0,0,1627863,1864317
+Toimiala- tai osuuskuntapohjainen tieto-operaattori,palvelu,Vahva,5,538,6986196,6022101,3365301,0,0,3365301,5229618
+Valtakunnallinen tieto-operaattori,palvelu,Heikko,1,140,1118376,955540,-2349460,2750000,0,-2349460,-5099460
+Valtakunnallinen tieto-operaattori,palvelu,Heikko,2,385,3796488,3201199,-2747801,0,0,-2747801,-7847261
+Valtakunnallinen tieto-operaattori,palvelu,Heikko,3,770,9181220,7690190,-2589710,0,0,-2589710,-10436971
+Valtakunnallinen tieto-operaattori,palvelu,Heikko,4,1260,17880660,14876709,-1616291,0,0,-1616291,-12053262
+Valtakunnallinen tieto-operaattori,palvelu,Heikko,5,1890,31638600,25968963,1061963,0,0,1061963,-10991299
+Valtakunnallinen tieto-operaattori,palvelu,Perus,1,200,1775200,1544424,-1555576,2500000,0,-1555576,-4055576
+Valtakunnallinen tieto-operaattori,palvelu,Perus,2,550,6035000,5190100,-389900,0,0,-389900,-4445476
+Valtakunnallinen tieto-operaattori,palvelu,Perus,3,1100,14562900,12451280,2813280,0,0,2813280,-1632196
+Valtakunnallinen tieto-operaattori,palvelu,Perus,4,1800,28382000,24124700,8664700,0,0,8664700,7032504
+Valtakunnallinen tieto-operaattori,palvelu,Perus,5,2700,50220000,42184800,18844800,0,0,18844800,25877304
+Valtakunnallinen tieto-operaattori,palvelu,Vahva,1,250,2329950,2051288,-1296712,2375000,0,-1296712,-3671712
+Valtakunnallinen tieto-operaattori,palvelu,Vahva,2,688,7926282,6905377,878977,0,0,878977,-2792735
+Valtakunnallinen tieto-operaattori,palvelu,Vahva,3,1375,19112323,16562739,6153699,0,0,6153699,3360964
+Valtakunnallinen tieto-operaattori,palvelu,Vahva,4,2250,37242366,32102919,15406119,0,0,15406119,18767083
+Valtakunnallinen tieto-operaattori,palvelu,Vahva,5,3375,65903292,56202327,30995127,0,0,30995127,49762211
+Toimialakohtainen yhdistelmäoperaattori,palvelu,Heikko,1,21,174474,143528,-398472,440000,0,-398472,-838472
+Toimialakohtainen yhdistelmäoperaattori,palvelu,Heikko,2,59,629910,499842,-462458,0,0,-462458,-1300929
+Toimialakohtainen yhdistelmäoperaattori,palvelu,Heikko,3,119,1511604,1170235,-369765,0,0,-369765,-1670695
+Toimialakohtainen yhdistelmäoperaattori,palvelu,Heikko,4,196,2898858,2209293,-183407,0,0,-183407,-1854101
+Toimialakohtainen yhdistelmäoperaattori,palvelu,Heikko,5,301,5125637,3864622,228372,0,0,228372,-1625729
+Toimialakohtainen yhdistelmäoperaattori,palvelu,Perus,1,30,293700,244470,-265530,400000,0,-265530,-665530
+Toimialakohtainen yhdistelmäoperaattori,palvelu,Perus,2,85,1039548,837104,-68896,0,0,-68896,-734426
+Toimialakohtainen yhdistelmäoperaattori,palvelu,Perus,3,170,2513960,1978300,528300,0,0,528300,-206126
+Toimialakohtainen yhdistelmäoperaattori,palvelu,Perus,4,280,4842650,3755331,1501331,0,0,1501331,1295205
+Toimialakohtainen yhdistelmäoperaattori,palvelu,Perus,5,430,8610600,6611850,3186850,0,0,3186850,4482055
+Toimialakohtainen yhdistelmäoperaattori,palvelu,Vahva,1,38,400496,336168,-214632,380000,0,-214632,-594632
+Toimialakohtainen yhdistelmäoperaattori,palvelu,Vahva,2,106,1406047,1143159,164679,0,0,164679,-429953
+Toimialakohtainen yhdistelmäoperaattori,palvelu,Vahva,3,212,3429300,2727548,1161548,0,0,1161548,731595
+Toimialakohtainen yhdistelmäoperaattori,palvelu,Vahva,4,350,6631416,5202460,2768140,0,0,2768140,3499735
+Toimialakohtainen yhdistelmäoperaattori,palvelu,Vahva,5,538,11813760,9182889,5483889,0,0,5483889,8983624
+Valtakunnallinen yhdistelmäoperaattori,palvelu,Heikko,1,126,1495066,1217011,-3157989,4950000,0,-3157989,-8107989
+Valtakunnallinen yhdistelmäoperaattori,palvelu,Heikko,2,364,5269345,4165401,-3369699,0,0,-3369699,-11477688
+Valtakunnallinen yhdistelmäoperaattori,palvelu,Heikko,3,735,12846870,10031504,-2508096,0,0,-2508096,-13985784
+Valtakunnallinen yhdistelmäoperaattori,palvelu,Heikko,4,1225,25239488,19511564,-537686,0,0,-537686,-14523470
+Valtakunnallinen yhdistelmäoperaattori,palvelu,Heikko,5,1820,44171846,33909473,4559473,0,0,4559473,-9963996
+Valtakunnallinen yhdistelmäoperaattori,palvelu,Perus,1,180,2444400,2019708,-2080292,4500000,0,-2080292,-6580292
+Valtakunnallinen yhdistelmäoperaattori,palvelu,Perus,2,520,8699200,6990920,-71080,0,0,-71080,-6651372
+Valtakunnallinen yhdistelmäoperaattori,palvelu,Perus,3,1050,21266400,16898590,5146590,0,0,5146590,-1504782
+Valtakunnallinen yhdistelmäoperaattori,palvelu,Perus,4,1750,41904800,33000380,14215380,0,0,14215380,12710598
+Valtakunnallinen yhdistelmäoperaattori,palvelu,Perus,5,2600,73392400,57456386,29956386,0,0,29956386,42666984
+Valtakunnallinen yhdistelmäoperaattori,palvelu,Vahva,1,225,3276882,2734163,-1693837,4275000,0,-1693837,-5968837
+Valtakunnallinen yhdistelmäoperaattori,palvelu,Vahva,2,650,11794944,9581266,1954306,0,0,1954306,-4014532
+Valtakunnallinen yhdistelmäoperaattori,palvelu,Vahva,3,1312,28876349,23209621,10517461,0,0,10517461,6502929
+Valtakunnallinen yhdistelmäoperaattori,palvelu,Vahva,4,2188,57014869,45448637,25160837,0,0,25160837,31663766
+Valtakunnallinen yhdistelmäoperaattori,palvelu,Vahva,5,3250,99894967,79215038,49515038,0,0,49515038,81178804
+Toimialakohtainen yritysvirtuaalioperaattori,palvelu,Heikko,1,35,125099,102878,-644622,330000,0,-644622,-974622
+Toimialakohtainen yritysvirtuaalioperaattori,palvelu,Heikko,2,126,479578,384848,-858352,0,0,-858352,-1832973
+Toimialakohtainen yritysvirtuaalioperaattori,palvelu,Heikko,3,336,1501809,1187885,-892515,0,0,-892515,-2725489
+Toimialakohtainen yritysvirtuaalioperaattori,palvelu,Heikko,4,770,4001876,3114777,-140223,0,0,-140223,-2865712
+Toimialakohtainen yritysvirtuaalioperaattori,palvelu,Heikko,5,1540,8885992,6851677,2114677,0,0,2114677,-751034
+Toimialakohtainen yritysvirtuaalioperaattori,palvelu,Perus,1,50,203700,169608,-530392,300000,0,-530392,-830392
+Toimialakohtainen yritysvirtuaalioperaattori,palvelu,Perus,2,180,794500,644843,-519157,0,0,-519157,-1349549
+Toimialakohtainen yritysvirtuaalioperaattori,palvelu,Perus,3,480,2505000,2002016,54016,0,0,54016,-1295533
+Toimialakohtainen yritysvirtuaalioperaattori,palvelu,Perus,4,1100,6761720,5314894,2264894,0,0,2264894,969361
+Toimialakohtainen yritysvirtuaalioperaattori,palvelu,Perus,5,2200,15218500,11840400,7400400,0,0,7400400,8369761
+Toimialakohtainen yritysvirtuaalioperaattori,palvelu,Vahva,1,62,274507,230297,-525703,285000,0,-525703,-810703
+Toimialakohtainen yritysvirtuaalioperaattori,palvelu,Vahva,2,225,1075939,879798,-377322,0,0,-377322,-1188025
+Toimialakohtainen yritysvirtuaalioperaattori,palvelu,Vahva,3,600,3417038,2750293,646453,0,0,646453,-541573
+Toimialakohtainen yritysvirtuaalioperaattori,palvelu,Vahva,4,1375,9326625,7382442,4088442,0,0,4088442,3546869
+Toimialakohtainen yritysvirtuaalioperaattori,palvelu,Vahva,5,2750,21188008,16597676,11802476,0,0,11802476,15349345
+Valtakunnallinen kuluttaja- ja pienyritysvirtuaalioperaattori,palvelu,Heikko,1,7000,704970,409653,-2736597,2200000,0,-2736597,-4936597
+Valtakunnallinen kuluttaja- ja pienyritysvirtuaalioperaattori,palvelu,Heikko,2,21000,3394440,1878811,-4082389,0,0,-4082389,-9018986
+Valtakunnallinen kuluttaja- ja pienyritysvirtuaalioperaattori,palvelu,Heikko,3,49000,9601200,5178970,-4543280,0,0,-4543280,-13562266
+Valtakunnallinen kuluttaja- ja pienyritysvirtuaalioperaattori,palvelu,Heikko,4,98000,22226400,11964718,-2829282,0,0,-2829282,-16391548
+Valtakunnallinen kuluttaja- ja pienyritysvirtuaalioperaattori,palvelu,Heikko,5,168000,42732900,23138106,1898106,0,0,1898106,-14493442
+Valtakunnallinen kuluttaja- ja pienyritysvirtuaalioperaattori,palvelu,Perus,1,10000,1290000,784800,-2140200,2000000,0,-2140200,-4140200
+Valtakunnallinen kuluttaja- ja pienyritysvirtuaalioperaattori,palvelu,Perus,2,30000,6360000,3732000,-1812000,0,0,-1812000,-5952200
+Valtakunnallinen kuluttaja- ja pienyritysvirtuaalioperaattori,palvelu,Perus,3,70000,18300000,10566000,1521000,0,0,1521000,-4431200
+Valtakunnallinen kuluttaja- ja pienyritysvirtuaalioperaattori,palvelu,Perus,4,140000,42840000,24796800,11016800,0,0,11016800,6585600
+Valtakunnallinen kuluttaja- ja pienyritysvirtuaalioperaattori,palvelu,Perus,5,240000,83220000,48609600,28809600,0,0,28809600,35395200
+Valtakunnallinen kuluttaja- ja pienyritysvirtuaalioperaattori,palvelu,Vahva,1,12500,1880156,1180427,-1978573,1900000,0,-1978573,-3878573
+Valtakunnallinen kuluttaja- ja pienyritysvirtuaalioperaattori,palvelu,Vahva,2,37500,9410625,5740515,-247005,0,0,-247005,-4125578
+Valtakunnallinen kuluttaja- ja pienyritysvirtuaalioperaattori,palvelu,Vahva,3,87500,27365625,16508820,6740220,0,0,6740220,2614642
+Valtakunnallinen kuluttaja- ja pienyritysvirtuaalioperaattori,palvelu,Vahva,4,175000,64496250,39086586,24204186,0,0,24204186,26818828
+Valtakunnallinen kuluttaja- ja pienyritysvirtuaalioperaattori,palvelu,Vahva,5,300000,126059062,77187604,55803604,0,0,55803604,82622433

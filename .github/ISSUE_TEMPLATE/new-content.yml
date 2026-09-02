@@ -1,0 +1,34 @@
+name: Ehdota uutta aihetta
+description: Ehdota uutta käsitettä, tutkimuskohdetta, markkinamallia tai muuta aineistoa.
+title: "Uusi aihe: "
+labels: ["uusi-aihe"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Aiheen nimi
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Mitä kysymystä aineisto auttaisi ymmärtämään?
+    validations:
+      required: true
+  - type: textarea
+    id: connection
+    attributes:
+      label: Yhteys nykyiseen sisältöön
+      description: Kerro mihin nykyiseen aiheeseen tai sivuun ehdotus liittyy.
+  - type: textarea
+    id: sources
+    attributes:
+      label: Lähtölähteet
+      description: Lisää ensisijaisia julkisia lähteitä, jos niitä on.
+  - type: checkboxes
+    id: public
+    attributes:
+      label: Julkisuus
+      options:
+        - label: Ehdotus ei sisällä henkilötietoja, tunnuksia tai luottamuksellista aineistoa.
+          required: true

@@ -1,0 +1,31 @@
+name: Ehdota lähdettä
+description: Ehdota julkista lähdettä nykyiseen tai uuteen aiheeseen.
+title: "Lähde-ehdotus: "
+labels: ["lähde-ehdotus"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Julkinen lähdeosoite
+      placeholder: https://...
+    validations:
+      required: true
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Miksi lähde on hyödyllinen?
+      description: Kerro mihin aiheeseen, väitteeseen tai tietueeseen lähde liittyy.
+    validations:
+      required: true
+  - type: textarea
+    id: note
+    attributes:
+      label: Huomiot
+      description: Kerro mahdollinen sidonnaisuus, rajoite tai erityinen tarkistustarve.
+  - type: checkboxes
+    id: public
+    attributes:
+      label: Julkisuus
+      options:
+        - label: Ehdotus ei sisällä henkilötietoja, tunnuksia tai luottamuksellista aineistoa.
+          required: true

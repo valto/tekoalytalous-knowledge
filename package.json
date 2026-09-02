@@ -1,0 +1,16 @@
+{
+  "name": "tekoalytalous-knowledge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-knowledge.mjs",
+    "test": "node --test scripts/*.test.mjs"
+  },
+  "devDependencies": {
+    "js-yaml": "^4.3.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

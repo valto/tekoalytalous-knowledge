@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/valto/tekoalytalous-knowledge/blob/main/schemas/concept.schema.json",
+  "title": "Tekoälytalous.fi knowledge concept metadata",
+  "type": "object",
+  "required": ["type", "title", "description", "status", "license"],
+  "properties": {
+    "type": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "description": { "type": "string", "minLength": 1 },
+    "resource": { "type": "string", "format": "uri-reference" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "generated": { "$ref": "#/$defs/event" },
+    "verified": { "$ref": "#/$defs/event" },
+    "status": { "enum": ["draft", "stable", "deprecated"] },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "resource", "title"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "resource": { "type": "string", "format": "uri" },
+          "title": { "type": "string", "minLength": 1 },
+          "author": { "type": "string" },
+          "source_year": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "id": { "type": "string", "minLength": 1 },
+    "slug": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "license": { "type": "string", "minLength": 1 }
+  },
+  "$defs": {
+    "event": {
+      "type": "object",
+      "required": ["by", "at"],
+      "properties": {
+        "by": { "type": "string", "minLength": 1 },
+        "at": { "type": "string", "format": "date-time" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
