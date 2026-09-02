@@ -8,6 +8,9 @@
 - **Tarkistus**: Lisättiin itsenäinen rakenteen, metatietojen, tunnisteiden, sisäisten linkkien ja yksityisten repositoryviittausten tarkistus.
 - **Auktoriteetti**: Julkinen perusversio ei vielä siirrä sisältöluokkien ensisijaista muokkauspaikkaa. Siirto ja verkkosivuston täsmärevisiotuonti tehdään erillisinä vaiheina.
 - **Lähderevisio**: Perusversio koottiin verkkosivustosovelluksen revisiosta `86620763bb9bd19fa6684b61842b829b6a1e6f7a`.
+- **Muuttumaton julkaisu**: `knowledge-v0.2.1` julkaistiin lähderevisiosta `700547a116a32ba0e85f3962d51f310714d4e0a0`. Julkaisu sisältää arkiston, aineistoluettelon, hyväksyntätiedon, tarkistustulokset, julkaisutekstin ja SHA-256-tarkistussummat.
+- **Takaisinvarmistus**: Kaikki `knowledge-v0.2.1`-julkaisun tiedostot ladattiin GitHubista ja niiden tarkistussummat varmistettiin onnistuneesti.
+- **Korvattu julkaisu**: `knowledge-v0.2.0` merkittiin korvatuksi, koska sen tarkistussummaluettelo viittasi julkaisutekstitiedostoon, jota ei ollut ladattu erillisenä aineistona. Julkaistuja tiedostoja ei korvattu hiljaisesti.
 
 ## 2026-08-27
 

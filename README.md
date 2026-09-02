@@ -39,6 +39,8 @@ GitHubin Releases-osiossa julkaistavat nimetyt versiot sisältävät tietopakett
 
 Julkaisuehdokas muodostetaan puhtaasta repositorytilasta erilliseen hakemistoon komennolla `npm run prepare:release`. Julkaiseminen GitHubiin ja ladattujen tiedostojen tarkistus ovat erillisiä, ihmisen hyväksyntään sidottuja vaiheita.
 
+Nykyinen varmennettu julkaisu on [knowledge-v0.2.1](https://github.com/valto/tekoalytalous-knowledge/releases/tag/knowledge-v0.2.1). Versio `knowledge-v0.2.0` on säilytetty historiassa mutta merkitty korvatuksi puuttuneen julkaisutekstitiedoston vuoksi.
+
 ## Julkaisu ja vastuu
 
 Tämän repositoryn hyväksytty sisältö, Tekoälytalous.fi-sivustolla näkyvä julkaisu ja muuttumaton nimetty julkaisu ovat eri asioita. Tarkka raja on kuvattu tiedostossa [AUKTORITEETTI.md](AUKTORITEETTI.md).
