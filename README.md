@@ -33,6 +33,12 @@ npm run validate
 
 Tarkistus ei hae verkkosisältöä eikä arvioi väitteiden totuutta. Se tarkistaa tiedostorakenteen, vaaditut metatiedot, sisäiset linkit, yksilölliset tunnisteet ja sen, ettei aineistoon ole jäänyt viittauksia yksityiseen sovellusrepositoryyn.
 
+## Muuttumattomat julkaisut
+
+GitHubin Releases-osiossa julkaistavat nimetyt versiot sisältävät tietopakettiarkiston, tiedostoluettelon, lähderevision, hyväksyntätiedon, tarkistustulokset ja SHA-256-tarkistussummat. Korjaukset julkaistaan uutena versiona; olemassa olevan version tiedostoja ei korvata.
+
+Julkaisuehdokas muodostetaan puhtaasta repositorytilasta erilliseen hakemistoon komennolla `npm run prepare:release`. Julkaiseminen GitHubiin ja ladattujen tiedostojen tarkistus ovat erillisiä, ihmisen hyväksyntään sidottuja vaiheita.
+
 ## Julkaisu ja vastuu
 
 Tämän repositoryn hyväksytty sisältö, Tekoälytalous.fi-sivustolla näkyvä julkaisu ja muuttumaton nimetty julkaisu ovat eri asioita. Tarkka raja on kuvattu tiedostossa [AUKTORITEETTI.md](AUKTORITEETTI.md).
