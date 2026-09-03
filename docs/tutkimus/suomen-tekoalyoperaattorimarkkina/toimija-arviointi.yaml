@@ -1,0 +1,129 @@
+menetelman_versio: "0.1"
+tila: "luonnos"
+paivitetty: "2026-09-03"
+tarkoitus: "Yhden Suomessa toimivan tai Suomen markkinaan uskottavasti tulevan toimijan roolikohtainen arviointi ilman automaattista paremmuusjärjestystä."
+arviointiyksikko:
+  sallitut:
+    - "oikeushenkilö"
+    - "osuuskunta"
+    - "yhteenliittymä"
+    - "sopimuksellisesti erillinen liiketoimintayksikkö"
+  saanto: "Arviointiyksikön pitää kantaa tai voida uskottavasti kantaa tarkasteltavan palvelun vastuu."
+kelpoisuusseula:
+  - "Tunnistettava oikeudellinen tai operatiivinen identiteetti"
+  - "Julkinen näyttö vähintään yhdestä operaattorille olennaisesta vastuusta tai valmiudesta"
+  - "Ulkoinen asiakas, jäsenkunta tai määritelty palveluyhteisö"
+  - "Jatkuva operointi tai tuotteistettu palvelu, ei vain yksittäinen projekti"
+  - "Arvioitavissa vähintään yhdessä roolissa ilman puuttuvan tiedon muuttamista oletukseksi"
+arvioinnin_tilat:
+  tuntematon: "Julkinen näyttö ei riitä myönteiseen tai kielteiseen arvioon. Ei ole pistemäärä."
+  ei_sovellu: "Muuttuja ei ole kyseisessä roolissa merkityksellinen; perustelu vaaditaan."
+asteikko:
+  0: "Lähteistetty näyttö siitä, että kyky puuttuu tai olennainen este on olemassa"
+  1: "Erittäin heikko lähtöasema"
+  2: "Osittainen kyvykkyys ja suuret puutteet"
+  3: "Uskottava lähtöasema, mutta olennaisia kehitystarpeita"
+  4: "Vahva lähtöasema"
+  5: "Poikkeuksellisen valmis kyvykkyys"
+luottamus:
+  A: "Vahva suora tai useasta riippumattomasta lähteestä vahvistettu näyttö"
+  B: "Hyvä suora näyttö tai yksi vahva ensisijainen lähde"
+  C: "Rajallinen tai pääosin epäsuora näyttö"
+  D: "Heikko näyttö; tulosta ei saa käyttää ilman näkyvää varoitusta"
+pakollinen_havaintorakenne:
+  - "muuttuja"
+  - "rooli"
+  - "tila tai piste"
+  - "perustelu"
+  - "lahde"
+  - "lahteen_tyyppi"
+  - "suora_tieto_tai_paatelma"
+  - "luottamus"
+  - "tarkistettu"
+  - "ristiriitainen_naytto"
+muuttujat:
+  - id: ASIAKAS
+    nimi: "Asiakaskanta ja jakelu"
+    paino_token: 8
+    paino_tieto: 10
+    paino_yhdistelma: 9
+    paino_virtuaali: 16
+  - id: KAPASITEETTI
+    nimi: "Laskentakapasiteetti, energiatehokkuus ja käyttöaste"
+    paino_token: 20
+    paino_tieto: 1
+    paino_yhdistelma: 9
+    paino_virtuaali: 2
+  - id: RAHOITUS
+    nimi: "Laitteisto- ja käyttöpääomarahoitus sekä jälleenmyyntipolku"
+    paino_token: 15
+    paino_tieto: 3
+    paino_yhdistelma: 8
+    paino_virtuaali: 5
+  - id: AVOIMET_MALLIT
+    nimi: "Avoimien mallien käyttöönotto, optimointi ja lisenssien hallinta"
+    paino_token: 14
+    paino_tieto: 2
+    paino_yhdistelma: 7
+    paino_virtuaali: 5
+  - id: TIETOYDIN
+    nimi: "Omistajakohtaisen tietoytimen jatkuvuus ja rakenne"
+    paino_token: 1
+    paino_tieto: 16
+    paino_yhdistelma: 9
+    paino_virtuaali: 8
+  - id: OMISTUS
+    nimi: "Tiedon omistus, valtuutukset ja käyttöoikeudet"
+    paino_token: 4
+    paino_tieto: 14
+    paino_yhdistelma: 9
+    paino_virtuaali: 8
+  - id: SIIRRETTAVYYS
+    nimi: "Avoimet standardit, vienti ja todellinen palveluntarjoajan vaihto"
+    paino_token: 5
+    paino_tieto: 13
+    paino_yhdistelma: 9
+    paino_virtuaali: 10
+  - id: TURVALLISUUS
+    nimi: "Tietoturva, auditointi ja vaatimustenmukaisuus"
+    paino_token: 9
+    paino_tieto: 11
+    paino_yhdistelma: 10
+    paino_virtuaali: 10
+  - id: TOIMIALA
+    nimi: "Toimiala-, alue- tai jäsenryhmäkohtainen palveluosaaminen"
+    paino_token: 5
+    paino_tieto: 8
+    paino_yhdistelma: 6
+    paino_virtuaali: 13
+  - id: OPEROINNIN_EROTTELU
+    nimi: "Laskennan ja tiedon tekninen, sopimuksellinen ja kaupallinen erottelu"
+    paino_token: 5
+    paino_tieto: 5
+    paino_yhdistelma: 10
+    paino_virtuaali: 8
+  - id: TUKI
+    nimi: "Jatkuva tuki, mittaus, laskutus ja häiriönhallinta"
+    paino_token: 8
+    paino_tieto: 7
+    paino_yhdistelma: 8
+    paino_virtuaali: 9
+  - id: INTEGRAATIO
+    nimi: "Integraatio- ja ohjelmistokyky"
+    paino_token: 6
+    paino_tieto: 10
+    paino_yhdistelma: 6
+    paino_virtuaali: 6
+erilliset_tulokset:
+  - "Nykyinen toteutuskyky"
+  - "Strateginen sopivuus"
+  - "Näyttö markkinoilletulon aikomuksesta"
+  - "Mahdollinen kilpailuvoima"
+  - "Tarvittavan muutoksen suuruus"
+  - "Aika uskottavaan markkinoilletuloon"
+  - "Arvion luottamus ja tietopuutteet"
+kiellot:
+  - "Puuttuvaa näyttöä ei pisteytetä nollaksi"
+  - "Painotettua tulosta ei käytetä automaattiseen paremmuusjärjestykseen"
+  - "Toimijan kokoa, tunnettuutta tai nykyistä markkina-asemaa ei käytetä yksin operaattorikyvyn näyttönä"
+  - "Agentti ei hyväksy tai julkaise yritysarviota ihmisen puolesta"

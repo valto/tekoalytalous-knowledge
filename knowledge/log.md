@@ -1,5 +1,11 @@
 # Tekoälytalous bundle history
 
+## 2026-09-03
+
+- **Suomen markkinatutkimuksen perusta**: Lisätty tekoälyoperaattorimarkkinan tutkimussuunnitelma, toimijaryhmät, lähderekisteri ja koneellisesti luettava arviointimalli luonnoksena.
+- **Arviointiraja**: Ehdokkuus erotettiin todetusta operaattoriasemasta, tuntematon tieto erotettiin nollapisteestä ja yritysten automaattinen paremmuusjärjestys kiellettiin.
+- **Kyvykkyys**: Markkinatoimijan arviointi määriteltiin omaksi kyvykkyydeksi ennen ensimmäisiä nimettyjä yritysarvioita.
+
 ## 2026-09-02
 
 - **Julkinen repository**: Tietopaketti ja sen julkiset tausta-aineistot koottiin itsenäiseen `valto/tekoalytalous-knowledge`-repositoryyn.

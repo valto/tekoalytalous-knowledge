@@ -9,5 +9,6 @@ Tässä julkisessa repositoriossa julkaistaan ne kyvykkyyskuvaukset, jotka ovat 
 | [Tietomuutoksen tarkistus](review-knowledge-change.md) | käytössä | Rakenteen, lähteiden, sääntöjen ja auktoriteetin neuvoa-antava tarkistus. |
 | [Julkisen tietomuutoksen ehdottaminen](propose-public-knowledge-change.md) | julkinen perusta käytössä | Ehdotus GitHub-lomakkeella tai muutosehdotuksella ilman automaattista julkaisuvaltaa. |
 | [Hyväksytyn tietorevision tuominen verkkosivustolle](integrate-approved-knowledge-revision.md) | suunniteltu | Täsmärevision tarkistettu ja palautettava tuonti verkkosivuston paikalliseksi kopioksi. |
+| [Markkinatoimijan arviointi](evaluate-market-actor.md) | luonnos | Yhden toimijan roolikohtainen, lähteistetty arviointi ilman automaattista paremmuusjärjestystä. |
 
 Täydellinen sovelluskohtainen toteutusinventaario ei kuulu tähän julkiseen tietovarastoon.
