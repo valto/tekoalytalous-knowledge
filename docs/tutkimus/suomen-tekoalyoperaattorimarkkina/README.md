@@ -1,8 +1,8 @@
 # Suomen tekoälyoperaattorimarkkinan tutkimus
 
-Versio 0.1 — tutkimussuunnitelma  
-Näytön katkaisupäivä 3.9.2026  
-Tila: julkinen tutkimusluonnos, ei yrityskohtaisia arvioita
+Versio 0.2 — tutkimussuunnitelma
+
+Näytön katkaisupäivä 4.9.2026. Tila: julkisesti nähtävä tietovarastoluonnos; ei toimituksellisesti hyväksytty yritysarviointiin eikä julkaistu verkkosivustolla.
 
 ## Tutkimuskysymys
 
@@ -22,22 +22,31 @@ Tutkimus käyttää neljää [aiemmin määriteltyä roolia](../../../knowledge/
 ## Ensimmäinen tutkimuspaketti
 
 - [Tutkimusmenetelmä](menetelma.md)
+- [Painotus ja laskenta](painotus-ja-laskenta.md)
+- [Lähde- ja esteellisyyssäännöt](lahde-ja-esteellisyys.md)
+- [Kalibrointiprotokolla](kalibrointi.md)
+- [Korjaus- ja vastineprosessi](korjaus-ja-vastineprosessi.md)
+- [Version 0.2 muutosperusteet](muutosperusteet-0.2.md)
 - [Ensimmäinen ehdokaskenttä](ehdokaskentta.md)
 - [Lähderekisteri](lahderekisteri.md)
 - [Koneellisesti luettava toimija-arviointimalli](toimija-arviointi.yaml)
 - [Toimijaprofiilin täytettävä pohja](toimijaprofiili-pohja.md)
+- [Ensimmäisen arviointierän valintapohja](ensimmaisen-eran-valinta-pohja.md)
+- [Synteettiset laskentaesimerkit](esimerkit/README.md)
 - [Markkinatoimijan arviointikyky](../../capabilities/evaluate-market-actor.md)
 
 ## Tutkimuksen vaiheet
 
-1. Hyväksytään arviointikyky, kelpoisuusseula, muuttujat ja epävarmuuden käsittely.
+1. Hyväksytään arviointikyky, kelpoisuusseula, muuttujat, laskenta ja epävarmuuden käsittely.
 2. Täydennetään toimijaryhmät niin, että kapasiteetti, tieto, asiakassuhde, toimialapalvelu ja julkinen infrastruktuuri ovat mukana.
 3. Muodostetaan lähteistetty pitkä lista. Listalle pääsy ei ole myönteinen arvio.
 4. Valitaan ensimmäinen pieni arviointierä eri ryhmistä; saman ryhmän tunnetuimpia yrityksiä ei arvioida yksin.
-5. Laaditaan yrityskohtaiset luonnokset yhdellä lukitulla menetelmäversiolla.
-6. Tarkistetaan tosiasiaväitteet, ristiriidat ja puuttuva näyttö ennen mahdollista julkaisua.
-7. Verrataan havaittua markkinaa ML-1- ja ML-2-malleihin sekä avoimiin vastahypoteeseihin.
+5. Kalibroidaan menetelmä kahdella synteettisellä tapauksella ja kahdella riippumattomalla arvioijalla.
+6. Laaditaan yrityskohtaiset luonnokset yhdellä lukitulla ja hyväksytyllä menetelmäversiolla.
+7. Tarkistetaan tosiasiaväitteet, sidonnaisuudet, ristiriidat ja puuttuva näyttö.
+8. Käsitellään toimijan mahdollinen tosiasiakorjaus tai vastine ennen julkaisupäätöstä.
+9. Verrataan havaittua markkinaa aiempiin markkina- ja operaattorimalleihin sekä avoimiin vastahypoteeseihin.
 
 ## Julkaisuraja
 
-Tämä paketti ei väitä yhdenkään nimetyn toimijan olevan tekoälyoperaattori. Se ei pisteytä yrityksiä, ennusta markkinoilletuloa eikä anna sijoitussuositusta. Yrityskohtainen arviointi ja sen verkkosivujulkaisu vaativat erillisen ihmisen hyväksynnän.
+Tämä paketti ei väitä yhdenkään nimetyn toimijan olevan tekoälyoperaattori. Se ei pisteytä yrityksiä, ennusta markkinoilletuloa eikä anna sijoitussuositusta. Yrityskohtainen arviointi alkaa vasta kahden riippumattoman arvioijan kalibroinnin ja omistajan menetelmäversion hyväksynnän jälkeen. Verkkosivujulkaisu vaatii lisäksi riippumattoman ihmiskatselmuksen sekä korjaus- ja vastineprosessin.

@@ -1,23 +1,40 @@
-menetelman_versio: "0.1"
-tila: "luonnos"
-paivitetty: "2026-09-03"
-tarkoitus: "Yhden Suomessa toimivan tai Suomen markkinaan uskottavasti tulevan toimijan roolikohtainen arviointi ilman automaattista paremmuusjärjestystä."
+menetelman_versio: "0.2"
+tila: "kalibrointia_odottava_luonnos"
+paivitetty: "2026-09-04"
+tarkoitus: "Yhden Suomessa toimivan tai Suomen markkinaan dokumentoidusti tulevan toimijan roolikohtainen arviointi ilman automaattista paremmuusjärjestystä."
+hyvaksyntaportit:
+  painojen_perustelut_dokumentoitu: true
+  laskentasaanto_testattu: true
+  lahde_ja_esteellisyyssaannot_dokumentoitu: true
+  korjaus_ja_vastineprosessi_dokumentoitu: true
+  kahden_riippumattoman_arvioijan_kalibrointi: false
+  omistajan_hyvaksynta_nimettyihin_arvioihin: false
+  saanto: "Nimettyjä toimijoita ei arvioida ennen kuin kaikki portit ovat true."
 arviointiyksikko:
   sallitut:
     - "oikeushenkilö"
     - "osuuskunta"
     - "yhteenliittymä"
     - "sopimuksellisesti erillinen liiketoimintayksikkö"
-  saanto: "Arviointiyksikön pitää kantaa tai voida uskottavasti kantaa tarkasteltavan palvelun vastuu."
+  saanto: "Arviointiyksikön pitää kantaa tai dokumentoidun suunnitelman perusteella valmistautua kantamaan tarkasteltavan palvelun vastuu."
 kelpoisuusseula:
-  - "Tunnistettava oikeudellinen tai operatiivinen identiteetti"
-  - "Julkinen näyttö vähintään yhdestä operaattorille olennaisesta vastuusta tai valmiudesta"
-  - "Ulkoinen asiakas, jäsenkunta tai määritelty palveluyhteisö"
-  - "Jatkuva operointi tai tuotteistettu palvelu, ei vain yksittäinen projekti"
-  - "Arvioitavissa vähintään yhdessä roolissa ilman puuttuvan tiedon muuttamista oletukseksi"
+  ehdot:
+    - id: TUNNISTETTAVA_TOIMIJA
+      ehto: "Oikeushenkilö, jäsenpohjainen yhteisö, yhteenliittymä tai sopimuksellisesti erotettu liiketoimintayksikkö voidaan nimetä."
+    - id: OLENNAINEN_VASTUU
+      ehto: "Julkinen näyttö osoittaa oman palvelusopimuksen, jatkuvan kapasiteetti- tai tietopalveluvastuun, palvelutason, mittauksen ja laskutuksen, häiriönhallinnan, valtuutusten hallinnan tai tuotteistetun tukkupalvelun."
+    - id: ULKOINEN_PALVELUSUHDE
+      ehto: "Palvelulla on ulkoinen asiakas, jäsenkunta tai ennalta määritelty palveluyhteisö."
+    - id: JATKUVA_OPEROINTI
+      ehto: "Vastuu jatkuu toimitusprojektin jälkeen ja sisältää vähintään kaksi jatkuvan palvelun tehtävää."
+    - id: TUOTTEISTETTU_PALVELU
+      ehto: "Kohderyhmä, toimitussisältö ja sopimus- tai hinnoitteluperiaate on kuvattu."
+    - id: ARVIOITAVUUS
+      ehto: "Vähintään yhden roolin pakollisista muuttujista on julkista näyttöä."
+  paatossaanto: "Kaikki kyllä = jatkoon; yksikin tuntematon = rajatapaus; yksikin olennainen ei = ulos rajattu."
 arvioinnin_tilat:
   tuntematon: "Julkinen näyttö ei riitä myönteiseen tai kielteiseen arvioon. Ei ole pistemäärä."
-  ei_sovellu: "Muuttuja ei ole kyseisessä roolissa merkityksellinen; perustelu vaaditaan."
+  ei_sovellu: "Muuttuja ei ole kyseisessä roolissa merkityksellinen; erillinen perustelu vaaditaan."
 asteikko:
   0: "Lähteistetty näyttö siitä, että kyky puuttuu tai olennainen este on olemassa"
   1: "Erittäin heikko lähtöasema"
@@ -30,6 +47,30 @@ luottamus:
   B: "Hyvä suora näyttö tai yksi vahva ensisijainen lähde"
   C: "Rajallinen tai pääosin epäsuora näyttö"
   D: "Heikko näyttö; tulosta ei saa käyttää ilman näkyvää varoitusta"
+laskenta:
+  roolit:
+    - token
+    - tieto
+    - yhdistelma
+    - virtuaali
+  minimi_nayttokattavuus_prosenttia: 70
+  suurin_ei_sovellu_paino_prosenttia: 20
+  tuloksen_desimaalit: 2
+  tuntematon: "Poistetaan tunnetun painon nimittäjästä mutta säilytetään soveltuvassa painossa, jolloin näyttökattavuus pienenee."
+  ei_sovellu: "Poistetaan sekä soveltuvasta että tunnetusta painosta; perustelu vaaditaan."
+  pistekaava: "summa(paino * piste) / tunnettujen muuttujien painojen summa"
+  kattavuuskaava: "100 * tunnettujen muuttujien painojen summa / soveltuvien muuttujien painojen summa"
+  luottamus_vaikuttaa_pisteeseen: false
+  ratkaisematon_olennainen_lahderistiriita_estaa_tuloksen: true
+  herkkyys:
+    muutos_prosenttia: 20
+    varoitusraja_pistetta: 0.25
+    saanto: "Muuta yhtä tunnettua painoa kerrallaan ±20 prosenttia, suhteuta muut tunnetut painot uudelleen ja raportoi tulosväli."
+pakolliset_muuttujat:
+  token: [KAPASITEETTI, RAHOITUS, AVOIMET_MALLIT, TURVALLISUUS, TUKI]
+  tieto: [TIETOYDIN, OMISTUS, SIIRRETTAVYYS, TURVALLISUUS, INTEGRAATIO]
+  yhdistelma: [KAPASITEETTI, TIETOYDIN, OMISTUS, SIIRRETTAVYYS, TURVALLISUUS, OPEROINNIN_EROTTELU]
+  virtuaali: [ASIAKAS, SIIRRETTAVYYS, TOIMIALA, OPEROINNIN_EROTTELU, TUKI]
 pakollinen_havaintorakenne:
   - "muuttuja"
   - "rooli"
@@ -37,93 +78,137 @@ pakollinen_havaintorakenne:
   - "perustelu"
   - "lahde"
   - "lahteen_tyyppi"
+  - "lahteen_paivays"
+  - "tuettu_vaite"
+  - "paikannustieto"
   - "suora_tieto_tai_paatelma"
   - "luottamus"
   - "tarkistettu"
   - "ristiriitainen_naytto"
+  - "arvioija"
+  - "sidonnaisuus"
 muuttujat:
   - id: ASIAKAS
     nimi: "Asiakaskanta ja jakelu"
-    paino_token: 8
-    paino_tieto: 10
-    paino_yhdistelma: 9
-    paino_virtuaali: 16
+    painot: { token: 8, tieto: 10, yhdistelma: 9, virtuaali: 16 }
+    perusteet:
+      token: "Jakelu tukee kapasiteetin käyttöastetta, mutta ei määritä tuotantokykyä."
+      tieto: "Luottamussuhde ja jatkuva asiakkuus tukevat omistajakohtaisen tiedon palvelua."
+      yhdistelma: "Asiakassuhde on tärkeä, mutta molempien teknisten kerrosten vastuut painavat enemmän."
+      virtuaali: "Oma asiakassuhde ja jakelu ovat virtuaalioperaattorin roolia määrittävä kyky."
   - id: KAPASITEETTI
     nimi: "Laskentakapasiteetti, energiatehokkuus ja käyttöaste"
-    paino_token: 20
-    paino_tieto: 1
-    paino_yhdistelma: 9
-    paino_virtuaali: 2
+    painot: { token: 20, tieto: 1, yhdistelma: 9, virtuaali: 2 }
+    perusteet:
+      token: "Laskennan operointi on tokenoperaattorin roolia määrittävä vastuu."
+      tieto: "Tieto-operaattori voi hankkia laskennan ulkoa."
+      yhdistelma: "Kapasiteetti on olennainen mutta tasapainossa tietokerroksen kanssa."
+      virtuaali: "Virtuaalioperaattori voi hankkia kapasiteetin tukkuna."
   - id: RAHOITUS
     nimi: "Laitteisto- ja käyttöpääomarahoitus sekä jälleenmyyntipolku"
-    paino_token: 15
-    paino_tieto: 3
-    paino_yhdistelma: 8
-    paino_virtuaali: 5
+    painot: { token: 15, tieto: 3, yhdistelma: 8, virtuaali: 5 }
+    perusteet:
+      token: "Laitteisto on pääomavaltainen ja käyttöaste vaatii käyttöpääomaa."
+      tieto: "Tietopalvelun pääomatarve painottuu vähemmän laitteistoon."
+      yhdistelma: "Kahden palvelukerroksen rakentaminen tarvitsee tasapainoista rahoitusta."
+      virtuaali: "Tukkusopimukset pienentävät omaisuusrahoituksen tarvetta mutta eivät poista käyttöpääomaa."
   - id: AVOIMET_MALLIT
     nimi: "Avoimien mallien käyttöönotto, optimointi ja lisenssien hallinta"
-    paino_token: 14
-    paino_tieto: 2
-    paino_yhdistelma: 7
-    paino_virtuaali: 5
+    painot: { token: 14, tieto: 2, yhdistelma: 7, virtuaali: 5 }
+    perusteet:
+      token: "Avoimien mallien ajaminen ja lisenssien hallinta erottavat roolin yleisestä pilvikapasiteetista."
+      tieto: "Tietoydin ei edellytä oman mallipalvelun operointia."
+      yhdistelma: "Mallipalvelu on yksi kahdesta ydinkerroksesta."
+      virtuaali: "Virtuaalioperaattori tarvitsee toimittajavalinnan ja malliehtojen hallintaa, vaikka ei aja malleja itse."
   - id: TIETOYDIN
     nimi: "Omistajakohtaisen tietoytimen jatkuvuus ja rakenne"
-    paino_token: 1
-    paino_tieto: 16
-    paino_yhdistelma: 9
-    paino_virtuaali: 8
+    painot: { token: 1, tieto: 16, yhdistelma: 9, virtuaali: 8 }
+    perusteet:
+      token: "Tokenoperaattorin rajattu palvelu ei säilytä asiakkaan tietoydintä."
+      tieto: "Tietoytimen jatkuvuus on tieto-operaattorin roolia määrittävä vastuu."
+      yhdistelma: "Tietoydin on toinen kahdesta ydinkerroksesta."
+      virtuaali: "Asiakasvastuu edellyttää tietoytimen toimittajan ja jatkuvuuden hallintaa."
   - id: OMISTUS
     nimi: "Tiedon omistus, valtuutukset ja käyttöoikeudet"
-    paino_token: 4
-    paino_tieto: 14
-    paino_yhdistelma: 9
-    paino_virtuaali: 8
+    painot: { token: 4, tieto: 14, yhdistelma: 9, virtuaali: 8 }
+    perusteet:
+      token: "Laskentapalvelu tarvitsee rajatut käyttöoikeudet mutta ei omista tietoydintä."
+      tieto: "Omistajan määräysvalta ja valtuutukset ovat tieto-operaattorin keskeinen vastuu."
+      yhdistelma: "Yhdistelmäpalvelun on säilytettävä omistusrajat molempien kerrosten yli."
+      virtuaali: "Virtuaalioperaattorin pitää välittää ja valvoa asiakkaan valtuutukset tukkutoimittajille."
   - id: SIIRRETTAVYYS
     nimi: "Avoimet standardit, vienti ja todellinen palveluntarjoajan vaihto"
-    paino_token: 5
-    paino_tieto: 13
-    paino_yhdistelma: 9
-    paino_virtuaali: 10
+    painot: { token: 5, tieto: 13, yhdistelma: 9, virtuaali: 10 }
+    perusteet:
+      token: "Työkuorman siirrettävyys vähentää kapasiteettilukkoa."
+      tieto: "Tietoytimen vienti ja vaihdettavuus ovat keskeinen osa omistajan määräysvaltaa."
+      yhdistelma: "Molempien kerrosten erillinen vaihdettavuus estää kokonaislukon."
+      virtuaali: "Tukkutoimittajan vaihto on virtuaalimallin jatkuvuuden edellytys."
   - id: TURVALLISUUS
     nimi: "Tietoturva, auditointi ja vaatimustenmukaisuus"
-    paino_token: 9
-    paino_tieto: 11
-    paino_yhdistelma: 10
-    paino_virtuaali: 10
+    painot: { token: 9, tieto: 11, yhdistelma: 10, virtuaali: 10 }
+    perusteet:
+      token: "Asiakkaan työkuorma ja käyttöympäristö vaativat jatkuvaa turvallisuusvastuuta."
+      tieto: "Omistajakohtainen tieto ja valtuutukset tekevät turvallisuudesta keskeisen kyvyn."
+      yhdistelma: "Kahden kerroksen rajapinta kasvattaa auditointi- ja turvallisuusvastuuta."
+      virtuaali: "Asiakasvastuu säilyy, vaikka infrastruktuuri hankitaan tukkuna."
   - id: TOIMIALA
     nimi: "Toimiala-, alue- tai jäsenryhmäkohtainen palveluosaaminen"
-    paino_token: 5
-    paino_tieto: 8
-    paino_yhdistelma: 6
-    paino_virtuaali: 13
+    painot: { token: 5, tieto: 8, yhdistelma: 6, virtuaali: 13 }
+    perusteet:
+      token: "Toimialaosaaminen auttaa tuotteistuksessa muttei määritä laskentakykyä."
+      tieto: "Tietorakenteet, työnkulut ja sääntely ovat merkittäviä tietopalvelussa."
+      yhdistelma: "Toimialaosaaminen täydentää kahden teknisen kerroksen operointia."
+      virtuaali: "Kohderyhmäkohtainen paketointi on virtuaalioperaattorin keskeinen erottautumistekijä."
   - id: OPEROINNIN_EROTTELU
     nimi: "Laskennan ja tiedon tekninen, sopimuksellinen ja kaupallinen erottelu"
-    paino_token: 5
-    paino_tieto: 5
-    paino_yhdistelma: 10
-    paino_virtuaali: 8
+    painot: { token: 5, tieto: 5, yhdistelma: 10, virtuaali: 8 }
+    perusteet:
+      token: "Selkeä palveluraja estää laskentatoimijaa ottamasta tarpeetonta tietovastuuta."
+      tieto: "Selkeä palveluraja mahdollistaa laskentatoimittajan vaihtamisen."
+      yhdistelma: "Kerrokset on pidettävä vaihdettavina, vaikka yksi toimija tarjoaa molemmat."
+      virtuaali: "Tukkupalvelut, oma asiakasvastuu ja alihankkijoiden vastuut on erotettava."
   - id: TUKI
     nimi: "Jatkuva tuki, mittaus, laskutus ja häiriönhallinta"
-    paino_token: 8
-    paino_tieto: 7
-    paino_yhdistelma: 8
-    paino_virtuaali: 9
+    painot: { token: 8, tieto: 7, yhdistelma: 8, virtuaali: 9 }
+    perusteet:
+      token: "Kapasiteetin jatkuva saatavuus vaatii mittausta ja häiriönhallintaa."
+      tieto: "Tietoytimen jatkuvuus vaatii ylläpitoa ja tukivastuuta."
+      yhdistelma: "Kahden palvelukerroksen jatkuvuus tarvitsee yhteensovitetun tuen."
+      virtuaali: "Oma brändi ja asiakassopimus edellyttävät ensimmäisen tason tukea ja laskutusta."
   - id: INTEGRAATIO
     nimi: "Integraatio- ja ohjelmistokyky"
-    paino_token: 6
-    paino_tieto: 10
-    paino_yhdistelma: 6
-    paino_virtuaali: 6
+    painot: { token: 6, tieto: 10, yhdistelma: 6, virtuaali: 6 }
+    perusteet:
+      token: "Rajapinnat ja työkuormien käyttöönotto ovat merkittävä tukikyky."
+      tieto: "Tietoydin syntyy lähteiden, käyttöoikeuksien ja sovellusten yhteentoimivuudesta."
+      yhdistelma: "Integraatio tukee molempia kerroksia, mutta ei korvaa niiden erillisiä vastuita."
+      virtuaali: "Tukkupalvelujen kokoaminen vaatii integraatiota, mutta osa voidaan hankkia kumppanilta."
 erilliset_tulokset:
-  - "Nykyinen toteutuskyky"
-  - "Strateginen sopivuus"
-  - "Näyttö markkinoilletulon aikomuksesta"
-  - "Mahdollinen kilpailuvoima"
-  - "Tarvittavan muutoksen suuruus"
-  - "Aika uskottavaan markkinoilletuloon"
-  - "Arvion luottamus ja tietopuutteet"
+  nykyinen_toteutuskyky:
+    arvot: "0.00-5.00 tai ei_muodosteta"
+    saanto: "Johdetaan vain laskentaosion ehtojen täyttyessä."
+  strateginen_sopivuus:
+    arvot: [ei_arvioitavissa, heikko, osittainen, vahva]
+    saanto: "Vaatii ajantasaisen strategialähteen tai kaksi riippumatonta lähdettä ja nimetyn yhteyden rooliin."
+  markkinoilletulon_aikomus:
+    arvot: [ei_nayttoa, alustava, vahvistettu, sitova]
+    saanto: "Aste määräytyy julkisen tavoitteen, resurssisitoumuksen ja toteutuneen sopimuksen perusteella."
+  kilpailuvoima_skenaario:
+    arvot: [ei_arvioitavissa, rajallinen, kohtalainen, vahva]
+    saanto: "Raportoidaan aina skenaariona ehtoineen ja vastanäyttöineen."
+  muutoksen_suuruus:
+    arvot: [ei_arvioitavissa, pieni, keskisuuri, suuri]
+    saanto: "Johdetaan pakollisten muuttujien pisteistä menetelmäasiakirjan sääntöjen mukaan."
+  aika_markkinoilletuloon:
+    arvot: [ei_arvioitavissa, jo_markkinassa, alle_12_kuukautta, yhdesta_kolmeen_vuotta, yli_kolme_vuotta]
+    saanto: "Vaatii lähteistetyn aikataulun tai nimetyt toteutusriippuvuudet."
+  kokonaisluottamus:
+    arvot: [A, B, C, D]
+    saanto: "Johdetaan näyttökattavuudesta ja havaintokohtaisista luottamuksista; ei muuta pistettä."
 kiellot:
   - "Puuttuvaa näyttöä ei pisteytetä nollaksi"
   - "Painotettua tulosta ei käytetä automaattiseen paremmuusjärjestykseen"
   - "Toimijan kokoa, tunnettuutta tai nykyistä markkina-asemaa ei käytetä yksin operaattorikyvyn näyttönä"
+  - "Skenaariota ei esitetä tosiasiaväitteenä"
   - "Agentti ei hyväksy tai julkaise yritysarviota ihmisen puolesta"

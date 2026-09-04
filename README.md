@@ -9,7 +9,7 @@ Sisältö on tarkoitettu sekä ihmisille että ohjelmallisille avustajille. Mark
 - [Tietopaketin hakemisto](knowledge/index.md)
 - [Tietopaketin muutosloki](knowledge/log.md)
 - [Suomalaisten tekoälyoperaattorimallien aineisto](docs/liiketoimintasuunnitelmat/suomalainen-tekoalyoperaattori/README.md)
-- [Suomen tekoälyoperaattorimarkkinan tutkimussuunnitelma](docs/tutkimus/suomen-tekoalyoperaattorimarkkina/README.md)
+- [Suomen tekoälyoperaattorimarkkinan tutkimussuunnitelma 0.2](docs/tutkimus/suomen-tekoalyoperaattorimarkkina/README.md)
 - [Open Knowledge Format ja kyvykkyysvaatimusasiakirjat](docs/okf-and-crd.md)
 - [Sisällön auktoriteetti ja julkaisuraja](AUKTORITEETTI.md)
 - [Osallistumisohje](CONTRIBUTING.md)

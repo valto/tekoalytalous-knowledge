@@ -11,7 +11,9 @@ Tätä pohjaa käytetään vasta, kun toimija on läpäissyt kelpoisuusseulan. L
 - Näytön katkaisupäivä:
 - Menetelmäversio:
 - Arvioija omalla identiteetillään:
-- Tila: luonnos / ihmisen katselmoima / julkaisuehdotus
+- Arvioijan sidonnaisuudet: ei / kyllä, kuvaus
+- Riippumaton tarkistaja:
+- Tila: luonnos / rinnakkaisarvioitu / ihmisen katselmoima / vastine käsitelty / julkaisuehdotus
 
 ## Kelpoisuusseula
 
@@ -23,7 +25,7 @@ Tätä pohjaa käytetään vasta, kun toimija on läpäissyt kelpoisuusseulan. L
 | Jatkuva operointi tai tuotteistettu palvelu | kyllä / ei / tuntematon | |
 | Arvioitavissa vähintään yhdessä roolissa | kyllä / ei / tuntematon | |
 
-Kelpoisuuspäätös: jatkoon / rajatapaus / ulos rajattu  
+Kelpoisuuspäätös: jatkoon / rajatapaus / ulos rajattu
 Päätöksen perustelu:
 
 ## Mahdolliset roolit
@@ -37,9 +39,22 @@ Päätöksen perustelu:
 
 ## Lähdehavainnot
 
-| Muuttuja | Rooli | Tila tai piste | Perustelu | Lähde ja lähdetyyppi | Suora tieto vai päätelmä | Luottamus | Tarkistettu | Ristiriitainen näyttö |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| | | tuntematon / ei sovellu / 0–5 | | | | A–D | | |
+| Muuttuja | Rooli | Tila tai piste | Perustelu | Lähde, tyyppi ja päiväys | Tuettu väite ja paikannus | Suora tieto vai päätelmä | Luottamus | Tarkistettu | Ristiriitainen näyttö |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | tuntematon / ei sovellu / 0–5 | | | | | A–D | | |
+
+## Laskennan tarkistus
+
+- Soveltuva paino:
+- Tunnettu paino:
+- Näyttökattavuus:
+- Puuttuvat pakolliset muuttujat:
+- `Ei sovellu` -paino ja perustelut:
+- Ratkaisematon olennainen lähderistiriita: ei / kyllä
+- Painotettu tulos tai eston syy:
+- Herkkyystarkastelun vaihteluväli:
+- Painoherkkä tulos: ei / kyllä
+- Kokonaisluottamus:
 
 ## Erilliset tulokset rooleittain
 
@@ -48,7 +63,7 @@ Päätöksen perustelu:
 - Nykyinen toteutuskyky:
 - Strateginen sopivuus:
 - Näyttö markkinoilletulon aikomuksesta:
-- Mahdollinen kilpailuvoima:
+- Mahdollinen kilpailuvoima skenaariona ja sen ehdot:
 - Tarvittavan muutoksen suuruus:
 - Aika uskottavaan markkinoilletuloon:
 - Arvion kokonaisluottamus:
@@ -67,7 +82,11 @@ Kirjoita laadullinen yhteenveto ilman paremmuusjärjestystä. Erota lähteistä 
 ## Ihmisen katselmus
 
 - Tarkistaja:
+- Tarkistajan sidonnaisuudet: ei / kyllä, kuvaus
 - Päätös: muutoksia vaaditaan / hyväksytty jatkotutkimukseen / hyväksytty julkaisuehdotukseksi / hylätty
 - Päätöksen päivämäärä:
 - Perustelu:
 - Toimijan mahdollinen tosiasiakorjaus tai vastine:
+- Korjauspyynnön lähetyspäivä:
+- Vastauksen määräpäivä:
+- Vastauksen käsittely ja vaikutus arvioon:

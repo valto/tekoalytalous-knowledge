@@ -1,72 +1,86 @@
 # Kyvykkyysvaatimusasiakirja: Markkinatoimijan arviointi
 
-Määritys: kyvykkyysvaatimusasiakirjan luonnos 0.4  
-Tila: luonnos; vaaditaan ennen ML-3-toimija-arviointeja
+Määritys: kyvykkyysvaatimusasiakirjan luonnos 0.4
+
+Tila: luonnos; menetelmän kalibrointi ja omistajan hyväksyntä vaaditaan ennen nimettyjä toimija-arviointeja.
 
 ## Tunniste
 
 - **Nimi:** Markkinatoimijan arviointi
-- **Määritelmä:** Arvioi yhden nimetyn tai rajatun markkinatoimijan kykyä, sopivuutta ja mahdollista kehityspolkua yhteen tai useampaan ennalta määriteltyyn markkinarooliin käyttäen yhtä versioitua menetelmää, lähteistettyä näyttöä ja näkyvää epävarmuutta.
+- **Määritelmä:** Arvioi yhden nimetyn tai rajatun markkinatoimijan nykyistä kykyä, sopivuutta ja mahdollista kehityspolkua yhteen tai useampaan ennalta määriteltyyn markkinarooliin käyttäen yhtä versioitua menetelmää, lähteistettyä näyttöä ja näkyvää epävarmuutta.
 
 ## Ydinmerkitys
 
-- **Kyvykkyyden tarkoitus:** Mahdollistaa toimijoiden järjestelmällinen tutkiminen ilman, että tunnettuus, koko, omistusrakenne tai arvioijan ennakko-oletus muuttuu huomaamatta tulokseksi.
-- **Merkityksellinen lopputulos:** Yhdestä toimijasta syntyy tarkistettava roolikohtainen arvio, jossa jokainen havainto, pistemäärä ja johtopäätös on yhdistetty lähteeseen, päivään, luottamusluokkaan ja perusteluun; tuntematon tieto säilyy tuntemattomana.
-- **Rajaus — sisältää:** arviointiyksikön tunnistamisen, kelpoisuusseulan, roolikohtaiset muuttujat ja painot, lähdehavainnot, pisteet, luottamusluokat, ristiriitaisen näytön, tarvittavan muutoksen, mahdollisen markkinoilletuloajan sekä laadullisen yhteenvedon.
-- **Rajaus — ei sisällä:** yrityksen paremmuusjärjestystä, sijoitussuositusta, luottoluokitusta, yrityksen aikomusten arvaamista, kaupallisen kysynnän todistamista, automaattista julkaisua, toimijan puolesta annettua lausuntoa tai lopullista päätöstä siitä, kuka tulee markkinaan.
-- **Termit ja käsitteet:** toimija voi olla oikeushenkilö, osuuskunta, julkisen ja yksityisen sektorin yhteenliittymä tai sopimuksellisesti erillinen liiketoimintayksikkö. Markkinarooli kuvaa vastuuta eikä välttämättä kokonaista yritystä. Ehdokas tarkoittaa jatkotutkimukseen valittua toimijaa, ei todettua tekoälyoperaattoria.
+- **Kyvykkyyden tarkoitus — kyvykkyyden tarkoitus:** Mahdollistaa toimijoiden järjestelmällinen tutkiminen ilman, että tunnettuus, koko, omistusrakenne tai arvioijan ennakko-oletus muuttuu huomaamatta tulokseksi.
+- **Merkityksellinen lopputulos — sääntö:** Yhdestä toimijasta syntyy tarkistettava roolikohtainen arvio tai dokumentoitu päätös siitä, ettei näyttö riitä arvioon. Jokainen havainto, pistemäärä ja johtopäätös yhdistyy lähteeseen, päivään, luottamusluokkaan, arvioijaan ja perusteluun; tuntematon tieto säilyy tuntemattomana.
+- **Rajaus — sisältää — sääntö:** Arviointiyksikön tunnistaminen, kelpoisuusseula, roolikohtaiset muuttujat ja painot, lähdehavainnot, pisteet, luottamusluokat, ristiriitainen näyttö, sidonnaisuudet, tarvittava muutos, mahdollinen markkinoilletuloaika, herkkyystarkastelu sekä laadullinen yhteenveto.
+- **Rajaus — ei sisällä — sääntö:** Yritysten paremmuusjärjestys, sijoitussuositus, luottoluokitus, kaupallisen kysynnän todistaminen, yrityksen aikomusten arvaaminen, automaattinen julkaisu, toimijan puolesta annettu lausunto tai lopullinen päätös siitä, kuka tulee markkinaan.
+- **Termit ja käsitteet — eksplisiittinen fakta:** Toimija voi olla oikeushenkilö, osuuskunta, julkisen ja yksityisen sektorin yhteenliittymä tai sopimuksellisesti erillinen liiketoimintayksikkö. Markkinarooli kuvaa vastuuta eikä välttämättä kokonaista yritystä. Ehdokas tarkoittaa jatkotutkimukseen valittua toimijaa, ei todettua tekoälyoperaattoria.
 
 ## Rajauspäätös
 
-Kyvykkyys läpäisee pienimmän merkityksellisen kokonaisuuden testin:
+Markkinatoimijan arviointi läpäisee pienimmän merkityksellisen kokonaisuuden testin:
 
 - se on ymmärrettävissä itsenäisesti yhden toimijan arviointina;
 - se voidaan käynnistää nimeämällä toimija, rooli, menetelmäversio ja näytön katkaisupäivä;
-- onnistuminen voidaan todeta arviointiluonnoksen, lähteiden ja näkyvien tietopuutteiden perusteella;
-- lähteiden kerääminen, pisteen laskeminen tai taulukon muodostaminen eivät yksin säilytä arvioinnin tarkoitusta, joten ne ovat tämän kyvykkyyden osia tai työkaluja;
+- onnistuminen tai epäonnistuminen voidaan todeta arviointiluonnoksen, lähteiden, laskennan estojen ja näkyvien tietopuutteiden perusteella;
+- lähteiden kerääminen, pisteen laskeminen, kalibrointi ja taulukon muodostaminen menettävät yksin arvioinnin tarkoituskontekstin, joten ne ovat tämän kyvykkyyden osia tai työkaluja;
 - arvioinnin julkaiseminen on erillinen kyvykkyys, koska arvio voi valmistua ilman julkaisua ja julkaisu tarvitsee oman valta- ja hyväksyntärajansa.
 
 ## Vuorovaikutussopimus: Arvioi yksi toimija
 
 - **Toimija:** Ihmistutkija tai omalla prosessi-identiteetillään toimiva agentti ihmisen määrittämässä tutkimustehtävässä.
 - **Pyyntö / tarkoitus:** Arvioi yksilöity toimija yhtä tai useampaa määriteltyä operaattoriroolia vasten.
-- **Lähtötila:** Arvioitava toimija, menetelmän tarkka versio, näytön katkaisupäivä, arvioitavat roolit ja hyväksytyt lähdetyypit on yksilöity.
-- **Säännöt / muuttumattomat ehdot:** Jokainen piste vaatii perustelun ja lähteen; puuttuva näyttö merkitään tuntemattomaksi eikä nollaksi; lähteestä todettava asia erotetaan päätelmästä; saman toimijan eri roolit arvioidaan erikseen; ristiriitaista näyttöä ei poisteta keskiarvolla; agentti ei hyväksy tai julkaise arviota ihmisen puolesta.
+- **Lähtötila:** Arvioitava toimija, menetelmän tarkka versio, näytön katkaisupäivä, arvioitavat roolit, hyväksytyt lähdetyypit ja arvioijan sidonnaisuudet on yksilöity.
+- **Säännöt / muuttumattomat ehdot:** Jokainen piste vaatii perustelun ja lähteen; puuttuva näyttö merkitään tuntemattomaksi eikä nollaksi; lähteestä todettava asia erotetaan päätelmästä; saman toimijan eri roolit arvioidaan erikseen; ristiriitaista näyttöä ei poisteta keskiarvolla; numeerinen tulos muodostetaan vain kattavuus- ja pakollisuusehtojen täyttyessä; agentti ei hyväksy tai julkaise arviota ihmisen puolesta.
 - **Muutos:** Arvioimattomasta toimijasta muodostuu versioitu arviointiluonnos tai dokumentoitu päätös siitä, ettei näyttö riitä arviointiin.
-- **Tulos:** Arvioija saa roolikohtaiset muuttujatulokset, luottamuksen, lähteet, puutteet, ristiriidat, laadullisen yhteenvedon ja ihmisen tarkistusta vaativat kohdat.
-- **Tapahtumat / vaikutukset:** Luonnos voidaan siirtää erilliseen toimitukselliseen katselmukseen; markkinamalli, verkkosivusto tai toimijan julkinen asema ei muutu automaattisesti.
-- **Avoimet asiat:** Miten toimijalle tarjotaan mahdollisuus korjata itseään koskeva tosiasiavirhe ennen mahdollista verkkosivujulkaisua.
+- **Tulos:** Arvioija saa roolikohtaiset muuttujatulokset, laskennan estot, näyttökattavuuden, herkkyysvälin, luottamuksen, lähteet, puutteet, ristiriidat, laadullisen yhteenvedon ja ihmisen tarkistusta vaativat kohdat.
+- **Tapahtumat / vaikutukset:** Luonnos voidaan siirtää erilliseen toimitukselliseen katselmukseen. Markkinamalli, verkkosivusto tai toimijan julkinen asema ei muutu automaattisesti.
+- **Avoimet asiat:** Ei tiedossa tämän sopimuksen määrittelyn osalta. Menetelmän käyttöönotto odottaa erillisiä hyväksyntäportteja.
 
 ## Vuorovaikutussopimus: Päivitä olemassa oleva arvio
 
 - **Toimija:** Ihmistutkija tai valtuutettu agentti.
 - **Pyyntö / tarkoitus:** Päivitä yhden toimijan aiempi arvio uuden näytön tai uuden menetelmäversion perusteella.
-- **Lähtötila:** Aiempi arvio, sen lähteet, katkaisupäivä ja menetelmäversio ovat saatavilla; muutoksen syy on yksilöity.
-- **Säännöt / muuttumattomat ehdot:** Aiempi arvio säilyy historiassa; muuttuneet lähteet, pisteet, luottamus ja johtopäätökset erotellaan; menetelmäversion muutos ei saa näyttää toimijan todelliselta muutokselta; olennainen johtopäätös vaatii uuden ihmiskatselmuksen.
+- **Lähtötila:** Aiempi arvio, sen lähteet, katkaisupäivä, menetelmäversio ja tarkistushistoria ovat saatavilla; muutoksen syy on yksilöity.
+- **Säännöt / muuttumattomat ehdot:** Aiempi arvio säilyy historiassa; muuttuneet lähteet, pisteet, luottamus ja johtopäätökset erotellaan; menetelmäversion muutos ei saa näyttää toimijan todelliselta muutokselta; olennainen johtopäätös vaatii uuden riippumattoman ihmiskatselmuksen.
 - **Muutos:** Arviosta syntyy uusi versio, joka viittaa korvaamaansa versioon ja muutoksen perusteeseen.
 - **Tulos:** Lukija voi erottaa toimijan muutoksen, uuden näytön ja menetelmämuutoksen toisistaan.
 - **Tapahtumat / vaikutukset:** Päivitetty luonnos voidaan ehdottaa julkaistavaksi erillisessä prosessissa.
-- **Avoimet asiat:** Julkisten arvioiden tarkka korjaus- ja vastineprosessi.
+- **Avoimet asiat:** Ei tiedossa.
+
+## Vuorovaikutussopimus: Käsittele tosiasiakorjaus tai vastine
+
+- **Toimija:** Sidonnaisuudesta vapaa ihmistoimittaja.
+- **Pyyntö / tarkoitus:** Tarkista nimetyn toimijan toimittama korjaus, uusi lähde tai vastine.
+- **Lähtötila:** Ihmisen katselmoima arvio, yhteydenoton päivä, vastausaika sekä toimijan toimittama aineisto ovat saatavilla.
+- **Säännöt / muuttumattomat ehdot:** Tosiasiakorjaus, toimijan näkemys ja toimituksellinen erimielisyys erotetaan; uusi aineisto arvioidaan samoilla lähdesäännöillä; vastaamatta jättäminen ei tarkoita hyväksyntää; toimijalla ei ole julkaisun veto-oikeutta.
+- **Muutos:** Korjaus hyväksytään tai hylätään perusteluineen, arvio päivitetään tarvittaessa ja vastine liitetään erillisenä toimijan näkemyksenä.
+- **Tulos:** Julkaisupäätöksellä on tarkistettava korjaus- ja vastinehistoria.
+- **Tapahtumat / vaikutukset:** Arvio voidaan siirtää julkaisupäätökseen tai palauttaa arviointiin.
+- **Avoimet asiat:** Ei tiedossa.
 
 ## Säännöt ja oletusarvot
 
 ### Säännöt / muuttumattomat ehdot
 
 - Arvioinnissa on käytettävä nimettyä menetelmäversiota ja näytön katkaisupäivää.
-- Jokaisella numeerisella tuloksella on oltava lähde, perustelu ja luottamusluokka.
+- Jokaisella numeerisella tuloksella on oltava lähde, perustelu, arvioija ja luottamusluokka.
 - `Tuntematon` on pidettävä erillisenä tilana nollapisteestä.
 - Yrityksen koko, tunnettuus, liikevaihto tai nykyinen markkina-asema ei saa yksin toimia näyttönä operaattoriroolin kyvystä.
-- Toteutuskyky, strateginen sopivuus, markkinoilletulon todennäköisyys, mahdollinen kilpailuvoima, tarvittavan muutoksen suuruus ja aika uskottavaan markkinoilletuloon on raportoitava erillisinä tuloksina.
+- Nykykyky, strateginen sopivuus, markkinoilletulon aikomus, kilpailuvoiman skenaario, tarvittavan muutoksen suuruus, aika uskottavaan markkinoilletuloon ja kokonaisluottamus on raportoitava erillisinä tuloksina.
 - Painotettu yhteenveto ei saa muodostaa automaattista paremmuusjärjestystä.
 - Toimijan oma markkinointiväite on erotettava riippumattomasta tai viranomaislähteestä saadusta näytöstä.
-- Nimettyä arviota ei saa julkaista ilman ihmisen toimituksellista päätöstä.
+- Ratkaisematon olennainen lähderistiriita estää numeerisen yhteenvedon.
+- Nimettyä arviota ei saa julkaista ilman riippumatonta ihmiskatselmusta sekä korjaus- ja vastineprosessia.
+- Menetelmäversion muutos ja toimijan muutos on erotettava historiassa.
 
 ### Suositellut oletusarvot
 
 - Aloita toimijaryhmistä ja nimeä yksittäinen toimija vasta, kun vähintään yhdestä operaattorille olennaisesta vastuusta on julkista näyttöä.
 - Käytä ensisijaisesti viranomais-, tilasto-, tilinpäätös-, sopimus-, palvelukuvaus- ja teknisen dokumentaation lähteitä.
 - Arvioi sama toimija erikseen token-, tieto-, yhdistelmä- ja virtuaalioperaattorirooleissa vain silloin, kun rooli läpäisee kelpoisuusseulan.
-- Raportoi pisteiden rinnalla aina merkittävimmät puuttuvat tiedot ja aikaisin havaittava kumoutumisehto.
+- Raportoi pisteiden rinnalla aina merkittävimmät puuttuvat tiedot, painoherkkyys ja aikaisin havaittava kumoutumisehto.
 
 ### Päätösten etusijajärjestys
 
@@ -80,19 +94,18 @@ Sääntö tai muuttumaton ehto
 
 ## Avoimet kysymykset
 
-- Mikä on toimijalle annettavan ennakkotarkistuksen tai vastineen palvelutaso?
-- Julkaistaanko tulevaisuudessa vain laadulliset profiilit vai myös roolikohtaiset pistetaulukot?
-- Milloin konserni arvioidaan yhtenä toimijana ja milloin liiketoimintayksikkö erikseen?
-- Millä ehdolla ei-suomalainen mutta Suomessa toimiva kapasiteettitoimittaja kuuluu Suomen markkinaan?
+- Kahden riippumattoman arvioijan kalibrointia ei ole vielä suoritettu.
+- Menetelmäversiota 0.2 ei ole vielä hyväksytty nimettyjen toimijoiden arviointiin.
+- Ensimmäisen nimetyn koe-erän toimijoita ei ole valittu tai lukittu.
 
 ## Operatiivinen toteutusluonnos
 
-- **Suoritustapa:** `agent-primary-using-software`, ihmistutkijan rajauksella ja hyväksynnällä; täysin ihmisen tekemä arvio on myös mahdollinen.
-- **Toteutuksen tila:** Menetelmä ja tutkimuspohja luonnoksena 3.9.2026; nimettyjä toimijoita ei ole arvioitu.
-- **Toimintaympäristö:** Julkinen Tekoälytalous-tietovarasto ja myöhempi verkkosivujulkaisu.
-- **Operatiiviset rajoitteet:** Vain julkiset lähteet; ei luottamuksellista yritysdataa; ei automaattista ulkoista julkaisemista; arviointien lähdekatko on kirjattava.
-- **Toteutusviitteet:** [Suomen tekoälyoperaattorimarkkinan tutkimus](../tutkimus/suomen-tekoalyoperaattorimarkkina/README.md) ja [toimija-arviointimalli](../tutkimus/suomen-tekoalyoperaattorimarkkina/toimija-arviointi.yaml).
-- **Valta, perustaminen ja hyväksyntä:** Agentti voi kerätä, jäsentää ja ehdottaa; ihminen hyväksyy menetelmän, arvioitavan toimijan, olennaiset johtopäätökset ja julkaisun.
+- **Suoritustapa — toteutusvalinta:** `unknown`. Suunniteltu vaihtoehto on agentin ohjaama työ ohjelmistolaskurilla ja ihmisen hyväksynnällä, mutta toimivaa arviointiprosessia ei ole vielä kalibroitu.
+- **Toteutuksen tila — eksplisiittinen fakta:** Menetelmä, laskuri ja synteettiset testitapaukset ovat luonnoksena 4.9.2026; nimettyjä toimijoita ei ole arvioitu.
+- **Toimintaympäristö — toteutusvalinta:** Julkinen Tekoälytalous-tietovarasto ja myöhempi verkkosivujulkaisu.
+- **Operatiiviset rajoitteet — operatiivinen rajoite:** Vain julkiset lähteet; ei luottamuksellista yritysdataa; ei automaattista ulkoista julkaisemista; arviointien lähdekatko ja arvioijien sidonnaisuudet kirjataan; laskuri hylkää muut kuin synteettiset tapaukset hyväksyntäporttien ollessa kesken.
+- **Toteutusviitteet:** [Tutkimuspaketti](../tutkimus/suomen-tekoalyoperaattorimarkkina/README.md), [arviointimalli](../tutkimus/suomen-tekoalyoperaattorimarkkina/toimija-arviointi.yaml), [laskentasääntö](../tutkimus/suomen-tekoalyoperaattorimarkkina/painotus-ja-laskenta.md) ja [kalibrointiprotokolla](../tutkimus/suomen-tekoalyoperaattorimarkkina/kalibrointi.md).
+- **Valta, perustaminen ja hyväksyntä — sääntö:** Agentti voi kerätä, jäsentää, laskea ja ehdottaa. Ihminen hyväksyy menetelmän, arvioitavan toimijan, olennaiset johtopäätökset, korjausten käsittelyn ja julkaisun.
 
 ## Jaetut elementit ja hyväksytty uudelleenkäyttö
 
@@ -101,12 +114,21 @@ Sääntö tai muuttumaton ehto
 | Näyttötasot | tietomalli | tutkimussisällön julkaiseminen | markkinatoimijan arviointi | Kuvaa väitteen näytön tasoa, ei arvioijan varmuutta. |
 | Luottamusluokat A–D | tietomalli | operaattorimallien arviointi | markkinatoimijan arviointi | Kuvaa yhden havainnon lähdepohjan vahvuutta. |
 | Julkisen tietomuutoksen ehdottaminen | kyvykkyys | julkinen tietovarasto | arviointiluonnoksen toimittaminen | Ehdotus ei anna julkaisuvaltaa. |
+| Roolikohtainen laskuri | työkalu | markkinatoimijan arviointi | vain tämän menetelmäversion tekninen tarkistus | Laskuri ei ole erillinen kyvykkyys eikä julkaise tulosta. |
 
 ## Väitteiden alkuperä
 
 | Väite | Semanttinen luokka | Näytön tila | Lähde tai huomio |
 | --- | --- | --- | --- |
-| Markkinarooli kuvaa vastuuta eikä välttämättä yritystä. | eksplisiittinen fakta | sisäinen tutkimuslähtökohta | `knowledge/market-models/ai-economy-market-formation-v1.md` |
-| Toimijaryhmät arvioidaan ennen nimettyjä yrityksiä. | nimenomainen omistajavalinta | hyväksytty lähtökohta | `docs/market-lab.md` ja aiempi etenemissuunnitelma |
-| Tuntematon tieto erotetaan nollasta. | suositeltu menetelmäparannus | odottaa hyväksyntää | Estää näytön puutteen tulkitsemisen todetuksi esteeksi. |
-| Arviointi ei muodosta automaattista paremmuusjärjestystä. | sääntö / muuttumaton ehto | nykyisessä arviointimallissa | Operaattorikokoelman arviointimalli 0.3. |
+| Markkinarooli kuvaa vastuuta eikä välttämättä yritystä. | eksplisiittinen fakta | sisäinen tutkimuslähtökohta | `knowledge/market-models/local-ai-operator-v1.md` |
+| Neljä arvioitavaa roolia ovat token-, tieto-, yhdistelmä- ja virtuaalioperaattori. | eksplisiittinen fakta | aiemmin määritelty malli | `knowledge/market-models/` ja liiketoimintasuunnitelmapaketti |
+| Toimijaryhmät arvioidaan ennen nimettyjä yrityksiä. | nimenomainen omistajavalinta | hyväksytty lähtökohta | aiempi etenemissuunnitelma ja tutkimusohjaus |
+| Tuntematon tieto erotetaan nollasta. | sääntö / muuttumaton ehto | auditoinnin vahvistama korjaus | Estää näytön puutteen tulkitsemisen todetuksi esteeksi. |
+| Painot ovat roolivastuista johdettu tutkimushypoteesi. | järkevä päätelmä | kalibrointia odottava | `docs/liiketoimintasuunnitelmat/suomalainen-tekoalyoperaattori/arviointimalli.yaml` ja painoperustelut |
+| Seitsemän tulosta raportoidaan erillään. | sääntö / muuttumaton ehto | menetelmäversio 0.2 | Estää nykykyvyn, aikomuksen ja skenaarion sekoittamisen. |
+| Vähimmäisnäyttökattavuus on 70 prosenttia. | toteutusvaatimus | kalibrointia odottava | Menetelmäversion 0.2 valittu varovaisuusraja. |
+| Luottamus ei muuta pistettä. | sääntö / muuttumaton ehto | menetelmäversio 0.2 | Estää lähdevarmuuden kaksinkertaisen vaikutuksen. |
+| Automaattista paremmuusjärjestystä ei muodosteta. | sääntö / muuttumaton ehto | nykyisessä arviointimallissa | Operaattorikokoelman arviointimalli 0.3 ja tämä menetelmä. |
+| Julkaisu vaatii riippumattoman ihmiskatselmuksen. | sääntö / muuttumaton ehto | auditoinnin korjaus | Sidonnaisuus- ja julkaisurajan suoja. |
+| Toimijalle annetaan korjaus- ja vastinemahdollisuus. | toteutusvaatimus | menetelmäversio 0.2 | `korjaus-ja-vastineprosessi.md` |
+| Suoritustapa on vielä vahvistamatta. | tuntematon / ratkaisematon | avoin | Kalibroitua operatiivista toteutusta ei ole. |

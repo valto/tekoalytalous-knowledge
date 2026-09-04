@@ -1,6 +1,6 @@
 # Ensimmäinen ehdokaskenttä
 
-Päivitetty 3.9.2026. Tämä on seulontalista, ei yritysarvio eikä väite tekoälyoperaattoriasemasta.
+Päivitetty 4.9.2026. Tämä on seulontalista, ei yritysarvio eikä väite tekoälyoperaattoriasemasta.
 
 ## 1. Kaupallinen tekoälylaskenta ja kapasiteettitukku
 
@@ -8,7 +8,7 @@ Päivitetty 3.9.2026. Tämä on seulontalista, ei yritysarvio eikä väite teko�
 
 **Ensimmäinen lähdeankkuri:** [Verda](https://verda.com/) tarjoaa itsepalveluna grafiikkasuoritinkapasiteettia, klustereita, tallennusta ja muita tekoälypilven palveluja. Tämä on suora seulontasignaali tokenoperaattorirooliin, mutta avoimien mallien palveluraja, sisältölokitus, tukkumalli ja suomalainen asiakasvastuu on arvioitava erikseen.
 
-**Laajennettava joukko:** Suomessa kapasiteettia operoivat muut tekoälypilvet, datakeskustoimijat, laitteistopalvelut ja kansainväliset toimijat, joilla on Suomessa fyysinen tai sopimuksellinen palvelurakenne.
+**Laajennettava joukko:** Suomessa kapasiteettia tai avoimien mallien tarjoilua operoivat muut tekoälypilvet, mallipalvelut, datakeskustoimijat, laitteistopalvelut ja kansainväliset toimijat, joilla on Suomessa fyysinen tai sopimuksellinen palvelurakenne.
 
 ## 2. Julkinen ja yhteisesti rahoitettu laskentainfrastruktuuri
 
@@ -36,7 +36,7 @@ Päivitetty 3.9.2026. Tämä on seulontalista, ei yritysarvio eikä väite teko�
 
 ## 6. Tietotekniikkaintegraattorit, pilvi- ja kyberturvapalvelut
 
-**Miksi ryhmä kuuluu tutkimukseen:** näillä toimijoilla voi olla integraatio-, identiteetti-, tietoturva-, hallinta- ja jatkuvan palvelun kyky, jota tieto- tai yhdistelmäoperaattori tarvitsee.
+**Miksi ryhmä kuuluu tutkimukseen:** näillä toimijoilla voi olla integraatio-, identiteetti-, valtuutus-, tietoturva-, hallinta- ja jatkuvan palvelun kyky, jota tieto- tai yhdistelmäoperaattori tarvitsee.
 
 **Ensimmäinen löytölähde:** [AI in Finnish Business 2026](https://aifinland.fi/en/ai-in-finnish-business-2026/) nimeää esimerkkejä suomalaisista tekoälykonsulteista ja integraattoreista. Raportin listaus toimii ehdokkaiden löytölähteenä, ei näyttönä operaattoriroolin täyttymisestä.
 
@@ -64,6 +64,8 @@ Päivitetty 3.9.2026. Tämä on seulontalista, ei yritysarvio eikä väite teko�
 
 **Seurattavat signaalit:** oma brändi ja asiakassopimus, erillinen hinnoittelu, ensimmäisen tason tuki, tukkutoimittajan vaihdettavuus, toimialakohtainen tuote sekä jatkuva palvelutasovastuu.
 
-## Seuraava päätös
+## Ensimmäisen erän valintatapa
 
-Seuraavaksi valitaan kuuden toimijan tai yhteenliittymän ensimmäinen arviointierä. Valinta tehdään vasta, kun arviointimalli on hyväksytty, jotta toimijoita ei valita tai pisteytetä tuloksen perusteella jälkikäteen.
+Kuuden toimijan tai yhteenliittymän ensimmäinen arviointierä on tarkoituksellinen koeotos eri rakenteista, ei tilastollinen otos Suomen yrityksistä. Ennen pisteytystä julkaistaan tai lukitaan pitkä lista, valitut ryhmät, mukaanotto- ja poissulkusyyt sekä arvioijien sidonnaisuudet. Sama toimija täyttää vain yhden paikan. Korvaava ryhmä perusteluineen päätetään ennen pisteiden näkemistä.
+
+Valinta tehdään vasta, kun menetelmäversion hyväksyntäportit, mukaan lukien kahden riippumattoman arvioijan kalibrointi, ovat täyttyneet.

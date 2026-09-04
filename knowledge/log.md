@@ -1,5 +1,12 @@
 # Tekoälytalous bundle history
 
+## 2026-09-04
+
+- **Menetelmäauditoinnin korjaukset**: Markkinatoimijan arviointimenetelmä päivitettiin versioon 0.2. Laskentakaava, vähimmäisnäyttö, pakolliset muuttujat, painoperustelut, herkkyystarkastelu ja seitsemän erillistä tulosta määriteltiin.
+- **Lähteet ja riippumattomuus**: Lisättiin lähteiden ajantasaisuus- ja vahvistussäännöt, arvioijien sidonnaisuudet sekä riippumattoman ihmiskatselmuksen vaatimus.
+- **Korjaukset ja vastineet**: Lisättiin nimettyjen toimijoiden tosiasiakorjaus- ja vastineprosessi.
+- **Kalibrointiraja**: Tekniset synteettiset esimerkit ja laskentatestit lisättiin, mutta nimettyjen toimijoiden arviointi pysyy estettynä kahden riippumattoman arvioijan kalibrointiin ja omistajan hyväksyntään asti.
+
 ## 2026-09-03
 
 - **Suomen markkinatutkimuksen perusta**: Lisätty tekoälyoperaattorimarkkinan tutkimussuunnitelma, toimijaryhmät, lähderekisteri ja koneellisesti luettava arviointimalli luonnoksena.

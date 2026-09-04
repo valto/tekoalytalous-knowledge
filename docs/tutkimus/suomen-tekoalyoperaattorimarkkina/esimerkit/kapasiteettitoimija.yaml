@@ -1,0 +1,19 @@
+case_id: "synteettinen-kapasiteettitoimija"
+synthetic: true
+method_version: "0.2"
+role: token
+evidence_cutoff: "2026-09-04"
+unresolved_material_conflict: false
+observations:
+  ASIAKAS: { score: 3, confidence: B }
+  KAPASITEETTI: { score: 4, confidence: A }
+  RAHOITUS: { score: 3, confidence: B }
+  AVOIMET_MALLIT: { score: 4, confidence: B }
+  TIETOYDIN: { state: unknown }
+  OMISTUS: { score: 2, confidence: C }
+  SIIRRETTAVYYS: { score: 3, confidence: B }
+  TURVALLISUUS: { score: 4, confidence: A }
+  TOIMIALA: { score: 2, confidence: C }
+  OPEROINNIN_EROTTELU: { score: 4, confidence: B }
+  TUKI: { score: 3, confidence: B }
+  INTEGRAATIO: { score: 3, confidence: B }

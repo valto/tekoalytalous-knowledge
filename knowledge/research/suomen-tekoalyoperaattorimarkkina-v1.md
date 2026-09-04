@@ -1,7 +1,7 @@
 ---
 type: Market Study Plan
-title: Suomen tekoälyoperaattorimarkkinan tutkimus v0.1
-description: Tutkimussuunnitelma Suomessa toimivien token-, tieto-, yhdistelmä- ja virtuaalioperaattoriehdokkaiden roolipohjaiseen, lähteistettyyn ja epävarmuuden säilyttävään arviointiin.
+title: Suomen tekoälyoperaattorimarkkinan tutkimus v0.2
+description: Kalibrointia odottava tutkimussuunnitelma Suomessa toimivien token-, tieto-, yhdistelmä- ja virtuaalioperaattoriehdokkaiden roolipohjaiseen, lähteistettyyn ja epävarmuuden säilyttävään arviointiin.
 resource: https://github.com/valto/tekoalytalous-knowledge/blob/main/docs/tutkimus/suomen-tekoalyoperaattorimarkkina/README.md
 tags:
   - tekoalytalous
@@ -10,7 +10,7 @@ tags:
   - tekoalyoperaattori
 generated:
   by: process:codex-primary-mac
-  at: 2026-09-03T00:00:00+03:00
+  at: 2026-09-04T00:00:00+03:00
 status: draft
 sources:
   - id: statistics-finland-ai-2025
@@ -47,14 +47,15 @@ id: ml3-finnish-ai-operator-market-study-v1
 slug: suomen-tekoalyoperaattorimarkkina-v1
 publication_status: unpublished
 editorial_status: review_required
-methodology: market-lab/1.1+actor-evaluation/0.1
+repository_visibility: public_draft
+methodology: market-lab/1.1+actor-evaluation/0.2
 evidence_level: avoin-kysymys
-evidence_cutoff: 2026-09-03
-next_review_at: 2026-12-03
-review_status: planned
+evidence_cutoff: 2026-09-04
+next_review_at: 2026-12-04
+review_status: calibration_required
 time_horizon: nyt-ja-1-3
 geography: Finland
-version: "0.1"
+version: "0.2"
 license: CC BY 4.0
 research_question: Mitkä Suomessa toimivat tai Suomeen uskottavasti tulevat toimijat voivat ottaa vastuulleen tekoälymallien työkapasiteetin, omistajakohtaisen tiedon, molemmat erillisinä palveluina tai näiden tukkupalvelujen päälle rakennetun asiakassuhteen?
 candidate_groups:
@@ -75,6 +76,8 @@ rules:
   - Jokainen piste vaatii lähteen, perustelun, tarkistuspäivän ja luottamusluokan.
   - Roolikohtaiset tulokset pidetään erillään eikä niistä muodosteta automaattista yritysjärjestystä.
   - Yrityskohtainen julkaisu vaatii ihmisen toimituksellisen hyväksynnän.
+  - Nimetty arviointi vaatii ensin kahden riippumattoman arvioijan hyväksytyn kalibroinnin.
+  - Merkittävä yrityskohtainen johtopäätös vaatii riippumattoman ihmisen tarkistuksen sekä korjaus- ja vastineprosessin.
 related:
   - type: evaluates
     target: /market-models/local-ai-operator-v1.md
@@ -84,6 +87,6 @@ related:
 
 # Suomen tekoälyoperaattorimarkkinan tutkimus
 
-Tutkimus alkaa markkinarooleista ja vastuista, ei tunnetuimpien yritysten pisteyttämisestä. Ensimmäinen versio määrittelee tutkimuksen maantieteellisen rajan, kelpoisuusseulan, toimijaryhmät, lähdehierarkian, epävarmuuden käsittelyn ja myöhemmän yritysarvioinnin hyväksyntärajat.
+Tutkimus alkaa markkinarooleista ja vastuista, ei tunnetuimpien yritysten pisteyttämisestä. Versio 0.2 määrittelee maantieteellisen rajan, kelpoisuusseulan, toimijaryhmät, lähdehierarkian, laskennan, painoperusteet, epävarmuuden käsittelyn, arvioijien sidonnaisuudet, kalibroinnin sekä korjaus- ja vastineprosessin.
 
-Tässä versiossa ei julkaista yrityskohtaisia pisteitä tai johtopäätöksiä. [Tutkimuspaketti](../../docs/tutkimus/suomen-tekoalyoperaattorimarkkina/README.md) sisältää menetelmän, ensimmäisen ehdokaskentän, lähderekisterin ja koneellisesti luettavan arviointimallin.
+Tässä versiossa ei julkaista yrityskohtaisia pisteitä tai johtopäätöksiä. Menetelmän tekniset testit eivät korvaa kahden riippumattoman arvioijan kalibrointia. [Tutkimuspaketti](../../docs/tutkimus/suomen-tekoalyoperaattorimarkkina/README.md) sisältää menetelmän, ensimmäisen ehdokaskentän, lähderekisterin, laskentasäännöt ja koneellisesti luettavan arviointimallin.

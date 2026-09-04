@@ -1,6 +1,6 @@
 # Lähderekisteri
 
-Päivitetty 3.9.2026. Rekisteri sisältää ensimmäisen tutkimuspaketin lähteet ja niiden sallitun käyttötarkoituksen.
+Päivitetty 4.9.2026. Rekisteri sisältää ensimmäisen tutkimuspaketin lähteet ja niiden sallitun käyttötarkoituksen. Ajantasaisuus ja riippumaton vahvistaminen arvioidaan erikseen [lähde- ja esteellisyyssääntöjen](lahde-ja-esteellisyys.md) mukaan.
 
 | Lähde | Lähdetyyppi | Käyttö tutkimuksessa | Rajoitus |
 | --- | --- | --- | --- |

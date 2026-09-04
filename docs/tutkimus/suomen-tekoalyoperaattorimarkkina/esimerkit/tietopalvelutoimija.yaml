@@ -1,0 +1,19 @@
+case_id: "synteettinen-tietopalvelutoimija"
+synthetic: true
+method_version: "0.2"
+role: tieto
+evidence_cutoff: "2026-09-04"
+unresolved_material_conflict: false
+observations:
+  ASIAKAS: { score: 4, confidence: B }
+  KAPASITEETTI: { state: not_applicable, reason: "Synteettinen toimija hankkii laskennan ulkoa eikä rooli edellytä omaa kapasiteettia." }
+  RAHOITUS: { state: unknown }
+  AVOIMET_MALLIT: { state: unknown }
+  TIETOYDIN: { score: 4, confidence: A }
+  OMISTUS: { score: 4, confidence: A }
+  SIIRRETTAVYYS: { score: 3, confidence: B }
+  TURVALLISUUS: { score: 4, confidence: A }
+  TOIMIALA: { score: 3, confidence: B }
+  OPEROINNIN_EROTTELU: { score: 4, confidence: B }
+  TUKI: { score: 3, confidence: B }
+  INTEGRAATIO: { score: 4, confidence: A }
