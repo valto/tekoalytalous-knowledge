@@ -4,7 +4,7 @@ Versio 0.2 korjaa ensimmäisen menetelmäluonnoksen puutteet ennen nimettyjen to
 
 | Havaittu puute | Version 0.2 ratkaisu | Tila |
 | --- | --- | --- |
-| Painojen alkuperä ja merkitys eivät olleet näkyviä. | Jokainen roolikohtainen paino sai perustelun, painoluokat määriteltiin ja painot nimettiin kalibrointia odottavaksi tutkimushypoteesiksi. | Dokumentoitu; omistajan hyväksyntä puuttuu. |
+| Painojen alkuperä ja merkitys eivät olleet näkyviä. | Jokainen roolikohtainen paino sai perustelun, painoluokat määriteltiin ja painot nimettiin kalibrointia odottavaksi tutkimushypoteesiksi. | Dokumentoitu ja omistajan hyväksymä; kalibrointi puuttuu. |
 | Painotetun tuloksen kaava ja puuttuvan tiedon käsittely puuttuivat. | Määriteltiin kaava, näyttökattavuus, pakolliset muuttujat, pyöristys, tasatilanne, luottamus ja laskennan estot. | Toteutettu ja teknisesti testattu. |
 | Erilliset tulokset olivat tulkinnanvaraisia. | Kaikille seitsemälle tulokselle määriteltiin sallittu muoto ja vähimmäisnäyttö. Kilpailuvoima nimettiin aina skenaarioksi. | Dokumentoitu. |
 | Arvioijien kalibrointia ei ollut. | Lisättiin kaksi synteettistä tapausta, yhtäpitävyyden hyväksymisrajat ja erojen käsittelyprosessi. | Tekninen aineisto valmis; kahden riippumattoman ihmisen koe puuttuu. |
@@ -19,4 +19,4 @@ Versio 0.2 korjaa ensimmäisen menetelmäluonnoksen puutteet ennen nimettyjen to
 
 ## Jäljellä oleva hyväksyntäraja
 
-Menetelmä ei ole valmis nimettyihin toimija-arvioihin ennen kuin kaksi riippumatonta arvioijaa on läpäissyt kalibroinnin ja omistaja on hyväksynyt version 0.2. Laskuri estää muut kuin synteettiset tapaukset siihen asti.
+Omistaja hyväksyi menetelmäversion 0.2 4.9.2026. Menetelmä ei silti ole valmis nimettyihin toimija-arvioihin ennen kuin kaksi riippumatonta arvioijaa on läpäissyt kalibroinnin. Laskuri estää muut kuin synteettiset tapaukset siihen asti.

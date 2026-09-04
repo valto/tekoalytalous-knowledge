@@ -2,7 +2,7 @@
 
 Versio 0.2 — tutkimussuunnitelma
 
-Näytön katkaisupäivä 4.9.2026. Tila: julkisesti nähtävä tietovarastoluonnos; ei toimituksellisesti hyväksytty yritysarviointiin eikä julkaistu verkkosivustolla.
+Näytön katkaisupäivä 4.9.2026. Tila: omistajan hyväksymä julkinen menetelmäluonnos; kahden riippumattoman arvioijan kalibrointi vaaditaan ennen nimettyjä yritysarviointeja; ei julkaistu verkkosivustolla.
 
 ## Tutkimuskysymys
 
@@ -49,4 +49,4 @@ Tutkimus käyttää neljää [aiemmin määriteltyä roolia](../../../knowledge/
 
 ## Julkaisuraja
 
-Tämä paketti ei väitä yhdenkään nimetyn toimijan olevan tekoälyoperaattori. Se ei pisteytä yrityksiä, ennusta markkinoilletuloa eikä anna sijoitussuositusta. Yrityskohtainen arviointi alkaa vasta kahden riippumattoman arvioijan kalibroinnin ja omistajan menetelmäversion hyväksynnän jälkeen. Verkkosivujulkaisu vaatii lisäksi riippumattoman ihmiskatselmuksen sekä korjaus- ja vastineprosessin.
+Tämä paketti ei väitä yhdenkään nimetyn toimijan olevan tekoälyoperaattori. Se ei pisteytä yrityksiä, ennusta markkinoilletuloa eikä anna sijoitussuositusta. Valto Loikkanen hyväksyi menetelmäversion 0.2 4.9.2026. Yrityskohtainen arviointi alkaa vasta kahden riippumattoman arvioijan hyväksytyn kalibroinnin jälkeen. Verkkosivujulkaisu vaatii lisäksi riippumattoman ihmiskatselmuksen sekä korjaus- ja vastineprosessin.

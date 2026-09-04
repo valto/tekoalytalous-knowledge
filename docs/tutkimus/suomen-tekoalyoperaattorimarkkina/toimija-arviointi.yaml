@@ -8,8 +8,13 @@ hyvaksyntaportit:
   lahde_ja_esteellisyyssaannot_dokumentoitu: true
   korjaus_ja_vastineprosessi_dokumentoitu: true
   kahden_riippumattoman_arvioijan_kalibrointi: false
-  omistajan_hyvaksynta_nimettyihin_arvioihin: false
+  omistajan_hyvaksynta_nimettyihin_arvioihin: true
   saanto: "Nimettyjä toimijoita ei arvioida ennen kuin kaikki portit ovat true."
+omistajan_hyvaksynta:
+  hyvaksyja: "Valto Loikkanen"
+  paiva: "2026-09-04"
+  kohde: "Menetelmäversio 0.2"
+  rajaus: "Hyväksyntä ei ohita kahden riippumattoman arvioijan kalibrointia eikä anna automaattista julkaisuvaltaa."
 arviointiyksikko:
   sallitut:
     - "oikeushenkilö"

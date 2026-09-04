@@ -39,7 +39,8 @@ test("arviointimalli dokumentoi painot, perusteet ja suljetut hyväksyntäportit
   assert.equal(model.menetelman_versio, "0.2");
   assert.equal(model.hyvaksyntaportit.laskentasaanto_testattu, true);
   assert.equal(model.hyvaksyntaportit.kahden_riippumattoman_arvioijan_kalibrointi, false);
-  assert.equal(model.hyvaksyntaportit.omistajan_hyvaksynta_nimettyihin_arvioihin, false);
+  assert.equal(model.hyvaksyntaportit.omistajan_hyvaksynta_nimettyihin_arvioihin, true);
+  assert.equal(model.omistajan_hyvaksynta.paiva, "2026-09-04");
   assert.match(model.arvioinnin_tilat.tuntematon, /Ei ole pistemäärä/);
   assert.match(model.asteikko[0], /Lähteistetty näyttö/);
 

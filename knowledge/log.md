@@ -2,6 +2,7 @@
 
 ## 2026-09-04
 
+- **Omistajan hyväksyntä**: Valto Loikkanen hyväksyi markkinatoimijan arviointimenetelmän version 0.2 julkaistavaksi julkisena menetelmäluonnoksena. Nimettyjen toimijoiden arviointi pysyy estettynä riippumattoman kalibroinnin valmistumiseen asti.
 - **Menetelmäauditoinnin korjaukset**: Markkinatoimijan arviointimenetelmä päivitettiin versioon 0.2. Laskentakaava, vähimmäisnäyttö, pakolliset muuttujat, painoperustelut, herkkyystarkastelu ja seitsemän erillistä tulosta määriteltiin.
 - **Lähteet ja riippumattomuus**: Lisättiin lähteiden ajantasaisuus- ja vahvistussäännöt, arvioijien sidonnaisuudet sekä riippumattoman ihmiskatselmuksen vaatimus.
 - **Korjaukset ja vastineet**: Lisättiin nimettyjen toimijoiden tosiasiakorjaus- ja vastineprosessi.

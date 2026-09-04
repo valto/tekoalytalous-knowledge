@@ -44,4 +44,4 @@ Jos rajat eivät täyty, arvioijat kirjaavat eron syyn luokkaan `epäselvä mä�
 
 ## Nykytila
 
-Tekniset esimerkkiaineistot ja laskennan automaattiset testit sisältyvät tietovarastoon. Kahden riippumattoman ihmisen kalibrointia ei ole vielä tehty, joten menetelmäversiota 0.2 ei ole hyväksytty nimettyjen toimijoiden arviointiin.
+Tekniset esimerkkiaineistot ja laskennan automaattiset testit sisältyvät tietovarastoon. Omistaja hyväksyi menetelmäversion 0.2 4.9.2026, mutta kahden riippumattoman ihmisen kalibrointia ei ole vielä tehty. Nimettyjen toimijoiden arviointi pysyy siksi estettynä.
