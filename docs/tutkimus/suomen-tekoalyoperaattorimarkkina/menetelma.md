@@ -119,4 +119,4 @@ Jos sama toimija täyttää usean paikan, se lasketaan vain yhteen. Korvaava ryh
 
 Nimetyn toimijan arvio ei etene julkaisuun ennen [korjaus- ja vastineprosessin](korjaus-ja-vastineprosessi.md) läpikäyntiä. Tosiasiakorjaus, toimijan oma näkemys ja toimituksellinen johtopäätös pidetään erillään.
 
-Tämä menetelmäversio on julkisesti nähtävä tietovarastoluonnos. Se ei ole toimituksellisesti hyväksytty yritysarviointiin eikä julkaistu verkkosivustolla. Nimettyjä toimijoita ei arvioida ennen kuin menetelmän hyväksyntäportit on merkitty täytetyiksi.
+Tämä menetelmäversio on julkisesti nähtävä ja kalibroitu tutkimusmenetelmä. Sen hyväksyntäportit täyttyivät 7.9.2026, joten sitä saa käyttää nimettyjen toimijoiden julkaisemattomiin luonnosarvioihin. Menetelmää tai yrityskohtaisia arvioita ei ole julkaistu verkkosivustolla. Yksittäisen toimija-arvion verkkosivujulkaisu vaatii riippumattoman ihmiskatselmuksen, korjaus- ja vastineprosessin sekä erillisen julkaisupäätöksen.

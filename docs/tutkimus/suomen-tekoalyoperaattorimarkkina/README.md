@@ -36,6 +36,8 @@ Tutkimus käyttää neljää [aiemmin määriteltyä roolia](../../../knowledge/
 - [Koneellisesti luettava toimija-arviointimalli](toimija-arviointi.yaml)
 - [Toimijaprofiilin täytettävä pohja](toimijaprofiili-pohja.md)
 - [Ensimmäisen arviointierän valintapohja](ensimmaisen-eran-valinta-pohja.md)
+- [Lukittu ensimmäinen arviointierä 7.9.2026](ensimmainen-arviointiera-2026-09-07.md)
+- [Ensimmäisen erän riippumaton valinta-auditointi](ensimmaisen-eran-valinta-auditointi-2026-09-07.md)
 - [Synteettiset laskentaesimerkit](esimerkit/README.md)
 - [Markkinatoimijan arviointikyky](../../capabilities/evaluate-market-actor.md)
 

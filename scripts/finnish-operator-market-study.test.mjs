@@ -210,6 +210,59 @@ test("ensimmäisen erän valinta lukitaan ennen pisteytystä", async () => {
   }
 });
 
+test("ensimmäinen nimetty koe-erä on tasapainoinen ja pisteetön", async () => {
+  const batch = loadYaml(
+    await readFile(resolve(studyRoot, "ensimmainen-arviointiera-2026-09-07.yaml"), "utf8"),
+  );
+  assert.equal(batch.status, "selection_locked_pending_actor_screening");
+  assert.equal(batch.method_version, "0.2");
+  assert.equal(batch.calibration_version, "0.2-2");
+  assert.equal(batch.gates.calibration_approval.approved, true);
+  assert.equal(batch.gates.named_draft_assessment_authorisation.approved, true);
+  assert.equal(batch.gates.actor_scores_seen_before_selection, false);
+  assert.equal(batch.gates.actor_specific_screening_complete, false);
+  assert.equal(batch.selected.length, 6);
+  assert.equal(new Set(batch.selected.map((entry) => entry.slot)).size, 6);
+  assert.equal(new Set(batch.selected.map((entry) => entry.actor)).size, 6);
+  assert.equal(batch.longlist_not_selected.length, 6);
+  assert.equal(batch.lock.confirmation_no_scores_seen, true);
+  assert.doesNotMatch(JSON.stringify(batch), /"score"|"piste"\s*:/i);
+  for (const entry of batch.selected) {
+    assert.equal(entry.screening_status, "pending");
+    assert.ok(entry.source_ids.length >= 1);
+    assert.ok(entry.selection_reason.length > 40);
+    assert.ok(entry.method_stress.length > 40);
+  }
+  assert.ok(batch.source_records.length >= 14);
+  for (const source of batch.source_records) {
+    for (const field of [
+      "url",
+      "title",
+      "publisher",
+      "source_type",
+      "published_or_updated",
+      "checked_at",
+      "supported_claim",
+      "locator",
+      "evidence_form",
+      "confidence",
+      "evaluator",
+      "evaluator_conflicts",
+      "conflicting_source_state",
+    ]) {
+      assert.equal(typeof source[field], "string", `${source.id}: ${field} puuttuu`);
+      assert.ok(source[field].length > 0, `${source.id}: ${field} on tyhjä`);
+    }
+    if (source.published_or_updated === "tuntematon") {
+      assert.equal(typeof source.source_excerpt, "string", `${source.id}: lähdeote puuttuu`);
+      assert.ok(source.source_excerpt.length > 0, `${source.id}: lähdeote on tyhjä`);
+    }
+  }
+  for (const entry of batch.longlist_not_selected) {
+    assert.match(entry.selection_status, /^not_selected/);
+  }
+});
+
 test("toimijaprofiili säilyttää laskennan, sidonnaisuudet ja ihmiskatselmuksen", async () => {
   const profile = await readFile(resolve(studyRoot, "toimijaprofiili-pohja.md"), "utf8");
   for (const required of [

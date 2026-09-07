@@ -2,6 +2,7 @@
 
 ## 2026-09-07
 
+- **Ensimmäinen nimetty koe-erä**: Kuuden toimijan rakenteellisesti tasapainoinen koe-erä valittiin ja lukittiin ennen pisteytystä. Valinta ei sisällä yrityspisteitä eikä väitettä tekoälyoperaattoriasemasta.
 - **Kalibroinnin hyväksyntä**: Valto Loikkanen hyväksyi kalibrointikierroksen 0.2-2. Menetelmä avattiin nimettyjen toimijoiden luonnosarvioihin; yksittäisten arvioiden hyväksyntä ja verkkosivujulkaisu pysyvät erillisten ihmispäätösten takana.
 - **Kalibroinnin arvioijat**: Omistaja päätti, että toistettavuuskalibrointi tehdään kahdella toisistaan eristetyllä auditointiagentilla. Ihminen säilyttää vertailuraportin ja menetelmäportin lopullisen hyväksynnän.
 - **Kalibrointikierros 0.2-2**: Kaksi uutta eristettyä auditointiagenttia arvioi molemmat synteettiset tapaukset. Muuttujayhtäpitävyys oli molemmissa 100 prosenttia ja pistetulosten erot 0,19 sekä 0,10. Tekninen tulos läpäisi rajat.
