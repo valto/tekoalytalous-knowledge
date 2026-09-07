@@ -175,7 +175,8 @@ test("tutkimuspaketti määrittelee lähde-, esteellisyys-, kalibrointi- ja vast
   assert.match(sourcePolicy, /kaksi keskenään riippumatonta lähdettä/);
   assert.match(sourcePolicy, /Hinnasto, palvelun saatavuus ja käyttöehdot \| 30 päivää/);
   assert.match(calibration, /80 prosentissa numeerisista muuttujista/);
-  assert.match(calibration, /ei ole vielä tehty/);
+  assert.match(calibration, /kaksi toisistaan eristettyä auditointiagenttia/);
+  assert.match(calibration, /ihminen hyväksyy vertailuraportin/);
   assert.match(correction, /seitsemän kalenteripäivää/);
   assert.match(correction, /veto-oikeutta/);
 });

@@ -46,9 +46,9 @@ Komento luo kummankin arviointitiedoston viereen `.lock.json`-tiedoston. Arvioin
 
 ## Riippumattomuus
 
-Kalibroinnin hyväksyntäportti edellyttää kahta riippumatonta ihmistä. Agentti voi tarkistaa tiedostomuodon, laskea tuloksen ja valmistella eroraportin, mutta agentin oma harjoituskierros ei täytä ihmisarvioijan paikkaa.
+Kalibroinnin toistettavuusportti edellyttää joko kahta eri ihmistä tai kahta toisistaan eristettyä auditointiagenttia. Auditointiagentit käynnistetään ilman jaettua keskusteluhistoriaa, ja niille annetaan vain tässä paketissa nimetyt tiedostot. Pääagentin harjoituskierros ei täytä kumpaakaan riippumatonta paikkaa.
 
-Arvioijat eivät saa keskustella pisteistä tai nähdä toistensa tuloksia ennen molempien tiedostojen lukitsemista. Sama henkilö ei voi täyttää molempia arvioijapaikkoja eri nimellä.
+Arvioijat eivät saa keskustella pisteistä tai nähdä toistensa tuloksia ennen molempien tiedostojen lukitsemista. Sama henkilö tai sama agenttiajo ei voi täyttää molempia arvioijapaikkoja eri nimellä. Ihminen hyväksyy lopullisen vertailuraportin.
 
 ## Tulosten vertailu
 
@@ -72,4 +72,19 @@ node scripts/compare-market-actor-calibration.mjs \
   arvioija-2-tapaus-a.yaml
 ```
 
-Molemmat tapaukset vertaillaan erikseen. Kalibrointi voidaan merkitä hyväksytyksi vasta, kun kummankin tapauksen rajat täyttyvät ja ihminen hyväksyy yhteisen kalibrointitietueen.
+Molemmat tapaukset vertaillaan erikseen. Kalibrointi voidaan merkitä hyväksytyksi vasta, kun kummankin tapauksen rajat täyttyvät, arvioijien riippumattomuus on dokumentoitu ja ihminen hyväksyy yhteisen kalibrointitietueen.
+
+Koko kahden tapauksen vertailuraportti muodostetaan yhdellä komennolla:
+
+```bash
+node scripts/run-market-actor-calibration.mjs \
+  toimija-arviointi.yaml tapaukset.yaml kalibrointiraportti.json \
+  arvioija-1-tapaus-a.yaml arvioija-2-tapaus-a.yaml \
+  arvioija-1-tapaus-b.yaml arvioija-2-tapaus-b.yaml
+```
+
+Työkalu jättää ihmisen hyväksyntäkentän aina epätodeksi. Tekninen läpäisy ei siis yksin avaa nimettyjen toimijoiden arviointia.
+
+## Nykyinen tulos
+
+Kalibrointikierros 0.2-2 läpäisi tekniset rajat 7.9.2026. [Lue tulosraportti](tulos-0.2-2.md). Menetelmäportti pysyy suljettuna, kunnes ihminen hyväksyy raportin.

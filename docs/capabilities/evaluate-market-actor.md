@@ -101,7 +101,7 @@ Sääntö tai muuttumaton ehto
 ## Operatiivinen toteutusluonnos
 
 - **Suoritustapa — toteutusvalinta:** `unknown`. Suunniteltu vaihtoehto on agentin ohjaama työ ohjelmistolaskurilla ja ihmisen hyväksynnällä, mutta toimivaa arviointiprosessia ei ole vielä kalibroitu.
-- **Toteutuksen tila — eksplisiittinen fakta:** Menetelmä, laskuri, pisteytysohje, kaksi synteettistä lähdepakettia, lukitus ja vertailutyökalu ovat käytettävissä 7.9.2026; kahden riippumattoman ihmisen kalibrointia tai nimettyjä toimija-arvioita ei ole tehty.
+- **Toteutuksen tila — eksplisiittinen fakta:** Menetelmä, laskuri, pisteytysohje, kaksi synteettistä lähdepakettia, lukitus ja vertailutyökalu ovat käytettävissä 7.9.2026. Omistaja hyväksyi kaksi eristettyä auditointiagenttia kalibroinnin arvioijiksi; nimettyjä toimija-arvioita ei ole tehty.
 - **Toimintaympäristö — toteutusvalinta:** Julkinen Tekoälytalous-tietovarasto ja myöhempi verkkosivujulkaisu.
 - **Operatiiviset rajoitteet — operatiivinen rajoite:** Vain julkiset lähteet; ei luottamuksellista yritysdataa; ei automaattista ulkoista julkaisemista; arviointien lähdekatko ja arvioijien sidonnaisuudet kirjataan; laskuri hylkää muut kuin synteettiset tapaukset hyväksyntäporttien ollessa kesken.
 - **Toteutusviitteet:** [Tutkimuspaketti](../tutkimus/suomen-tekoalyoperaattorimarkkina/README.md), [arviointimalli](../tutkimus/suomen-tekoalyoperaattorimarkkina/toimija-arviointi.yaml), [pisteytysohje](../tutkimus/suomen-tekoalyoperaattorimarkkina/pisteytysohje.md), [laskentasääntö](../tutkimus/suomen-tekoalyoperaattorimarkkina/painotus-ja-laskenta.md) ja [kalibroinnin työpaketti](../tutkimus/suomen-tekoalyoperaattorimarkkina/kalibrointi/README.md).

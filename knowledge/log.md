@@ -2,6 +2,8 @@
 
 ## 2026-09-07
 
+- **Kalibroinnin arvioijat**: Omistaja päätti, että toistettavuuskalibrointi tehdään kahdella toisistaan eristetyllä auditointiagentilla. Ihminen säilyttää vertailuraportin ja menetelmäportin lopullisen hyväksynnän.
+- **Kalibrointikierros 0.2-2**: Kaksi uutta eristettyä auditointiagenttia arvioi molemmat synteettiset tapaukset. Muuttujayhtäpitävyys oli molemmissa 100 prosenttia ja pistetulosten erot 0,19 sekä 0,10. Tekninen tulos odottaa omistajan hyväksyntää.
 - **Kalibrointipaketti**: Lisätty muuttujakohtainen pisteytysohje, kaksi uutta synteettistä lähdepakettia ja tapauskohtaiset arviointipohjat.
 - **Tulosten eheys**: Lisätty arviointitiedoston rakenteen tarkistus, tarkistussummalla tehtävä lukitus ja kahden arvioijan tulosten vertailu.
 - **Riippumattomuusraja**: Vertailutyökalu hylkää kalibroinnin, jos arvioijat eivät ole eri ihmisarvioijia tai keskeinen lähde on jätetty käsittelemättä ilman perustelua.

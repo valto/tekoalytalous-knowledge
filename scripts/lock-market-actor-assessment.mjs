@@ -29,8 +29,13 @@ export function validateAssessmentShape(assessment) {
   if (!assessment?.assessor?.id || !assessment?.assessor?.name) {
     throw new Error("Arvioijan tunniste tai nimi puuttuu");
   }
-  if (!['human', 'agent'].includes(assessment.assessor.type)) {
-    throw new Error("Arvioijan tyypin pitää olla human tai agent");
+  if (!["human", "audit_agent", "agent"].includes(assessment.assessor.type)) {
+    throw new Error("Arvioijan tyypin pitää olla human, audit_agent tai agent");
+  }
+  if (assessment.assessor.type === "audit_agent") {
+    if (!assessment.assessor.model_identity || !assessment.assessor.isolation_run_id || !assessment.assessor.context_isolation) {
+      throw new Error("Auditointiagentin malli- tai eristystiedot puuttuvat");
+    }
   }
   if (!assessment.assessor.independence_declaration || !assessment.assessor.conflicts_of_interest) {
     throw new Error("Riippumattomuus- tai sidonnaisuusilmoitus puuttuu");
@@ -76,6 +81,7 @@ export async function lockAssessment(path, lockedBy) {
     assessment_file: basename(path),
     case_id: assessment.case_id,
     assessor_id: assessment.assessor.id,
+    assessor_type: assessment.assessor.type,
     locked_by: lockedBy,
     locked_at: assessment.locked_at,
     sha256: createHash("sha256").update(bytes).digest("hex"),

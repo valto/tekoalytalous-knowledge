@@ -17,7 +17,16 @@ Kaikissa muuttujissa käytetään yhteistä rakennetta:
 - **4:** vahva, jatkuvasti operoitu ja useasta lähteestä todennettava kyky;
 - **5:** poikkeuksellisen valmis, laajassa käytössä osoitettu ja riippumattomasti varmennettu kyky.
 
-Jos aineisto ei mahdollista myönteistä eikä kielteistä päätelmää, käytetään tilaa `tuntematon`. Jos muuttuja ei aidosti kuulu tarkasteltavaan rooliin, käytetään tilaa `ei sovellu` ja kirjataan perustelu.
+Jos aineisto ei mahdollista myönteistä eikä kielteistä päätelmää, käytetään tilaa `tuntematon`. Jos muuttuja ei aidosti kuulu tarkasteltavan roolin vastuuseen, käytetään tilaa `ei sovellu` ja kirjataan perustelu.
+
+`Ei sovellu` ja piste 0 erotetaan näin:
+
+- käytä `ei sovellu`, kun rooli voi täyttyä ilman kyseistä vastuuta ja lähde osoittaa vastuun olevan tarkoituksella roolin ulkopuolella tai erillisellä toimittajalla;
+- käytä pistettä 0, kun vastuu kuuluu arvioitavaan rooliin mutta luotettava lähde osoittaa kyvyn puuttuvan tai olennaisen esteen;
+- älä anna pistettä 1 pelkän ulkoa hankkimisen perusteella, jos kyseinen vastuu ei kuulu arvioitavaan rooliin;
+- tokenoperaattorin pysyvä omistajakohtainen tietoydin ja tieto-operaattorin oma laskentakapasiteetti tai mallien suorittaminen ovat normaalisti `ei sovellu`, ellei arvioitava palvelu nimenomaisesti ota myös tätä vastuuta;
+- yhdistelmäoperaattorin molemmat ydinkerrokset ovat soveltuvia, joten niiden puuttuminen pisteytetään näytön perusteella eikä merkitä `ei sovellu`;
+- virtuaalioperaattorissa tukkuna hankittu kyky arvioidaan oman asiakas-, sopimus- ja jatkuvuusvastuun kautta eikä pelkän infrastruktuurin omistamisen perusteella.
 
 ## Muuttujakohtaiset ankkurit
 

@@ -5,7 +5,10 @@ evidence_cutoff: "2026-08-31"
 assessor:
   id: "VAIHDA"
   name: "VAIHDA"
-  type: "human"
+  type: "human TAI audit_agent"
+  model_identity: "Täytä vain auditointiagentille"
+  isolation_run_id: "Täytä vain auditointiagentille"
+  context_isolation: "Täytä vain auditointiagentille"
   independence_declaration: "En ole nähnyt toisen arvioijan pisteitä tai perusteluja ennen tämän tiedoston lukitsemista."
   conflicts_of_interest: "ei"
 eligibility:

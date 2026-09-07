@@ -55,15 +55,23 @@ export async function compareCalibration(model, caseDefinition, first, second) {
   const variableAgreementPercent = comparableCount === 0 ? 0 : 100 * withinOneCount / comparableCount;
   const scoreDifference = firstResult.score === null || secondResult.score === null
     ? null
-    : Math.abs(firstResult.score - secondResult.score);
+    : Math.round(Math.abs(firstResult.score - secondResult.score) * 100) / 100;
   const confidenceDifference = Math.abs(
     CONFIDENCE_ORDER[firstResult.overall_confidence] - CONFIDENCE_ORDER[secondResult.overall_confidence],
   );
   const firstSources = sourceCoverage(first, caseDefinition.key_sources);
   const secondSources = sourceCoverage(second, caseDefinition.key_sources);
-  const humanGateEligible =
-    first.assessor?.type === "human" &&
-    second.assessor?.type === "human" &&
+  const humanPair = first.assessor?.type === "human" && second.assessor?.type === "human";
+  const auditAgentPair =
+    first.assessor?.type === "audit_agent" &&
+    second.assessor?.type === "audit_agent" &&
+    first.assessor?.isolation_run_id !== second.assessor?.isolation_run_id &&
+    Boolean(first.assessor?.model_identity) &&
+    Boolean(second.assessor?.model_identity) &&
+    Boolean(first.assessor?.context_isolation) &&
+    Boolean(second.assessor?.context_isolation);
+  const independentPairEligible =
+    (humanPair || auditAgentPair) &&
     Boolean(first.assessor?.independence_declaration) &&
     Boolean(second.assessor?.independence_declaration);
 
@@ -75,13 +83,14 @@ export async function compareCalibration(model, caseDefinition, first, second) {
     confidence_difference_at_most_one_class: confidenceDifference <= 1,
     first_key_sources_accounted_for: firstSources.pass,
     second_key_sources_accounted_for: secondSources.pass,
-    distinct_independent_human_assessors: humanGateEligible,
+    distinct_independent_assessors: independentPairEligible,
   };
 
   return {
-    calibration_version: "0.2-1",
+    calibration_version: caseDefinition.calibration_version ?? "0.2-2",
     case_id: first.case_id,
     assessors: [first.assessor.id, second.assessor.id],
+    assessor_types: [first.assessor.type, second.assessor.type],
     first_result: firstResult,
     second_result: secondResult,
     variable_agreement_percent: Math.round(variableAgreementPercent * 100) / 100,
