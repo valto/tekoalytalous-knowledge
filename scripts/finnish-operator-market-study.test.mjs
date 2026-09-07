@@ -28,19 +28,22 @@ test("markkinatoimijan arviointikyky on rajattu ennen yritysarvioita", async () 
     "Tuntematon",
     "automaattista paremmuusjärjestystä",
     "riippumatonta ihmiskatselmusta",
-    "Suoritustapa — toteutusvalinta.*`unknown`",
+    "Suoritustapa — toteutusvalinta.*`agent-primary-using-software`",
   ]) {
     assert.match(document, new RegExp(required, "is"));
   }
 });
 
-test("arviointimalli dokumentoi painot, perusteet ja suljetut hyväksyntäportit", async () => {
+test("arviointimalli dokumentoi painot, perusteet ja hyväksytyt portit", async () => {
   const model = await loadModel();
   assert.equal(model.menetelman_versio, "0.2");
   assert.equal(model.hyvaksyntaportit.laskentasaanto_testattu, true);
-  assert.equal(model.hyvaksyntaportit.kahden_riippumattoman_arvioijan_kalibrointi, false);
+  assert.equal(model.hyvaksyntaportit.kahden_riippumattoman_arvioijan_kalibrointi, true);
   assert.equal(model.hyvaksyntaportit.omistajan_hyvaksynta_nimettyihin_arvioihin, true);
   assert.equal(model.omistajan_hyvaksynta.paiva, "2026-09-04");
+  assert.equal(model.kalibroinnin_hyvaksynta.kalibrointiversio, "0.2-2");
+  assert.equal(model.kalibroinnin_hyvaksynta.paiva, "2026-09-07");
+  assert.equal(model.kalibroinnin_hyvaksynta.arvioijat.length, 2);
   assert.match(model.arvioinnin_tilat.tuntematon, /Ei ole pistemäärä/);
   assert.match(model.asteikko[0], /Lähteistetty näyttö/);
 
@@ -82,15 +85,14 @@ test("synteettinen tietopalvelutapaus käsittelee ei sovellu -tilan määritelly
   });
 });
 
-test("suljetut hyväksyntäportit estävät nimetyn toimijan laskennan", async () => {
+test("hyväksytyt portit sallivat nimetyn toimijan luonnoslaskennan", async () => {
   const model = await loadModel();
   const assessment = await loadExample("kapasiteettitoimija.yaml");
   assessment.synthetic = false;
   assessment.case_id = "nimetty-toimija";
-  assert.throws(
-    () => calculateRoleResult(model, assessment),
-    /Menetelmää ei ole hyväksytty nimettyyn arviointiin/,
-  );
+  const result = calculateRoleResult(model, assessment);
+  assert.equal(result.score, 3.39);
+  assert.deepEqual(result.blockers, []);
 });
 
 test("tuntematon pienentää kattavuutta mutta ei muutu nollaksi", async () => {
@@ -148,7 +150,7 @@ test("tutkimussuunnitelma pysyy verkkosivustolla julkaisemattomana ja ilman yrit
   assert.equal(concept.frontmatter.status, "draft");
   assert.equal(concept.frontmatter.publication_status, "unpublished");
   assert.equal(concept.frontmatter.repository_visibility, "public_draft");
-  assert.equal(concept.frontmatter.review_status, "calibration_required");
+  assert.equal(concept.frontmatter.review_status, "calibrated_for_draft_assessment");
   assert.equal(concept.frontmatter.candidate_groups.length, 10);
   assert.equal((candidates.match(/^## \d+\./gm) ?? []).length, 10);
   assert.match(candidates, /seulontalista, ei yritysarvio/i);

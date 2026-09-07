@@ -2,7 +2,7 @@
 
 Versio 0.2 — tutkimussuunnitelma
 
-Näytön katkaisupäivä 4.9.2026. Tila: omistajan hyväksymä julkinen menetelmäluonnos; kahden riippumattoman arvioijan kalibrointi vaaditaan ennen nimettyjä yritysarviointeja; ei julkaistu verkkosivustolla.
+Näytön katkaisupäivä 4.9.2026. Tila: omistajan hyväksymä ja kahdella eristetyllä auditointiagentilla kalibroitu julkinen menetelmä; nimetyt luonnosarvioinnit sallittu; ei julkaistu verkkosivustolla.
 
 ## Tutkimuskysymys
 
@@ -28,6 +28,7 @@ Tutkimus käyttää neljää [aiemmin määriteltyä roolia](../../../knowledge/
 - [Muuttujien pisteytysohje](pisteytysohje.md)
 - [Riippumattoman kalibroinnin työpaketti](kalibrointi/README.md)
 - [Kalibrointikierroksen 0.2-2 tulos](kalibrointi/tulos-0.2-2.md)
+- [Kalibrointikierroksen 0.2-2 hyväksyntä](kalibrointi/hyvaksynta-0.2-2.yaml)
 - [Korjaus- ja vastineprosessi](korjaus-ja-vastineprosessi.md)
 - [Version 0.2 muutosperusteet](muutosperusteet-0.2.md)
 - [Ensimmäinen ehdokaskenttä](ehdokaskentta.md)
@@ -52,4 +53,4 @@ Tutkimus käyttää neljää [aiemmin määriteltyä roolia](../../../knowledge/
 
 ## Julkaisuraja
 
-Tämä paketti ei väitä yhdenkään nimetyn toimijan olevan tekoälyoperaattori. Se ei pisteytä yrityksiä, ennusta markkinoilletuloa eikä anna sijoitussuositusta. Valto Loikkanen hyväksyi menetelmäversion 0.2 4.9.2026. Yrityskohtainen arviointi alkaa vasta kahden riippumattoman arvioijan hyväksytyn kalibroinnin jälkeen. Verkkosivujulkaisu vaatii lisäksi riippumattoman ihmiskatselmuksen sekä korjaus- ja vastineprosessin.
+Tämä paketti ei väitä yhdenkään nimetyn toimijan olevan tekoälyoperaattori. Se ei vielä pisteytä yrityksiä, ennusta markkinoilletuloa eikä anna sijoitussuositusta. Valto Loikkanen hyväksyi menetelmäversion 0.2 4.9.2026 ja kalibrointikierroksen 0.2-2 7.9.2026. Nimetyt toimija-arviot voidaan nyt aloittaa luonnoksina. Verkkosivujulkaisu vaatii lisäksi riippumattoman ihmiskatselmuksen sekä korjaus- ja vastineprosessin.

@@ -1,0 +1,13 @@
+calibration_version: "0.2-2"
+technical_result: "passed"
+technical_report: "tulos-0.2-2.md"
+owner_approval:
+  approved: true
+  approved_by: "Valto Loikkanen"
+  approved_at: "2026-09-07"
+  scope: "Nimetyt toimija-arviot voidaan aloittaa luonnoksina. Yksittäiset arviot ja niiden julkaiseminen vaativat erilliset ihmispäätökset."
+assessors:
+  - id: "audit-agent-gamma-20260907"
+    type: "isolated_audit_agent"
+  - id: "audit-agent-delta-20260907"
+    type: "isolated_audit_agent"

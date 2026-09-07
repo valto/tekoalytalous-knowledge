@@ -1,6 +1,6 @@
 # Kalibrointiprotokolla
 
-Versio 0.2 — kalibrointia odottava luonnos
+Versio 0.2 — kalibrointi hyväksytty 7.9.2026
 
 Päivitetty 7.9.2026.
 
@@ -53,6 +53,6 @@ Ensimmäinen auditointiagenttikierros läpäisi määrälliset rajat, mutta palj
 
 ## Nykytila
 
-Tekniset esimerkkiaineistot, kaksi lähdepakettia, arviointipohja, tiedostojen lukitus, tulosten vertailu ja laskennan automaattiset testit sisältyvät tietovarastoon. Omistaja hyväksyi 7.9.2026, että kaksi toisistaan eristettyä auditointiagenttia voi toteuttaa kalibroinnin. Nimettyjen toimijoiden arviointi pysyy estettynä, kunnes molemmat agenttikierrokset on lukittu, vertailurajat täyttyvät ja ihminen hyväksyy vertailuraportin.
+Tekniset esimerkkiaineistot, kaksi lähdepakettia, arviointipohja, tiedostojen lukitus, tulosten vertailu ja laskennan automaattiset testit sisältyvät tietovarastoon. Omistaja hyväksyi 7.9.2026, että kaksi toisistaan eristettyä auditointiagenttia voi toteuttaa kalibroinnin.
 
-Kierros 0.2-2 läpäisi tekniset vertailurajat 7.9.2026. [Tulosraportti](kalibrointi/tulos-0.2-2.md) odottaa omistajan hyväksyntää.
+Kierros 0.2-2 läpäisi tekniset vertailurajat 7.9.2026, ja Valto Loikkanen hyväksyi tuloksen samana päivänä. [Tulosraportti](kalibrointi/tulos-0.2-2.md) ja [koneellisesti luettava hyväksyntätietue](kalibrointi/hyvaksynta-0.2-2.yaml) avaavat nimetyt toimija-arviot luonnoskäyttöön. Julkaisu vaatii edelleen erillisen ihmiskatselmuksen ja julkaisupäätöksen.

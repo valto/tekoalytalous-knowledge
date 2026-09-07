@@ -1,7 +1,7 @@
 ---
 type: Market Study Plan
 title: Suomen tekoälyoperaattorimarkkinan tutkimus v0.2
-description: Kalibrointia odottava tutkimussuunnitelma Suomessa toimivien token-, tieto-, yhdistelmä- ja virtuaalioperaattoriehdokkaiden roolipohjaiseen, lähteistettyyn ja epävarmuuden säilyttävään arviointiin.
+description: Kalibroitu tutkimussuunnitelma Suomessa toimivien token-, tieto-, yhdistelmä- ja virtuaalioperaattoriehdokkaiden roolipohjaiseen, lähteistettyyn ja epävarmuuden säilyttävään arviointiin.
 resource: https://github.com/valto/tekoalytalous-knowledge/blob/main/docs/tutkimus/suomen-tekoalyoperaattorimarkkina/README.md
 tags:
   - tekoalytalous
@@ -52,7 +52,7 @@ methodology: market-lab/1.1+actor-evaluation/0.2
 evidence_level: avoin-kysymys
 evidence_cutoff: 2026-09-04
 next_review_at: 2026-12-04
-review_status: calibration_required
+review_status: calibrated_for_draft_assessment
 time_horizon: nyt-ja-1-3
 geography: Finland
 version: "0.2"
@@ -89,4 +89,4 @@ related:
 
 Tutkimus alkaa markkinarooleista ja vastuista, ei tunnetuimpien yritysten pisteyttämisestä. Versio 0.2 määrittelee maantieteellisen rajan, kelpoisuusseulan, toimijaryhmät, lähdehierarkian, laskennan, painoperusteet, epävarmuuden käsittelyn, arvioijien sidonnaisuudet, kalibroinnin sekä korjaus- ja vastineprosessin.
 
-Tässä versiossa ei julkaista yrityskohtaisia pisteitä tai johtopäätöksiä. Menetelmän tekniset testit eivät korvaa kahden riippumattoman arvioijan kalibrointia. [Tutkimuspaketti](../../docs/tutkimus/suomen-tekoalyoperaattorimarkkina/README.md) sisältää menetelmän, ensimmäisen ehdokaskentän, lähderekisterin, laskentasäännöt ja koneellisesti luettavan arviointimallin.
+Tässä versiossa ei julkaista yrityskohtaisia pisteitä tai johtopäätöksiä. Kaksi eristettyä auditointiagenttia läpäisi kalibrointikierroksen 0.2-2, jonka Valto Loikkanen hyväksyi 7.9.2026. Menetelmää saa nyt käyttää nimettyjen toimijoiden luonnosarvioihin. [Tutkimuspaketti](../../docs/tutkimus/suomen-tekoalyoperaattorimarkkina/README.md) sisältää menetelmän, ensimmäisen ehdokaskentän, lähderekisterin, laskentasäännöt ja koneellisesti luettavan arviointimallin. Yrityskohtainen julkaisu vaatii edelleen riippumattoman ihmiskatselmuksen ja erillisen julkaisupäätöksen.

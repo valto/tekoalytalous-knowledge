@@ -2,7 +2,7 @@
 
 Määritys: kyvykkyysvaatimusasiakirjan luonnos 0.4
 
-Tila: luonnos; menetelmän kalibrointi ja omistajan hyväksyntä vaaditaan ennen nimettyjä toimija-arviointeja.
+Tila: kalibroitu ja käytössä nimettyjen toimijoiden luonnosarviointiin; julkinen yrityskohtainen arvio vaatii erillisen ihmiskatselmuksen ja julkaisupäätöksen.
 
 ## Tunniste
 
@@ -36,7 +36,7 @@ Markkinatoimijan arviointi läpäisee pienimmän merkityksellisen kokonaisuuden 
 - **Muutos:** Arvioimattomasta toimijasta muodostuu versioitu arviointiluonnos tai dokumentoitu päätös siitä, ettei näyttö riitä arviointiin.
 - **Tulos:** Arvioija saa roolikohtaiset muuttujatulokset, laskennan estot, näyttökattavuuden, herkkyysvälin, luottamuksen, lähteet, puutteet, ristiriidat, laadullisen yhteenvedon ja ihmisen tarkistusta vaativat kohdat.
 - **Tapahtumat / vaikutukset:** Luonnos voidaan siirtää erilliseen toimitukselliseen katselmukseen. Markkinamalli, verkkosivusto tai toimijan julkinen asema ei muutu automaattisesti.
-- **Avoimet asiat:** Ei tiedossa tämän sopimuksen määrittelyn osalta. Menetelmän käyttöönotto odottaa erillisiä hyväksyntäportteja.
+- **Avoimet asiat:** Ensimmäistä nimettyä koe-erää ei ole vielä valittu tai lukittu.
 
 ## Vuorovaikutussopimus: Päivitä olemassa oleva arvio
 
@@ -94,16 +94,14 @@ Sääntö tai muuttumaton ehto
 
 ## Avoimet kysymykset
 
-- Kahden riippumattoman arvioijan kalibrointia ei ole vielä suoritettu.
-- Menetelmäversiota 0.2 ei ole vielä hyväksytty nimettyjen toimijoiden arviointiin.
 - Ensimmäisen nimetyn koe-erän toimijoita ei ole valittu tai lukittu.
 
 ## Operatiivinen toteutusluonnos
 
-- **Suoritustapa — toteutusvalinta:** `unknown`. Suunniteltu vaihtoehto on agentin ohjaama työ ohjelmistolaskurilla ja ihmisen hyväksynnällä, mutta toimivaa arviointiprosessia ei ole vielä kalibroitu.
-- **Toteutuksen tila — eksplisiittinen fakta:** Menetelmä, laskuri, pisteytysohje, kaksi synteettistä lähdepakettia, lukitus ja vertailutyökalu ovat käytettävissä 7.9.2026. Omistaja hyväksyi kaksi eristettyä auditointiagenttia kalibroinnin arvioijiksi; nimettyjä toimija-arvioita ei ole tehty.
+- **Suoritustapa — toteutusvalinta:** `agent-primary-using-software`. Agentti kokoaa ja jäsentää julkisen näytön, ohjelmistolaskuri tarkistaa laskennan ja ihminen päättää olennaisista johtopäätöksistä sekä julkaisusta.
+- **Toteutuksen tila — eksplisiittinen fakta:** Menetelmä, laskuri, pisteytysohje, kaksi synteettistä lähdepakettia, lukitus ja vertailutyökalu ovat käytettävissä. Kaksi eristettyä auditointiagenttia läpäisi kalibrointikierroksen 0.2-2, jonka Valto Loikkanen hyväksyi 7.9.2026. Nimettyjä toimija-arvioita ei ole vielä tehty.
 - **Toimintaympäristö — toteutusvalinta:** Julkinen Tekoälytalous-tietovarasto ja myöhempi verkkosivujulkaisu.
-- **Operatiiviset rajoitteet — operatiivinen rajoite:** Vain julkiset lähteet; ei luottamuksellista yritysdataa; ei automaattista ulkoista julkaisemista; arviointien lähdekatko ja arvioijien sidonnaisuudet kirjataan; laskuri hylkää muut kuin synteettiset tapaukset hyväksyntäporttien ollessa kesken.
+- **Operatiiviset rajoitteet — operatiivinen rajoite:** Vain julkiset lähteet; ei luottamuksellista yritysdataa; ei automaattista ulkoista julkaisemista; arviointien lähdekatko ja arvioijien sidonnaisuudet kirjataan; julkaisu vaatii riippumattoman ihmiskatselmuksen.
 - **Toteutusviitteet:** [Tutkimuspaketti](../tutkimus/suomen-tekoalyoperaattorimarkkina/README.md), [arviointimalli](../tutkimus/suomen-tekoalyoperaattorimarkkina/toimija-arviointi.yaml), [pisteytysohje](../tutkimus/suomen-tekoalyoperaattorimarkkina/pisteytysohje.md), [laskentasääntö](../tutkimus/suomen-tekoalyoperaattorimarkkina/painotus-ja-laskenta.md) ja [kalibroinnin työpaketti](../tutkimus/suomen-tekoalyoperaattorimarkkina/kalibrointi/README.md).
 - **Valta, perustaminen ja hyväksyntä — sääntö:** Agentti voi kerätä, jäsentää, laskea ja ehdottaa. Ihminen hyväksyy menetelmän, arvioitavan toimijan, olennaiset johtopäätökset, korjausten käsittelyn ja julkaisun.
 
@@ -125,11 +123,11 @@ Sääntö tai muuttumaton ehto
 | Neljä arvioitavaa roolia ovat token-, tieto-, yhdistelmä- ja virtuaalioperaattori. | eksplisiittinen fakta | aiemmin määritelty malli | `knowledge/market-models/` ja liiketoimintasuunnitelmapaketti |
 | Toimijaryhmät arvioidaan ennen nimettyjä yrityksiä. | nimenomainen omistajavalinta | hyväksytty lähtökohta | aiempi etenemissuunnitelma ja tutkimusohjaus |
 | Tuntematon tieto erotetaan nollasta. | sääntö / muuttumaton ehto | auditoinnin vahvistama korjaus | Estää näytön puutteen tulkitsemisen todetuksi esteeksi. |
-| Painot ovat roolivastuista johdettu tutkimushypoteesi. | järkevä päätelmä | kalibrointia odottava | `docs/liiketoimintasuunnitelmat/suomalainen-tekoalyoperaattori/arviointimalli.yaml` ja painoperustelut |
+| Painot ovat roolivastuista johdettu tutkimushypoteesi. | järkevä päätelmä | kalibroitu synteettisillä tapauksilla | `docs/liiketoimintasuunnitelmat/suomalainen-tekoalyoperaattori/arviointimalli.yaml`, painoperustelut ja kalibrointikierros 0.2-2 |
 | Seitsemän tulosta raportoidaan erillään. | sääntö / muuttumaton ehto | menetelmäversio 0.2 | Estää nykykyvyn, aikomuksen ja skenaarion sekoittamisen. |
-| Vähimmäisnäyttökattavuus on 70 prosenttia. | toteutusvaatimus | kalibrointia odottava | Menetelmäversion 0.2 valittu varovaisuusraja. |
+| Vähimmäisnäyttökattavuus on 70 prosenttia. | toteutusvaatimus | kalibroitu synteettisillä tapauksilla | Menetelmäversion 0.2 valittu varovaisuusraja ja kalibrointikierros 0.2-2. |
 | Luottamus ei muuta pistettä. | sääntö / muuttumaton ehto | menetelmäversio 0.2 | Estää lähdevarmuuden kaksinkertaisen vaikutuksen. |
 | Automaattista paremmuusjärjestystä ei muodosteta. | sääntö / muuttumaton ehto | nykyisessä arviointimallissa | Operaattorikokoelman arviointimalli 0.3 ja tämä menetelmä. |
 | Julkaisu vaatii riippumattoman ihmiskatselmuksen. | sääntö / muuttumaton ehto | auditoinnin korjaus | Sidonnaisuus- ja julkaisurajan suoja. |
 | Toimijalle annetaan korjaus- ja vastinemahdollisuus. | toteutusvaatimus | menetelmäversio 0.2 | `korjaus-ja-vastineprosessi.md` |
-| Suoritustapa on vielä vahvistamatta. | tuntematon / ratkaisematon | avoin | Kalibroitua operatiivista toteutusta ei ole. |
+| Agentti kokoaa arvion ohjelmistolaskurin tukemana ja ihminen päättää julkaisemisesta. | toteutusvalinta | kalibroitu synteettisillä tapauksilla | Kalibrointikierros 0.2-2 ja omistajan hyväksyntä 7.9.2026. |

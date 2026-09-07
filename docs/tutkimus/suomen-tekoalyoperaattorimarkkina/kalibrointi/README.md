@@ -87,4 +87,4 @@ Työkalu jättää ihmisen hyväksyntäkentän aina epätodeksi. Tekninen läpä
 
 ## Nykyinen tulos
 
-Kalibrointikierros 0.2-2 läpäisi tekniset rajat 7.9.2026. [Lue tulosraportti](tulos-0.2-2.md). Menetelmäportti pysyy suljettuna, kunnes ihminen hyväksyy raportin.
+Kalibrointikierros 0.2-2 läpäisi tekniset rajat 7.9.2026, ja Valto Loikkanen hyväksyi tuloksen samana päivänä. [Lue tulosraportti](tulos-0.2-2.md) ja [hyväksyntätietue](hyvaksynta-0.2-2.yaml). Menetelmää saa nyt käyttää nimettyjen toimijoiden luonnosarvioihin, mutta yksittäisen arvion julkaisu vaatii erillisen ihmispäätöksen.

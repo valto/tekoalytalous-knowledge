@@ -1,6 +1,6 @@
 # Painotus ja laskenta
 
-Versio 0.2 — kalibrointia odottava luonnos
+Versio 0.2 — kalibroitu menetelmä
 
 Päivitetty 4.9.2026.
 

@@ -2,7 +2,7 @@
 
 Päivä: 7.9.2026
 
-Tila: teknisesti läpäisty; odottaa ihmisen omistajapäätöstä
+Tila: teknisesti läpäisty ja omistajan hyväksymä
 
 ## Arvioijat ja riippumattomuus
 
@@ -58,4 +58,8 @@ Kierros 0.2-2 läpäisee kaikki ennalta määritellyt tekniset rajat:
 - molemmat tapauskohtaiset vertailut läpäisivät kaikki rajat;
 - arviointitiedostojen lukitukset ja tarkistussummat täsmäävät.
 
-Tekninen läpäisy ei yksin avaa nimettyjen toimijoiden arviointia. Valto Loikkasen nimenomainen hyväksyntä vaaditaan ennen kuin menetelmän kalibrointiportti muutetaan hyväksytyksi.
+## Omistajan päätös
+
+Valto Loikkanen hyväksyi kalibrointikierroksen 0.2-2 7.9.2026. Menetelmän kalibrointiportti on tämän vuoksi avoin nimettyjen toimijoiden luonnosarvioinneille.
+
+Hyväksyntä ei hyväksy ennalta yhtäkään toimijaa, yrityskohtaista pistettä tai johtopäätöstä. Jokainen olennainen yrityskohtainen johtopäätös vaatii edelleen riippumattoman ihmiskatselmuksen, korjaus- ja vastineprosessin sekä erillisen julkaisupäätöksen.
