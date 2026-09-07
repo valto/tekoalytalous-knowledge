@@ -1,0 +1,15 @@
+calibration_version: "0.2-1"
+method_version: "0.2"
+cases:
+  - case_id: "kalibrointi-01-pohjolan-laskentapalvelu"
+    synthetic: true
+    primary_role: token
+    evidence_cutoff: "2026-08-31"
+    source_packet: "tapaus-a-lahdepaketti.md"
+    key_sources: [A2, A3, A4, A5, A6]
+  - case_id: "kalibrointi-02-siltatieto-palveluosuuskunta"
+    synthetic: true
+    primary_role: tieto
+    evidence_cutoff: "2026-08-31"
+    source_packet: "tapaus-b-lahdepaketti.md"
+    key_sources: [B2, B3, B4, B5, B7]

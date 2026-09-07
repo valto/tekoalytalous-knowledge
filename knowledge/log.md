@@ -1,5 +1,12 @@
 # Tekoälytalous bundle history
 
+## 2026-09-07
+
+- **Kalibrointipaketti**: Lisätty muuttujakohtainen pisteytysohje, kaksi uutta synteettistä lähdepakettia ja tapauskohtaiset arviointipohjat.
+- **Tulosten eheys**: Lisätty arviointitiedoston rakenteen tarkistus, tarkistussummalla tehtävä lukitus ja kahden arvioijan tulosten vertailu.
+- **Riippumattomuusraja**: Vertailutyökalu hylkää kalibroinnin, jos arvioijat eivät ole eri ihmisarvioijia tai keskeinen lähde on jätetty käsittelemättä ilman perustelua.
+- **Harjoituskierros**: Yksi agentin harjoituskierros tehtiin molemmille tapauksille ja tallennettiin yksityiseen työarkistoon. Se ei täytä ihmiskalibroinnin hyväksyntäporttia.
+
 ## 2026-09-04
 
 - **Omistajan hyväksyntä**: Valto Loikkanen hyväksyi markkinatoimijan arviointimenetelmän version 0.2 julkaistavaksi julkisena menetelmäluonnoksena. Nimettyjen toimijoiden arviointi pysyy estettynä riippumattoman kalibroinnin valmistumiseen asti.

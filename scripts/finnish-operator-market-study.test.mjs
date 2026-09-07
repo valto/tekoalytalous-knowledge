@@ -180,6 +180,20 @@ test("tutkimuspaketti määrittelee lähde-, esteellisyys-, kalibrointi- ja vast
   assert.match(correction, /veto-oikeutta/);
 });
 
+test("kalibrointipaketti sisältää kaksi synteettistä lähdepakettia ilman oikeita yritysväitteitä", async () => {
+  const calibrationRoot = resolve(studyRoot, "kalibrointi");
+  const [first, second, scoring, cases] = await Promise.all([
+    readFile(resolve(calibrationRoot, "tapaus-a-lahdepaketti.md"), "utf8"),
+    readFile(resolve(calibrationRoot, "tapaus-b-lahdepaketti.md"), "utf8"),
+    readFile(resolve(studyRoot, "pisteytysohje.md"), "utf8"),
+    readFile(resolve(calibrationRoot, "tapaukset.yaml"), "utf8"),
+  ]);
+  assert.match(first, /Synteettinen kalibrointitapaus/);
+  assert.match(second, /Synteettinen kalibrointitapaus/);
+  assert.match(scoring, /Muuttujakohtaiset ankkurit/);
+  assert.equal(loadYaml(cases).cases.length, 2);
+});
+
 test("ensimmäisen erän valinta lukitaan ennen pisteytystä", async () => {
   const selection = await readFile(resolve(studyRoot, "ensimmaisen-eran-valinta-pohja.md"), "utf8");
   for (const required of [

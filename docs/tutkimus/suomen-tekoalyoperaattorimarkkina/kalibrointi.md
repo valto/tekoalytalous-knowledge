@@ -17,6 +17,8 @@ Kaksi arvioijaa käsittelee toisistaan riippumatta vähintään kaksi synteettis
 
 Arvioijat saavat saman lähdepaketin, menetelmäversion ja näytön katkaisupäivän. He eivät näe toistensa pisteitä tai perusteluja ennen ensimmäisen kierroksen lukitsemista.
 
+Arvioijat käyttävät samaa [muuttujien pisteytysohjetta](pisteytysohje.md). Kalibroinnin lähdepaketit, tyhjä arviointipohja ja lukitusohje ovat [kalibroinnin työpaketissa](kalibrointi/README.md).
+
 ## Hyväksymisrajat
 
 Kalibrointi hyväksytään vasta, kun molemmissa tapauksissa:
@@ -44,4 +46,4 @@ Jos rajat eivät täyty, arvioijat kirjaavat eron syyn luokkaan `epäselvä mä�
 
 ## Nykytila
 
-Tekniset esimerkkiaineistot ja laskennan automaattiset testit sisältyvät tietovarastoon. Omistaja hyväksyi menetelmäversion 0.2 4.9.2026, mutta kahden riippumattoman ihmisen kalibrointia ei ole vielä tehty. Nimettyjen toimijoiden arviointi pysyy siksi estettynä.
+Tekniset esimerkkiaineistot, kaksi lähdepakettia, arviointipohja, tiedostojen lukitus, tulosten vertailu ja laskennan automaattiset testit sisältyvät tietovarastoon. Omistaja hyväksyi menetelmäversion 0.2 4.9.2026, mutta kahden riippumattoman ihmisen kalibrointia ei ole vielä tehty. Nimettyjen toimijoiden arviointi pysyy siksi estettynä.

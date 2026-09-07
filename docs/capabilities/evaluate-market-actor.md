@@ -101,10 +101,10 @@ Sääntö tai muuttumaton ehto
 ## Operatiivinen toteutusluonnos
 
 - **Suoritustapa — toteutusvalinta:** `unknown`. Suunniteltu vaihtoehto on agentin ohjaama työ ohjelmistolaskurilla ja ihmisen hyväksynnällä, mutta toimivaa arviointiprosessia ei ole vielä kalibroitu.
-- **Toteutuksen tila — eksplisiittinen fakta:** Menetelmä, laskuri ja synteettiset testitapaukset ovat luonnoksena 4.9.2026; nimettyjä toimijoita ei ole arvioitu.
+- **Toteutuksen tila — eksplisiittinen fakta:** Menetelmä, laskuri, pisteytysohje, kaksi synteettistä lähdepakettia, lukitus ja vertailutyökalu ovat käytettävissä 7.9.2026; kahden riippumattoman ihmisen kalibrointia tai nimettyjä toimija-arvioita ei ole tehty.
 - **Toimintaympäristö — toteutusvalinta:** Julkinen Tekoälytalous-tietovarasto ja myöhempi verkkosivujulkaisu.
 - **Operatiiviset rajoitteet — operatiivinen rajoite:** Vain julkiset lähteet; ei luottamuksellista yritysdataa; ei automaattista ulkoista julkaisemista; arviointien lähdekatko ja arvioijien sidonnaisuudet kirjataan; laskuri hylkää muut kuin synteettiset tapaukset hyväksyntäporttien ollessa kesken.
-- **Toteutusviitteet:** [Tutkimuspaketti](../tutkimus/suomen-tekoalyoperaattorimarkkina/README.md), [arviointimalli](../tutkimus/suomen-tekoalyoperaattorimarkkina/toimija-arviointi.yaml), [laskentasääntö](../tutkimus/suomen-tekoalyoperaattorimarkkina/painotus-ja-laskenta.md) ja [kalibrointiprotokolla](../tutkimus/suomen-tekoalyoperaattorimarkkina/kalibrointi.md).
+- **Toteutusviitteet:** [Tutkimuspaketti](../tutkimus/suomen-tekoalyoperaattorimarkkina/README.md), [arviointimalli](../tutkimus/suomen-tekoalyoperaattorimarkkina/toimija-arviointi.yaml), [pisteytysohje](../tutkimus/suomen-tekoalyoperaattorimarkkina/pisteytysohje.md), [laskentasääntö](../tutkimus/suomen-tekoalyoperaattorimarkkina/painotus-ja-laskenta.md) ja [kalibroinnin työpaketti](../tutkimus/suomen-tekoalyoperaattorimarkkina/kalibrointi/README.md).
 - **Valta, perustaminen ja hyväksyntä — sääntö:** Agentti voi kerätä, jäsentää, laskea ja ehdottaa. Ihminen hyväksyy menetelmän, arvioitavan toimijan, olennaiset johtopäätökset, korjausten käsittelyn ja julkaisun.
 
 ## Jaetut elementit ja hyväksytty uudelleenkäyttö
@@ -115,6 +115,7 @@ Sääntö tai muuttumaton ehto
 | Luottamusluokat A–D | tietomalli | operaattorimallien arviointi | markkinatoimijan arviointi | Kuvaa yhden havainnon lähdepohjan vahvuutta. |
 | Julkisen tietomuutoksen ehdottaminen | kyvykkyys | julkinen tietovarasto | arviointiluonnoksen toimittaminen | Ehdotus ei anna julkaisuvaltaa. |
 | Roolikohtainen laskuri | työkalu | markkinatoimijan arviointi | vain tämän menetelmäversion tekninen tarkistus | Laskuri ei ole erillinen kyvykkyys eikä julkaise tulosta. |
+| Arviointitiedoston lukitus ja vertailu | työkalu | markkinatoimijan arviointi | vain menetelmän kalibrointi | Työkalu todentaa tiedoston muuttumattomuuden ja laskee yhtäpitävyyden, mutta ei hyväksy kalibrointia ihmisen puolesta. |
 
 ## Väitteiden alkuperä
 

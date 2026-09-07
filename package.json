@@ -6,6 +6,8 @@
   "scripts": {
     "validate": "node scripts/validate-knowledge.mjs",
     "test": "node --test scripts/*.test.mjs",
+    "lock:market-assessment": "node scripts/lock-market-actor-assessment.mjs",
+    "compare:market-calibration": "node scripts/compare-market-actor-calibration.mjs",
     "prepare:release": "node scripts/prepare-release.mjs"
   },
   "devDependencies": {

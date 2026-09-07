@@ -1,0 +1,38 @@
+case_id: "kalibrointi-01-pohjolan-laskentapalvelu"
+synthetic: true
+method_version: "0.2"
+evidence_cutoff: "2026-08-31"
+assessor:
+  id: "VAIHDA"
+  name: "VAIHDA"
+  type: "human"
+  independence_declaration: "En ole nähnyt toisen arvioijan pisteitä tai perusteluja ennen tämän tiedoston lukitsemista."
+  conflicts_of_interest: "ei"
+eligibility:
+  decision: "jatkoon"
+  reason: "VAIHDA"
+selected_roles: [token]
+role: token
+used_sources: []
+omitted_key_sources: {}
+unresolved_material_conflict: false
+observations:
+  ASIAKAS: { state: unknown, reason: "VAIHDA", sources: [] }
+  KAPASITEETTI: { state: unknown, reason: "VAIHDA", sources: [] }
+  RAHOITUS: { state: unknown, reason: "VAIHDA", sources: [] }
+  AVOIMET_MALLIT: { state: unknown, reason: "VAIHDA", sources: [] }
+  TIETOYDIN: { state: unknown, reason: "VAIHDA", sources: [] }
+  OMISTUS: { state: unknown, reason: "VAIHDA", sources: [] }
+  SIIRRETTAVYYS: { state: unknown, reason: "VAIHDA", sources: [] }
+  TURVALLISUUS: { state: unknown, reason: "VAIHDA", sources: [] }
+  TOIMIALA: { state: unknown, reason: "VAIHDA", sources: [] }
+  OPEROINNIN_EROTTELU: { state: unknown, reason: "VAIHDA", sources: [] }
+  TUKI: { state: unknown, reason: "VAIHDA", sources: [] }
+  INTEGRAATIO: { state: unknown, reason: "VAIHDA", sources: [] }
+separate_results:
+  strategic_fit: { value: "ei_arvioitavissa", reason: "VAIHDA", sources: [] }
+  market_entry_intent: { value: "ei_nayttoa", reason: "VAIHDA", sources: [] }
+  competitive_strength_scenario: { value: "ei_arvioitavissa", conditions: "VAIHDA", counter_evidence: "VAIHDA", sources: [] }
+  required_change: { value: "ei_arvioitavissa", reason: "VAIHDA" }
+  time_to_market: { value: "ei_arvioitavissa", reason: "VAIHDA", sources: [] }
+locked_at: "VAIHDA ISO 8601"

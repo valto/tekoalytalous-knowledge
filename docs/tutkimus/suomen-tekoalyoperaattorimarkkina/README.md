@@ -25,6 +25,8 @@ Tutkimus käyttää neljää [aiemmin määriteltyä roolia](../../../knowledge/
 - [Painotus ja laskenta](painotus-ja-laskenta.md)
 - [Lähde- ja esteellisyyssäännöt](lahde-ja-esteellisyys.md)
 - [Kalibrointiprotokolla](kalibrointi.md)
+- [Muuttujien pisteytysohje](pisteytysohje.md)
+- [Riippumattoman kalibroinnin työpaketti](kalibrointi/README.md)
 - [Korjaus- ja vastineprosessi](korjaus-ja-vastineprosessi.md)
 - [Version 0.2 muutosperusteet](muutosperusteet-0.2.md)
 - [Ensimmäinen ehdokaskenttä](ehdokaskentta.md)
