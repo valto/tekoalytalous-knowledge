@@ -1,0 +1,422 @@
+screening_id: "ml3-first-batch-eligibility-2026-09-18"
+selection_id: "ml3-first-batch-2026-09-07"
+method_version: "0.2"
+evidence_cutoff: "2026-09-18"
+screened_at: "2026-09-18"
+screened_by: "codex-primary-mac"
+screening_conflicts: "Ei tiedossa olevia taloudellisia, työ-, toimeksianto-, hallinto- tai läheissidonnaisuuksia seulottuihin toimijoihin."
+status: "approved_after_two_independent_audits"
+scope:
+  - "Seula ratkaisee vain, voidaanko toimijasta aloittaa roolikohtainen julkaisematon arviointiluonnos."
+  - "Seula ei anna pisteitä, sijoita toimijoita järjestykseen eikä totea tekoälyoperaattoriasemaa."
+  - "Myönteinen ehto tarkoittaa vain, että menetelmän vähimmäisnäyttö kyseiseen ehtoon löytyi."
+decision_rule: "Kaikki kuusi ehtoa kyllä = jatkoon; yksikin tuntematon = rajatapaus; yksikin olennainen ei = ulos rajattu."
+source_record_defaults: &source_record_defaults
+  evaluator: "codex-primary-mac"
+  evaluator_conflicts: "ei tiedossa"
+  conflicting_evidence: "ei tunnistettu seulontavaiheessa, ellei lähdetietueessa toisin mainita"
+sources:
+  - id: "verda-terms-2026"
+    <<: *source_record_defaults
+    url: "https://verda.com/terms-and-conditions"
+    title: "Terms and Conditions"
+    publisher: "Verda / DataCrunch Oy"
+    source_type: "sopimusehdot"
+    published_or_updated: "2025-09-30"
+    checked_at: "2026-09-18"
+    locator: "Johdanto nimeää DataCrunch Oy:n toimittajaksi; palvelu-, maksu- ja tukiehdot."
+    evidence_form: "suora tieto"
+    confidence: "A"
+    supported_claim: "DataCrunch Oy on palvelun toimittaja ja asiakkaan sopimusosapuoli."
+    freshness_risk: "Sopimusehdot ovat yli 30 päivää vanhat; voimassaolo tarkistettiin sivulta 18.9.2026, mutta ehtoihin sovelletaan vanhentumisvaroitusta."
+  - id: "verda-services-2026"
+    <<: *source_record_defaults
+    url: "https://docs.verda.com/resources/services-overview"
+    title: "Services Overview"
+    publisher: "Verda"
+    source_type: "tekninen dokumentaatio"
+    published_or_updated: "2026-04"
+    checked_at: "2026-09-18"
+    locator: "GPU- ja CPU-instanssit, klusterit, tallennus, palvelimettomat säiliöt ja hallittu mallipäättely."
+    evidence_form: "suora tieto"
+    confidence: "B"
+    supported_claim: "Verda tarjoaa jatkuvasti hallittua laskentakapasiteettia ja mallipäättelyä."
+  - id: "verda-pricing-2026"
+    <<: *source_record_defaults
+    url: "https://docs.verda.com/welcome-to-verda/pricing-and-billing"
+    title: "Pricing and Billing"
+    publisher: "Verda"
+    source_type: "hinnasto- ja laskutusdokumentaatio"
+    published_or_updated: "2026-09"
+    checked_at: "2026-09-18"
+    locator: "Käytön mukainen laskutus, pitkäaikaiset sopimukset, saldon hallinta ja laskut."
+    evidence_form: "suora tieto"
+    confidence: "B"
+    supported_claim: "Palvelulla on käytön mukainen laskutus ja sopimuspohjaisia hinnoitteluvaihtoehtoja."
+  - id: "verda-responsibility-2026"
+    <<: *source_record_defaults
+    url: "https://docs.verda.com/resources/shared-responsibility-model"
+    title: "Shared Responsibility Model"
+    publisher: "Verda"
+    source_type: "vastuunjakodokumentaatio"
+    published_or_updated: "2026-05-11"
+    checked_at: "2026-09-18"
+    locator: "Verdan vastuu tiloista, laitteista, verkoista, palvelun provisioinnista ja käyttömenetelmästä."
+    evidence_form: "suora tieto"
+    confidence: "B"
+    supported_claim: "Verda kantaa nimetyt infrastruktuuri-, verkko- ja provisiointivastuut."
+  - id: "elisa-identity-2026"
+    <<: *source_record_defaults
+    url: "https://elisa.fi/yhtiotieto/tietoa-elisasta/yhteystiedot/"
+    title: "Elisa Oyj – Yhteystiedot"
+    publisher: "Elisa Oyj"
+    source_type: "virallinen yhtiökuvaus"
+    published_or_updated: "tuntematon"
+    checked_at: "2026-09-18"
+    locator: "Elisa Oyj, Y-tunnus 0116510-6 ja Helsingin päätoimipaikka."
+    evidence_form: "suora tieto"
+    confidence: "A"
+    supported_claim: "Elisa Oyj on tunnistettava suomalainen oikeushenkilö."
+  - id: "elisa-ai-services-2026"
+    <<: *source_record_defaults
+    url: "https://yrityksille.elisa.fi/tekoaly"
+    title: "Tekoälypalvelut yritykselle"
+    publisher: "Elisa Oyj"
+    source_type: "palvelukuvaus"
+    published_or_updated: "tuntematon"
+    checked_at: "2026-09-18"
+    locator: "Yritysasiakkaiden tekoälypalvelut, AI Botti ja verkkosivujen chatbot."
+    evidence_form: "suora tieto"
+    confidence: "B"
+    supported_claim: "Elisa markkinoi yrityksille useita tekoälyä hyödyntäviä palveluja."
+  - id: "elisa-chat-2026"
+    <<: *source_record_defaults
+    url: "https://yrityksille.elisa.fi/chatpalvelu"
+    title: "Chat ja chatbot nettisivuille"
+    publisher: "Elisa Oyj"
+    source_type: "tuotteistettu palvelukuvaus"
+    published_or_updated: "tuntematon"
+    checked_at: "2026-09-18"
+    locator: "Yritysasiakkaalle tilattava chat-palvelu, kirjautuminen ja ympärivuorokautinen chatbot-lisäpalvelu."
+    evidence_form: "suora tieto"
+    confidence: "B"
+    supported_claim: "Elisa Chat on yrityksille tuotteistettu chatbot-palvelu."
+  - id: "elisa-copilot-2026"
+    <<: *source_record_defaults
+    url: "https://yrityksille.elisa.fi/microsoft-copilot"
+    title: "Microsoft Copilot yrityksille"
+    publisher: "Elisa Oyj"
+    source_type: "jälleenmyynti- ja käyttöönottopalvelun kuvaus"
+    published_or_updated: "tuntematon"
+    checked_at: "2026-09-18"
+    locator: "Copilot-lisenssin tilaus Elisan hallintaportaalista ja Microsoft 365 -riippuvuus."
+    evidence_form: "suora tieto"
+    confidence: "B"
+    supported_claim: "Elisa välittää ja hallinnoi Microsoft Copilot -lisenssejä yritysasiakkaille."
+  - id: "elisa-support-2026"
+    <<: *source_record_defaults
+    url: "https://yrityksille.elisa.fi/en/contact-information"
+    title: "Contact information for companies"
+    publisher: "Elisa Oyj"
+    source_type: "asiakaspalvelu- ja häiriöprosessi"
+    published_or_updated: "tuntematon"
+    checked_at: "2026-09-18"
+    locator: "Yritysasiakkaiden laskutus-, tilaus-, tuki- ja häiriökanavat sekä palveluhinnasto."
+    evidence_form: "suora tieto"
+    confidence: "B"
+    supported_claim: "Elisalla on yleiset yritysasiakkaiden tilaus-, laskutus-, tuki- ja häiriökanavat."
+  - id: "lounea-company-2026"
+    <<: *source_record_defaults
+    url: "https://lounea.fi/fi/lounea-oy/"
+    title: "Lounea Oy"
+    publisher: "Lounea Oy"
+    source_type: "virallinen yhtiökuvaus"
+    published_or_updated: "tuntematon"
+    checked_at: "2026-09-18"
+    locator: "Lounea Oy kuvataan suomalaiseksi valokuitu- ja ICT-yhtiöksi."
+    evidence_form: "suora tieto"
+    confidence: "B"
+    supported_claim: "Lounea Oy on tunnistettava suomalainen ICT-yhtiö."
+  - id: "lounea-virtual-server-2026"
+    <<: *source_record_defaults
+    url: "https://lounea.fi/fi/yrityksille/palvelut/laitteet-ja-alustat/virtuaalipalvelin/"
+    title: "Virtuaalipalvelin"
+    publisher: "Lounea Oy"
+    source_type: "tuotteistettu palvelukuvaus"
+    published_or_updated: "tuntematon"
+    checked_at: "2026-09-18"
+    locator: "Yritysasiakkaille tarjottava hallittu virtuaalipalvelin."
+    evidence_form: "suora tieto"
+    confidence: "B"
+    supported_claim: "Lounea tarjoaa yritysasiakkaille hallitun virtuaalipalvelimen."
+  - id: "lounea-support-2026"
+    <<: *source_record_defaults
+    url: "https://lounea.fi/fi/yrityksille/asiakaspalvelu/"
+    title: "Yritysasiakkaiden asiakaspalvelu"
+    publisher: "Lounea Oy"
+    source_type: "asiakaspalvelu- ja häiriöprosessi"
+    published_or_updated: "tuntematon"
+    checked_at: "2026-09-18"
+    locator: "Myynti, tekninen tuki, häiriöilmoitukset, laskutus ja ylläpito."
+    evidence_form: "suora tieto"
+    confidence: "B"
+    supported_claim: "Lounealla on yritysasiakkaiden tuki-, häiriö- ja laskutuskanavat."
+  - id: "lounea-sla-2026"
+    <<: *source_record_defaults
+    url: "https://lounea.fi/fi/yrityksille/palvelut/tuki-ja-koulutuspalvelut/sla-palvelutasot/"
+    title: "Korotettu palvelutaso"
+    publisher: "Lounea Oy"
+    source_type: "palvelutasokuvaus"
+    published_or_updated: "tuntematon"
+    checked_at: "2026-09-18"
+    locator: "Nopeampi viankorjauksen aloitus, käsittelyprioriteetti ja erillislaskutus."
+    evidence_form: "suora tieto"
+    confidence: "B"
+    supported_claim: "Lounea tarjoaa erikseen tilattavia korotettuja palvelutasoja."
+  - id: "dataspace-company-2026"
+    <<: *source_record_defaults
+    url: "https://www.dataspace.fi/en/company"
+    title: "Who we are?"
+    publisher: "DataSpace Europe Oy"
+    source_type: "virallinen yhtiökuvaus"
+    published_or_updated: "tuntematon"
+    checked_at: "2026-09-18"
+    locator: "Vuonna 2022 perustettu suomalainen DataSpace Europe Oy ja sen Tritom-ratkaisu."
+    evidence_form: "suora tieto"
+    confidence: "B"
+    supported_claim: "DataSpace Europe Oy on tunnistettava suomalainen oikeushenkilö."
+  - id: "dataspace-register-2026"
+    <<: *source_record_defaults
+    url: "https://digital-strategy.ec.europa.eu/en/policies/data-intermediary-services"
+    title: "Register of data intermediation services"
+    publisher: "Euroopan komissio"
+    source_type: "viranomaisrekisteri"
+    published_or_updated: "jatkuvasti päivittyvä"
+    checked_at: "2026-09-18"
+    locator: "DataSpace Europe Oy:n Suomen rekisterimerkintä."
+    evidence_form: "suora tieto"
+    confidence: "A"
+    supported_claim: "DataSpace Europe Oy on merkitty datan välityspalvelujen viranomaisrekisteriin."
+  - id: "dataspace-tritom-2026"
+    <<: *source_record_defaults
+    url: "https://www.dataspace.fi/en/data-intermediation-service"
+    title: "Tritom – Data Intermediation Service"
+    publisher: "DataSpace Europe Oy"
+    source_type: "tekninen palvelukuvaus"
+    published_or_updated: "2025-01-20"
+    checked_at: "2026-09-18"
+    locator: "Salaus, luvitus, luvan peruminen, tiedon kuvaus ja tiedon välitys ilman tallentamista."
+    evidence_form: "suora tieto"
+    confidence: "B"
+    supported_claim: "Tritom hallitsee lupia ja välittää salattua dataa tallentamatta sitä."
+  - id: "dataspace-faq-2026"
+    <<: *source_record_defaults
+    url: "https://www.dataspace.fi/fi/ukk"
+    title: "Usein kysytyt kysymykset"
+    publisher: "DataSpace Europe Oy"
+    source_type: "palvelu- ja hinnoittelukuvaus"
+    published_or_updated: "tuntematon"
+    checked_at: "2026-09-18"
+    locator: "Essential- ja Enterprise-käyttäjät, lupien hallinta, palveluostot ja datakanavakohtainen kuukausimaksu."
+    evidence_form: "suora tieto"
+    confidence: "B"
+    supported_claim: "Tritomilla on nimetyt käyttäjäryhmät ja datakanavakohtainen kuukausihinta."
+  - id: "tiera-company-2026"
+    <<: *source_record_defaults
+    url: "https://tiera.fi/yritys/"
+    title: "Tiera Oy"
+    publisher: "Tiera Oy"
+    source_type: "virallinen yhtiökuvaus"
+    published_or_updated: "tuntematon"
+    checked_at: "2026-09-18"
+    locator: "Kuntaorganisaatioiden omistama valtakunnallinen inhouse-yhtiö ja tuotteistetut ICT-palvelut."
+    evidence_form: "suora tieto"
+    confidence: "B"
+    supported_claim: "Tiera Oy on tunnistettava suomalainen inhouse-palveluyhtiö."
+  - id: "tiera-owners-2026"
+    <<: *source_record_defaults
+    url: "https://tiera.fi/asiakasomistajat/"
+    title: "Asiakasomistajat"
+    publisher: "Tiera Oy"
+    source_type: "omistaja- ja asiakaskuvaus"
+    published_or_updated: "tuntematon"
+    checked_at: "2026-09-18"
+    locator: "Lähes 400 kunta- ja hyvinvointialueomistajaa sekä inhouse-palvelun asiakasraja."
+    evidence_form: "suora tieto"
+    confidence: "B"
+    supported_claim: "Tieran ulkoisen palveluyhteisön muodostavat sen kunta- ja hyvinvointialueomistajat."
+  - id: "tiera-integration-2026"
+    <<: *source_record_defaults
+    url: "https://tiera.fi/palvelumme/digius-palvelualusta/integraatioalustajapalvelut/"
+    title: "Integraatiopalvelut"
+    publisher: "Tiera Oy"
+    source_type: "tuotteistettu palvelukuvaus"
+    published_or_updated: "2025-09-23"
+    checked_at: "2026-09-18"
+    locator: "Integraatiot palveluna Tieran omalta alustalta, logitettuina, monitoroituina ja valvottuina."
+    evidence_form: "suora tieto"
+    confidence: "B"
+    supported_claim: "Tiera toimittaa integraatioita palveluna omalta alustaltaan monitoroituina ja valvottuina."
+  - id: "tiera-support-2026"
+    <<: *source_record_defaults
+    url: "https://tiera.fi/palvelumme/ict-kokonaispalvelut/tukipalvelut/"
+    title: "Tukipalvelut"
+    publisher: "Tiera Oy"
+    source_type: "tuki- ja häiriöprosessin kuvaus"
+    published_or_updated: "tuntematon"
+    checked_at: "2026-09-18"
+    locator: "Lähi-, puhelin- ja verkkotuki sekä häiriö- ja käyttöoikeuspyynnöt."
+    evidence_form: "suora tieto"
+    confidence: "B"
+    supported_claim: "Tieralla on yleinen tuki-, häiriö- ja käyttöoikeuspyyntöjen prosessi."
+  - id: "lumi-organisation-2026"
+    <<: *source_record_defaults
+    url: "https://lumi-ai-factory.eu/faq/"
+    title: "FAQ"
+    publisher: "LUMI AI Factory"
+    source_type: "organisointi- ja palvelukuvaus"
+    published_or_updated: "tuntematon"
+    checked_at: "2026-09-18"
+    locator: "Kuuden maan konsortio, CSC:n isännöinti ja koordinointi sekä voittoa tavoittelematon palvelualusta."
+    evidence_form: "suora tieto"
+    confidence: "B"
+    supported_claim: "LUMI AI Factory on konsortio, jota CSC isännöi ja koordinoi."
+  - id: "lumi-pricing-2026"
+    <<: *source_record_defaults
+    url: "https://lumi-ai-factory.eu/pricing-and-eligibility/"
+    title: "Pricing and eligibility"
+    publisher: "LUMI AI Factory"
+    source_type: "palveluehdot"
+    published_or_updated: "2026-06-24"
+    checked_at: "2026-09-18"
+    locator: "Asiakasryhmät, laskentakapasiteetti, data-, konsultointi- ja koulutuspalvelut sekä hinnoitteluperiaatteet."
+    evidence_form: "suora tieto"
+    confidence: "B"
+    supported_claim: "LUMI AI Factorylla on asiakasryhmäkohtaiset kelpoisuus- ja hinnoitteluperiaatteet."
+    freshness_risk: "Palveluehtojen päiväys on yli 30 päivää vanha; sivun voimassaolo tarkistettiin 18.9.2026."
+  - id: "lumi-access-2026"
+    <<: *source_record_defaults
+    url: "https://lumi-ai-factory.eu/playground-access-to-lumi-ai-factory/"
+    title: "Playground Access to LUMI AI Factory"
+    publisher: "LUMI AI Factory"
+    source_type: "tuotteistettu kapasiteettipalvelu"
+    published_or_updated: "tuntematon"
+    checked_at: "2026-09-18"
+    locator: "GPU-tunnit, tallennus, 1–3 kuukauden kesto, käyttötarkoitukset, tukisisältö ja maksuttomuusehdot."
+    evidence_form: "suora tieto"
+    confidence: "B"
+    supported_claim: "LUMI AI Factory tarjoaa rajattuja GPU-, tallennus- ja tukipalvelupaketteja."
+  - id: "lumi-support-2026"
+    <<: *source_record_defaults
+    url: "https://lumi-ai-factory.eu/user-support/"
+    title: "User support"
+    publisher: "LUMI AI Factory"
+    source_type: "tuki- ja häiriöprosessi"
+    published_or_updated: "tuntematon"
+    checked_at: "2026-09-18"
+    locator: "Projektinumeron ja vakavuusluokan sisältävä tukipyyntö sekä palvelutilan ja dokumentaation linkit."
+    evidence_form: "suora tieto"
+    confidence: "B"
+    supported_claim: "LUMI AI Factorylla on käyttäjien tukipyyntö- ja vianmääritysprosessi."
+actors:
+  - actor: "DataCrunch Oy"
+    assessment_unit: "DataCrunch Oy:n sopimusvastuulla tarjottava Verda AI Cloud -palvelu"
+    geographic_connection: "Suomalainen sopimusosapuoli ja Helsingin datakeskukset."
+    conditions:
+      identifiable_actor: {result: "kyllä", basis: "DataCrunch Oy on nimetty sopimusehdoissa toimittajaksi.", sources: ["verda-terms-2026"]}
+      relevant_responsibility: {result: "kyllä", basis: "Palvelu sisältää kapasiteetin provisioinnin, infrastruktuurin operoinnin, laskutuksen ja hallitun päättelyn.", sources: ["verda-services-2026", "verda-responsibility-2026", "verda-pricing-2026"]}
+      external_service_relationship: {result: "kyllä", basis: "Palveluehdot ja dokumentaatio määrittelevät asiakkaan ja toimittajan välisen palvelusuhteen.", sources: ["verda-terms-2026", "verda-services-2026"]}
+      continuous_operation: {result: "kyllä", basis: "Jatkuva vastuu kattaa vähintään kapasiteetin hallinnan, laskutuksen, infrastruktuurin ylläpidon ja tuen.", sources: ["verda-services-2026", "verda-pricing-2026", "verda-responsibility-2026"]}
+      productised_service: {result: "kyllä", basis: "Kohderyhmät, palvelutyypit, toimitussisältö ja käyttö- sekä sopimushinnoittelu on kuvattu.", sources: ["verda-services-2026", "verda-pricing-2026"]}
+      assessability: {result: "kyllä", basis: "Tokenoperaattorin pakollinen KAPASITEETTI-muuttuja voidaan arvioida julkaistusta GPU-, klusteri- ja palvelinkapasiteetin dokumentaatiosta.", mandatory_variable: "KAPASITEETTI", sources: ["verda-services-2026"]}
+    decision: "jatkoon"
+    roles_opened_for_draft_assessment: ["token"]
+    decision_basis: "Kaikki kuusi vähimmäisehtoa täyttyvät. Avoimien mallien käyttö ja sisältölokien rajaus ratkaistaan varsinaisessa arvioinnissa."
+  - actor: "Elisa Oyj"
+    assessment_unit: "Elisa Chat -chatbot-palvelu"
+    geographic_connection: "Suomalainen Elisa Oyj palvelee suomalaisia yritysasiakkaita omilla myynti-, hallinta-, laskutus-, tuki- ja häiriökanavillaan."
+    conditions:
+      identifiable_actor: {result: "kyllä", basis: "Elisa Oyj:n nimi, Y-tunnus ja kotipaikka ovat yhtiön virallisella sivulla.", sources: ["elisa-identity-2026"]}
+      relevant_responsibility: {result: "kyllä", basis: "Elisa tarjoaa oman asiakassuhteensa kautta yrityksille tuotteistetun chatbot-palvelun.", sources: ["elisa-ai-services-2026", "elisa-chat-2026"]}
+      external_service_relationship: {result: "kyllä", basis: "Elisa Chat on suunnattu yritysasiakkaille ja tilataan Elisalta.", sources: ["elisa-chat-2026"]}
+      continuous_operation: {result: "tuntematon", basis: "Chatbotin jatkuva saatavuus on kuvattu, mutta lähteet eivät kytke kahta menetelmän mukaista jatkuvan operoinnin tehtävää juuri Elisa Chat -palveluun.", sources: ["elisa-chat-2026", "elisa-support-2026"]}
+      productised_service: {result: "kyllä", basis: "Kohderyhmä, chatbot-palvelun sisältö ja tarjousperusteinen hankintatapa on kuvattu.", sources: ["elisa-chat-2026"]}
+      assessability: {result: "kyllä", basis: "Virtuaalioperaattorin pakollinen ASIAKAS-muuttuja voidaan tutkia Elisan omasta yritysasiakassuhteesta ja tilauskanavasta.", mandatory_variable: "ASIAKAS", sources: ["elisa-chat-2026"]}
+    decision: "rajatapaus"
+    candidate_roles_for_further_screening: ["virtuaali"]
+    roles_opened_for_draft_assessment: []
+    decision_basis: "Palveluyksikkö on tuotteistettu, mutta kaksi palvelukohtaista jatkuvan operoinnin tehtävää jäi tuntemattomaksi. Microsoft Copilot pidetään erillisenä mahdollisena arviointiyksikkönä."
+  - actor: "Lounea Oy"
+    assessment_unit: "Lounea Oy:n hallittu virtuaalipalvelin"
+    geographic_connection: "Suomalainen Lounea Oy tarjoaa palvelun suomalaisille yritysasiakkaille."
+    conditions:
+      identifiable_actor: {result: "kyllä", basis: "Lounea Oy on nimetty suomalaiseksi valokuitu- ja ICT-yhtiöksi.", sources: ["lounea-company-2026"]}
+      relevant_responsibility: {result: "kyllä", basis: "Hallittu virtuaalipalvelin sekä palvelutaso osoittavat kapasiteetti-, ylläpito- ja häiriövastuuta.", sources: ["lounea-virtual-server-2026", "lounea-sla-2026"]}
+      external_service_relationship: {result: "kyllä", basis: "Palvelu on yritysasiakkaalle tarjottava nimetty palvelu.", sources: ["lounea-virtual-server-2026", "lounea-support-2026"]}
+      continuous_operation: {result: "kyllä", basis: "Palvelurakenteessa ovat vähintään ylläpito, tekninen tuki, häiriöiden käsittely ja palvelutasoon sidottu viankorjaus.", sources: ["lounea-support-2026", "lounea-sla-2026"]}
+      productised_service: {result: "kyllä", basis: "Kohderyhmä ja toimitussisältö on nimetty, ja palvelutaso voidaan tilata palvelukohtaisesti tai erillislaskutettuna.", sources: ["lounea-virtual-server-2026", "lounea-sla-2026"]}
+      assessability: {result: "tuntematon", basis: "Virtuaalipalvelin osoittaa yleistä laskentakapasiteettia, mutta lähteet eivät kytke palvelua tekoälymallien työkapasiteettiin tai tekoälypalvelun asiakassuhteeseen.", sources: ["lounea-virtual-server-2026"]}
+    decision: "rajatapaus"
+    candidate_roles_for_further_screening: ["token", "virtuaali"]
+    roles_opened_for_draft_assessment: []
+    decision_basis: "Yleinen hallittu palvelinpalvelu täyttää jatkuvan ICT-palvelun ehdot, mutta yhteys tutkimuksen tekoälyoperaattorirooleihin jäi tuntemattomaksi."
+  - actor: "DataSpace Europe Oy"
+    assessment_unit: "DataSpace Europe Oy:n kehittämä ja tarjoama Tritom-datanvälityspalvelu"
+    geographic_connection: "Suomalainen yhtiö, Helsingin päätoimipaikka ja Suomen viranomaisvalvonnan alainen datan välityspalvelu."
+    conditions:
+      identifiable_actor: {result: "kyllä", basis: "DataSpace Europe Oy ja sen Tritom-ratkaisu on nimetty yhtiön sivulla ja Euroopan komission rekisterissä.", sources: ["dataspace-company-2026", "dataspace-register-2026"]}
+      relevant_responsibility: {result: "kyllä", basis: "Palvelu hallitsee luvitusta, salattua tiedon välitystä ja datan sekä palvelutuotteiden kuvausta.", sources: ["dataspace-tritom-2026", "dataspace-faq-2026"]}
+      external_service_relationship: {result: "kyllä", basis: "Palvelu on suunnattu datan omistajille, palveluntarjoajille ja julkisille toimijoille.", sources: ["dataspace-tritom-2026", "dataspace-faq-2026"]}
+      continuous_operation: {result: "tuntematon", basis: "Käyttövaltuutusten hallinta on osoitettu, mutta kuukausihinta ei yksin osoita palveluntarjoajan laskutustehtävää eikä toista menetelmässä nimettyä jatkuvan operoinnin tehtävää.", sources: ["dataspace-tritom-2026", "dataspace-faq-2026"]}
+      productised_service: {result: "kyllä", basis: "Essential- ja Enterprise-kohderyhmät, palvelusisältö ja datakanavakohtainen kuukausimaksu on kuvattu.", sources: ["dataspace-faq-2026"]}
+      assessability: {result: "kyllä", basis: "Tieto-operaattorin pakollinen OMISTUS-muuttuja voidaan tutkia dokumentoidusta luvan antamisesta ja peruuttamisesta.", mandatory_variable: "OMISTUS", sources: ["dataspace-tritom-2026", "dataspace-faq-2026"]}
+    decision: "rajatapaus"
+    candidate_roles_for_further_screening: ["tieto"]
+    roles_opened_for_draft_assessment: []
+    decision_basis: "Tieto-operaattorirooli on arvioitavissa, mutta toinen menetelmässä nimetty jatkuvan operoinnin tehtävä jäi osoittamatta. Virtuaaliroolia ei avata."
+  - actor: "Tiera Oy"
+    assessment_unit: "Tiera Oy:n Digius-palvelualustan integraatiopalvelut"
+    geographic_connection: "Suomalainen kunta- ja hyvinvointialueomisteinen inhouse-yhtiö palvelee omistaja-asiakkaitaan Suomessa."
+    conditions:
+      identifiable_actor: {result: "kyllä", basis: "Tiera Oy ja sen omistaja-asiakaskunta on nimetty yhtiön virallisilla sivuilla.", sources: ["tiera-company-2026", "tiera-owners-2026"]}
+      relevant_responsibility: {result: "kyllä", basis: "Tiera tarjoaa integraatiot omalta alustaltaan logitettuina, monitoroituina ja valvottuina.", sources: ["tiera-integration-2026"]}
+      external_service_relationship: {result: "kyllä", basis: "Palveluyhteisön muodostavat lähes 400 kunta- ja hyvinvointialueomistajaa, joille inhouse-palvelut tarjotaan.", sources: ["tiera-owners-2026"]}
+      continuous_operation: {result: "tuntematon", basis: "Monitorointi ja valvonta osoittavat seurannan, mutta yleisen tukipalvelun yhteyttä juuri Digius-integraatiopalveluun ei ole osoitettu toiseksi tehtäväksi.", sources: ["tiera-integration-2026", "tiera-support-2026"]}
+      productised_service: {result: "tuntematon", basis: "Kohderyhmä ja toimitussisältö on kuvattu, mutta julkisesta aineistosta ei löytynyt integraatiopalvelun sopimus- tai hinnoitteluperiaatetta.", sources: ["tiera-integration-2026", "tiera-owners-2026"]}
+      assessability: {result: "kyllä", basis: "Tieto-operaattorin pakollinen INTEGRAATIO-muuttuja voidaan tutkia julkaistusta integraatioalustan kuvauksesta.", mandatory_variable: "INTEGRAATIO", sources: ["tiera-integration-2026"]}
+    decision: "rajatapaus"
+    candidate_roles_for_further_screening: ["tieto"]
+    roles_opened_for_draft_assessment: []
+    decision_basis: "Integraatiopalvelu on arvioitavissa, mutta toinen jatkuvan operoinnin tehtävä ja sopimus- tai hinnoitteluperiaate jäivät tuntemattomiksi. Virtuaaliroolia ei avata."
+  - actor: "LUMI AI Factory -konsortio"
+    assessment_unit: "LUMI AI Factoryn yrityksille tarjottavat laskenta- ja tukipalvelut, joita CSC isännöi ja koordinoi konsortiorakenteessa"
+    geographic_connection: "Palvelu on CSC:n Suomessa isännöimä ja koordinoima, ja Suomi kuuluu kuuden maan konsortioon."
+    conditions:
+      identifiable_actor: {result: "tuntematon", basis: "Konsortio ja CSC:n isännöinti sekä koordinointi on nimetty, mutta yrityspalvelujen sopimus- ja palveluvastuuta kantavaa yksikköä ei voitu yksiselitteisesti tunnistaa.", sources: ["lumi-organisation-2026", "lumi-pricing-2026"]}
+      relevant_responsibility: {result: "kyllä", basis: "Palvelu jakaa GPU-kapasiteettia, projektitallennusta, käyttäjätunnuksia, teknistä tukea ja asiantuntija-apua.", sources: ["lumi-access-2026", "lumi-support-2026"]}
+      external_service_relationship: {result: "kyllä", basis: "Palvelut on tarkoitettu yrityksille, julkisille organisaatioille ja tutkimusorganisaatioille määritellyin kelpoisuusehdoin.", sources: ["lumi-pricing-2026"]}
+      continuous_operation: {result: "kyllä", basis: "Jatkuva vastuu sisältää kapasiteetin ja käyttöoikeuksien hallinnan, käyttöönoton tuen, vianmäärityksen ja tukipyynnöt.", sources: ["lumi-access-2026", "lumi-support-2026"]}
+      productised_service: {result: "kyllä", basis: "Kohderyhmät, GPU-tunnit, tallennus, kesto, tukisisältö ja maksuttomuus- tai hinnoitteluperiaatteet on kuvattu.", sources: ["lumi-pricing-2026", "lumi-access-2026"]}
+      assessability: {result: "kyllä", basis: "Tokenoperaattorin pakollinen KAPASITEETTI-muuttuja voidaan tutkia julkaistuista GPU-tunti-, tallennus- ja projektirajoista.", mandatory_variable: "KAPASITEETTI", sources: ["lumi-access-2026"]}
+    decision: "rajatapaus"
+    candidate_roles_for_further_screening: ["token"]
+    roles_opened_for_draft_assessment: []
+    decision_basis: "Palvelu on tuotteistettu ja arvioitavissa, mutta sopimus- ja palveluvastuuta kantava arviointiyksikkö jäi tuntemattomaksi."
+aggregate:
+  selected_actors: 6
+  passed: 1
+  borderline: 5
+  excluded: 0
+  scores_produced: false
+  publication_authority_granted: false
+  next_gate: "Vain DataCrunch Oy:n tokenoperaattoriluonnos voidaan avata. Ennen pisteytystä kirjataan omistajan mahdolliset toimijakohtaiset sidonnaisuudet."
+audit:
+  assessor_ids:
+    - "01a0b487-d5e3-7910-a435-ed32955fd499"
+    - "01a0b487-d6a4-7101-b0ea-98b11444806a"
+  first_review: "Alkuperäinen kuuden jatkoon -tulos hylättiin tai hyväksyttiin vain korjauksin."
+  corrected_result: "Yksi jatkoon ja viisi rajatapausta."
+  final_reviews:
+    - "hyväksy"
+    - "hyväksy"
+  approved_at: "2026-09-18"

@@ -50,7 +50,7 @@ editorial_status: review_required
 repository_visibility: public_draft
 methodology: market-lab/1.1+actor-evaluation/0.2
 evidence_level: avoin-kysymys
-evidence_cutoff: 2026-09-04
+evidence_cutoff: 2026-09-18
 next_review_at: 2026-12-04
 review_status: calibrated_for_draft_assessment
 time_horizon: nyt-ja-1-3
@@ -89,4 +89,4 @@ related:
 
 Tutkimus alkaa markkinarooleista ja vastuista, ei tunnetuimpien yritysten pisteyttämisestä. Versio 0.2 määrittelee maantieteellisen rajan, kelpoisuusseulan, toimijaryhmät, lähdehierarkian, laskennan, painoperusteet, epävarmuuden käsittelyn, arvioijien sidonnaisuudet, kalibroinnin sekä korjaus- ja vastineprosessin.
 
-Tässä versiossa ei julkaista yrityskohtaisia pisteitä tai johtopäätöksiä. Kaksi eristettyä auditointiagenttia läpäisi kalibrointikierroksen 0.2-2, jonka Valto Loikkanen hyväksyi 7.9.2026. Menetelmää saa nyt käyttää nimettyjen toimijoiden luonnosarvioihin. [Tutkimuspaketti](../../docs/tutkimus/suomen-tekoalyoperaattorimarkkina/README.md) sisältää menetelmän, ensimmäisen ehdokaskentän, lähderekisterin, laskentasäännöt ja koneellisesti luettavan arviointimallin. Yrityskohtainen julkaisu vaatii edelleen riippumattoman ihmiskatselmuksen ja erillisen julkaisupäätöksen.
+Tässä versiossa ei julkaista yrityskohtaisia pisteitä tai johtopäätöksiä. Kaksi eristettyä auditointiagenttia läpäisi kalibrointikierroksen 0.2-2, jonka Valto Loikkanen hyväksyi 7.9.2026. Ensimmäisen kuuden toimijan kelpoisuusseula valmistui ja läpäisi kahden auditointiagentin tarkistuksen 18.9.2026: yksi toimija etenee tokenoperaattorin arviointiluonnokseen ja viisi jäi rajatapauksiksi. [Tutkimuspaketti](../../docs/tutkimus/suomen-tekoalyoperaattorimarkkina/README.md) sisältää menetelmän, valinnan, seulontatuloksen, lähderekisterin, laskentasäännöt ja koneellisesti luettavan arviointimallin. Yrityskohtainen julkaisu vaatii edelleen riippumattoman ihmiskatselmuksen ja erillisen julkaisupäätöksen.

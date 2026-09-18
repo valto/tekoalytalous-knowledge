@@ -3,7 +3,7 @@ method_version: "0.2"
 calibration_version: "0.2-2"
 longlist_cutoff: "2026-09-07"
 selected_at: "2026-09-07"
-status: "selection_locked_pending_actor_screening"
+status: "selection_locked_actor_screening_approved"
 selection_maker:
   id: "codex-primary-mac"
   type: "agent"
@@ -20,7 +20,8 @@ gates:
     approved_at: "2026-09-07"
     record: "toimija-arviointi.yaml"
   actor_scores_seen_before_selection: false
-  actor_specific_screening_complete: false
+  actor_specific_screening_complete: true
+  actor_specific_screening_record: "ensimmaisen-eran-kelpoisuusseula-2026-09-18.yaml"
 rules:
   - "Erä on tarkoituksellinen menetelmäkoe, ei tilastollinen otos eikä paremmuusjärjestys."
   - "Sama toimija täyttää vain yhden koepaikan."
@@ -241,7 +242,8 @@ selected:
     primary_structure: "kaupallinen kapasiteetti- ja tekoälypilvipalvelu"
     assessment_unit: "DataCrunch Oy:n sopimusvastuulla tarjottava Verda AI Cloud -palvelu"
     roles_to_test: ["token"]
-    screening_status: "pending"
+    screening_status: "jatkoon"
+    roles_opened_for_draft_assessment: ["token"]
     selection_reason: "Julkisissa lähteissä ovat näkyvissä tekoälypilvi, hinnasto, asiakassopimus, jaettu vastuumalli ja jatkuvan palvelun kuvaukset."
     method_stress: "Testaa, erottaako menetelmä yleisen grafiikkasuoritinpilven tässä tutkimuksessa määritellystä avoimien mallien tokenoperaattorista."
     source_ids: ["verda-ai-cloud", "verda-pricing", "verda-terms"]
@@ -252,7 +254,8 @@ selected:
     primary_structure: "valtakunnallinen tele- ja tietotekniikkapalveluyhtiö"
     assessment_unit: "Elisa Oyj:n yritysasiakkaille tarjoama tekoälypalvelukokonaisuus; tarkka sopimus- ja palveluraja vahvistetaan seulonnassa"
     roles_to_test: ["tieto", "yhdistelma", "virtuaali"]
-    screening_status: "pending"
+    screening_status: "rajatapaus"
+    roles_opened_for_draft_assessment: []
     selection_reason: "Julkinen lähde kuvaa yritysasiakkaille tuotteistettuja tekoälypalveluja, ja toimija edustaa valtakunnallisen tele- ja tietotekniikkapalvelun rakennetta."
     method_stress: "Testaa, estääkö menetelmä teleoperaattoriaseman käyttämisen tekoälyoperaattorikyvyn automaattisena todisteena."
     source_ids: ["elisa-ai-services"]
@@ -263,7 +266,8 @@ selected:
     primary_structure: "alueellisesta tietoliikenneyhtiöstä valtakunnallisia yrityspalveluja tarjoavaksi kasvanut toimija"
     assessment_unit: "Lounea Oy:n hallittu virtuaalipalvelin; muut yrityspalvelut ovat taustaa eivätkä kuulu samaan arviointiyksikköön ilman erillistä näyttöä"
     roles_to_test: ["virtuaali", "token"]
-    screening_status: "pending"
+    screening_status: "rajatapaus"
+    roles_opened_for_draft_assessment: []
     selection_reason: "Julkinen palvelukuvaus nimeää hallitun virtuaalipalvelimen, ylläpidon ja palvelutasot alueellisen tietoliikennetaustan yhteydessä."
     method_stress: "Testaa hypoteesia siitä, voiko alueellinen toimija muodostaa oman asiakassuhteen päälle kapasiteettia paketoivan virtuaalioperaattorirakenteen."
     source_ids: ["lounea-business", "lounea-virtual-server"]
@@ -274,7 +278,8 @@ selected:
     primary_structure: "säännelty datan välityspalvelu"
     assessment_unit: "Tritom-datanvälityspalvelu, jonka DataSpace Europe kertoo kehittäneensä; oikeushenkilö ja sopimusosapuoli vahvistetaan seulonnassa"
     roles_to_test: ["tieto", "virtuaali"]
-    screening_status: "pending"
+    screening_status: "rajatapaus"
+    roles_opened_for_draft_assessment: []
     selection_reason: "Toimija on Euroopan unionin rekisterissä suomalaisena datan välityspalveluna ja tarjoaa tuotteistetun Tritom-palvelun tiedon sopimukselliseen välittämiseen."
     method_stress: "Testaa, erottaako menetelmä datan välityksen omistajakohtaisen tietoytimen jatkuvasta operoinnista."
     source_ids: ["eu-data-intermediaries", "dataspace-tritom", "traficom-dataspace-registration"]
@@ -285,7 +290,8 @@ selected:
     primary_structure: "kuntaorganisaatioiden ja hyvinvointialueiden omistama palveluyhtiö"
     assessment_unit: "Tiera Oy:n Digius-palvelualustan integraatioalustapalvelut"
     roles_to_test: ["tieto", "virtuaali"]
-    screening_status: "pending"
+    screening_status: "rajatapaus"
+    roles_opened_for_draft_assessment: []
     selection_reason: "Julkinen palvelukuvaus nimeää omistajayhteisölle tarjottavan integraatioalustapalvelun ja toimija edustaa kunta- ja hyvinvointialueomisteista palvelurakennetta."
     method_stress: "Testaa jäsen- tai omistajayhteisöön rajatun toimijan sekä kumppaneilta hankittujen kykyjen käsittelyä."
     source_ids: ["tiera-company", "tiera-integration-platform"]
@@ -293,10 +299,11 @@ selected:
     actor: "LUMI AI Factory -konsortio"
     service_or_brand: "LUMI AI Factory"
     candidate_group: "julkinen-laskentainfrastruktuuri"
-    primary_structure: "julkisesti ja yhteisesti rahoitettu tekoälytehdaskonsortio, jonka koordinointia ja palveluvastuuta CSC hoitaa julkisten kuvausten mukaan"
+    primary_structure: "julkisesti ja yhteisesti rahoitettu tekoälytehdaskonsortio, jota CSC isännöi ja koordinoi; palveluvastuunkantaja on tuntematon"
     assessment_unit: "LUMI AI Factoryn yrityksille tarjottavat palvelut; CSC:n, konsortion ja EuroHPC:n sopimus- ja operointivastuut vahvistetaan seulonnassa"
     roles_to_test: ["token", "yhdistelma"]
-    screening_status: "pending"
+    screening_status: "rajatapaus"
+    roles_opened_for_draft_assessment: []
     selection_reason: "Palvelukokonaisuus tarjoaa yrityksille ja muille kelpoisille asiakkaille laskentaa, dataa, asiantuntijatukea ja julkaistut käyttöehdot."
     method_stress: "Testaa kaupallisesta operaattorista poikkeavan, maksuttomia ja ehdollisia palveluja tarjoavan infrastruktuurin käsittelyä."
     source_ids: ["lumi-ai-factory", "lumi-pricing", "lumi-first-services"]
@@ -336,6 +343,6 @@ longlist_not_selected:
 lock:
   locked_by: "codex-primary-mac"
   locked_at: "2026-09-07"
-  decision: "selection_locked; actor_specific_screening_required_before_scoring"
+  decision: "selection_locked; actor_specific_screening_approved"
   confirmation_no_scores_seen: true
-  next_gate: "Jokaiselle toimijalle tehdään kuusikohtainen kelpoisuusseula ja omistajan mahdolliset toimijakohtaiset sidonnaisuudet kirjataan ennen pisteytystä."
+  next_gate: "Vain DataCrunch Oy:n tokenoperaattoriluonnos voidaan avata. Omistajan mahdolliset toimijakohtaiset sidonnaisuudet kirjataan ennen pisteytystä."

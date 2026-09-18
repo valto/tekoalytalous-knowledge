@@ -3,7 +3,7 @@
 Päivä: 7.9.2026  
 Menetelmä: 0.2  
 Kalibrointi: 0.2-2, hyväksytty 7.9.2026  
-Tila: toimijavalinta lukittu; toimijakohtaiset kelpoisuusseulat kesken
+Tila: toimijavalinta lukittu; toimijakohtainen kelpoisuusseula kahden riippumattoman auditointiagentin hyväksymä
 
 Tämä on tarkoituksellinen kuuden toimijan menetelmäkoe. Se ei ole tilastollinen otos, yritysten paremmuusjärjestys eikä väite siitä, että valitut toimijat olisivat tekoälyoperaattoreita.
 
@@ -28,16 +28,18 @@ Valinnan teki `codex-primary-mac`. Agentilla ei ole tiedossa taloudellisia, työ
 
 ## Kelpoisuusseulan tila
 
-Kuusikko on lukittu tutkittavaksi, mutta yksikään toimija ei ole vielä läpäissyt kelpoisuusseulaa. Jokainen kuudesta ehdosta tarkistetaan toimijakohtaisesti ennen pisteytystä.
+Kuusikko on lukittu tutkittavaksi. Jokaisen toimijan kuusi ehtoa tarkistettiin 18.9.2026. Riippumaton auditointi korjasi liian laajan ensimmäisen tulkinnan: yksi toimija etenee ja viisi jää rajatapaukseksi. Molemmat auditointiagentit hyväksyivät korjatun tuloksen.
 
 | Toimija | Tunnistettava yksikkö | Olennainen vastuu | Ulkoinen palvelusuhde | Jatkuva operointi | Tuotteistettu palvelu | Arvioitavuus | Nykytila |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| DataCrunch Oy / Verda AI Cloud | tarkistamatta | tarkistamatta | tarkistamatta | tarkistamatta | tarkistamatta | tarkistamatta | seulonta kesken |
-| Elisa Oyj:n tekoälypalvelukokonaisuus | tarkistamatta | tarkistamatta | tarkistamatta | tarkistamatta | tarkistamatta | tarkistamatta | seulonta kesken |
-| Lounea Oy:n hallittu virtuaalipalvelin | tarkistamatta | tarkistamatta | tarkistamatta | tarkistamatta | tarkistamatta | tarkistamatta | seulonta kesken |
-| DataSpace Europe Oy / Tritom | tarkistamatta | tarkistamatta | tarkistamatta | tarkistamatta | tarkistamatta | tarkistamatta | seulonta kesken |
-| Tiera Oy:n integraatioalustapalvelut | tarkistamatta | tarkistamatta | tarkistamatta | tarkistamatta | tarkistamatta | tarkistamatta | seulonta kesken |
-| LUMI AI Factory -konsortion yrityspalvelut | tarkistamatta | tarkistamatta | tarkistamatta | tarkistamatta | tarkistamatta | tarkistamatta | seulonta kesken |
+| DataCrunch Oy / Verda AI Cloud | kyllä | kyllä | kyllä | kyllä | kyllä | kyllä | jatkoon: tokenoperaattori |
+| Elisa Oyj / Elisa Chat | kyllä | kyllä | kyllä | tuntematon | kyllä | kyllä | rajatapaus |
+| Lounea Oy:n hallittu virtuaalipalvelin | kyllä | kyllä | kyllä | kyllä | kyllä | tuntematon | rajatapaus |
+| DataSpace Europe Oy / Tritom | kyllä | kyllä | kyllä | tuntematon | kyllä | kyllä | rajatapaus |
+| Tiera Oy:n Digius-integraatiopalvelut | kyllä | kyllä | kyllä | tuntematon | tuntematon | kyllä | rajatapaus |
+| LUMI AI Factory -yrityspalvelut | tuntematon | kyllä | kyllä | kyllä | kyllä | kyllä | rajatapaus |
+
+Täydet perusteet ja lähteet ovat [kelpoisuusseulan tuloksessa](ensimmaisen-eran-kelpoisuusseula-2026-09-18.md).
 
 ## Pitkän listan muut toimijat
 
@@ -64,4 +66,4 @@ Kuusikko on lukittu tutkittavaksi, mutta yksikään toimija ei ole vielä läpä
 
 Kuuden paikan toimijavalinta lukittiin 7.9.2026 ennen pisteiden muodostamista. Koneellisesti luettava tietue on tiedostossa [ensimmainen-arviointiera-2026-09-07.yaml](ensimmainen-arviointiera-2026-09-07.yaml). Lukitus estää kuusikon vaihtamisen myöhemmin havaittujen pisteiden perusteella, mutta ei tarkoita kelpoisuusseulan läpäisyä.
 
-Seuraava vaihe on kuuden kelpoisuusehdon toimijakohtainen lähdepaketti ja seulontapäätös. Pisteytys alkaa vasta, kun kaikki ehdot on käsitelty, toimija on saanut päätöksen `jatkoon` ja omistajan mahdolliset toimijakohtaiset sidonnaisuudet on kirjattu. Yksikään arvio ei etene verkkosivujulkaisuun ilman riippumatonta ihmiskatselmusta, korjaus- ja vastineprosessia sekä erillistä julkaisupäätöstä.
+Seuraava vaihe on DataCrunch Oy:n tokenoperaattoriluonnos. Ennen pisteytystä omistajan mahdolliset toimijakohtaiset sidonnaisuudet on kirjattava. Rajatapaukset tarvitsevat nimetyn lisänäytön. Yksikään arvio ei etene verkkosivujulkaisuun ilman riippumatonta ihmiskatselmusta, korjaus- ja vastineprosessia sekä erillistä julkaisupäätöstä.

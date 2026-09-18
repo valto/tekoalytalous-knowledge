@@ -214,21 +214,24 @@ test("ensimmäinen nimetty koe-erä on tasapainoinen ja pisteetön", async () =>
   const batch = loadYaml(
     await readFile(resolve(studyRoot, "ensimmainen-arviointiera-2026-09-07.yaml"), "utf8"),
   );
-  assert.equal(batch.status, "selection_locked_pending_actor_screening");
+  assert.equal(batch.status, "selection_locked_actor_screening_approved");
   assert.equal(batch.method_version, "0.2");
   assert.equal(batch.calibration_version, "0.2-2");
   assert.equal(batch.gates.calibration_approval.approved, true);
   assert.equal(batch.gates.named_draft_assessment_authorisation.approved, true);
   assert.equal(batch.gates.actor_scores_seen_before_selection, false);
-  assert.equal(batch.gates.actor_specific_screening_complete, false);
+  assert.equal(batch.gates.actor_specific_screening_complete, true);
+  assert.match(batch.gates.actor_specific_screening_record, /kelpoisuusseula/);
   assert.equal(batch.selected.length, 6);
   assert.equal(new Set(batch.selected.map((entry) => entry.slot)).size, 6);
   assert.equal(new Set(batch.selected.map((entry) => entry.actor)).size, 6);
   assert.equal(batch.longlist_not_selected.length, 6);
   assert.equal(batch.lock.confirmation_no_scores_seen, true);
   assert.doesNotMatch(JSON.stringify(batch), /"score"|"piste"\s*:/i);
+  assert.equal(batch.selected.filter((entry) => entry.screening_status === "jatkoon").length, 1);
+  assert.equal(batch.selected.filter((entry) => entry.screening_status === "rajatapaus").length, 5);
   for (const entry of batch.selected) {
-    assert.equal(entry.screening_status, "pending");
+    assert.ok(["jatkoon", "rajatapaus"].includes(entry.screening_status));
     assert.ok(entry.source_ids.length >= 1);
     assert.ok(entry.selection_reason.length > 40);
     assert.ok(entry.method_stress.length > 40);
@@ -260,6 +263,70 @@ test("ensimmäinen nimetty koe-erä on tasapainoinen ja pisteetön", async () =>
   }
   for (const entry of batch.longlist_not_selected) {
     assert.match(entry.selection_status, /^not_selected/);
+  }
+});
+
+test("ensimmäisen erän kelpoisuusseula käsittelee kuusi ehtoa ilman pisteitä", async () => {
+  const screening = loadYaml(
+    await readFile(
+      resolve(studyRoot, "ensimmaisen-eran-kelpoisuusseula-2026-09-18.yaml"),
+      "utf8",
+    ),
+  );
+  assert.equal(screening.method_version, "0.2");
+  assert.equal(screening.evidence_cutoff, "2026-09-18");
+  assert.equal(screening.status, "approved_after_two_independent_audits");
+  assert.deepEqual(screening.audit.final_reviews, ["hyväksy", "hyväksy"]);
+  assert.equal(screening.actors.length, 6);
+  assert.equal(screening.aggregate.passed, 1);
+  assert.equal(screening.aggregate.borderline, 5);
+  assert.equal(screening.aggregate.scores_produced, false);
+  assert.equal(screening.aggregate.publication_authority_granted, false);
+  assert.doesNotMatch(JSON.stringify(screening), /"score"\s*:|"piste"\s*:/i);
+  const conditionNames = [
+    "identifiable_actor",
+    "relevant_responsibility",
+    "external_service_relationship",
+    "continuous_operation",
+    "productised_service",
+    "assessability",
+  ];
+  assert.equal(screening.actors.filter((actor) => actor.decision === "jatkoon").length, 1);
+  assert.equal(screening.actors.filter((actor) => actor.decision === "rajatapaus").length, 5);
+  for (const actor of screening.actors) {
+    assert.ok(["jatkoon", "rajatapaus"].includes(actor.decision));
+    for (const condition of conditionNames) {
+      assert.ok(
+        ["kyllä", "tuntematon"].includes(actor.conditions[condition].result),
+        `${actor.actor}: ${condition}`,
+      );
+      assert.ok(actor.conditions[condition].basis.length > 30);
+      assert.ok(actor.conditions[condition].sources.length >= 1);
+    }
+    if (actor.decision === "jatkoon") {
+      assert.ok(Object.values(actor.conditions).every((condition) => condition.result === "kyllä"));
+      assert.ok(actor.roles_opened_for_draft_assessment.length >= 1);
+    } else {
+      assert.ok(Object.values(actor.conditions).some((condition) => condition.result === "tuntematon"));
+      assert.deepEqual(actor.roles_opened_for_draft_assessment, []);
+    }
+  }
+  const sourceIds = new Set(screening.sources.map((source) => source.id));
+  for (const actor of screening.actors) {
+    for (const condition of Object.values(actor.conditions)) {
+      for (const sourceId of condition.sources) assert.ok(sourceIds.has(sourceId));
+    }
+  }
+  for (const source of screening.sources) {
+    for (const field of [
+      "supported_claim",
+      "evaluator",
+      "evaluator_conflicts",
+      "conflicting_evidence",
+    ]) {
+      assert.equal(typeof source[field], "string", `${source.id}: ${field} puuttuu`);
+      assert.ok(source[field].length > 0, `${source.id}: ${field} on tyhjä`);
+    }
   }
 });
 

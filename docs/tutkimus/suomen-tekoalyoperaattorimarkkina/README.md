@@ -38,6 +38,8 @@ Tutkimus käyttää neljää [aiemmin määriteltyä roolia](../../../knowledge/
 - [Ensimmäisen arviointierän valintapohja](ensimmaisen-eran-valinta-pohja.md)
 - [Lukittu ensimmäinen arviointierä 7.9.2026](ensimmainen-arviointiera-2026-09-07.md)
 - [Ensimmäisen erän riippumaton valinta-auditointi](ensimmaisen-eran-valinta-auditointi-2026-09-07.md)
+- [Ensimmäisen erän kelpoisuusseula 18.9.2026](ensimmaisen-eran-kelpoisuusseula-2026-09-18.md)
+- [Kelpoisuusseulan riippumaton auditointi](kelpoisuusseulan-auditointi-2026-09-18.md)
 - [Synteettiset laskentaesimerkit](esimerkit/README.md)
 - [Markkinatoimijan arviointikyky](../../capabilities/evaluate-market-actor.md)
 

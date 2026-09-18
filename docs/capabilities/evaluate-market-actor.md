@@ -94,12 +94,13 @@ Sääntö tai muuttumaton ehto
 
 ## Avoimet kysymykset
 
-- Ensimmäisen nimetyn koe-erän toimijoita ei ole valittu tai lukittu.
+- Omistajan toimijakohtaiset sidonnaisuudet on kirjattava ennen pisteytystä.
+- Viiden rajatapauksen puuttuva näyttö on hankittava ennen niiden pisteytystä.
 
 ## Operatiivinen toteutusluonnos
 
 - **Suoritustapa — toteutusvalinta:** `agent-primary-using-software`. Agentti kokoaa ja jäsentää julkisen näytön, ohjelmistolaskuri tarkistaa laskennan ja ihminen päättää olennaisista johtopäätöksistä sekä julkaisusta.
-- **Toteutuksen tila — eksplisiittinen fakta:** Menetelmä, laskuri, pisteytysohje, kaksi synteettistä lähdepakettia, lukitus ja vertailutyökalu ovat käytettävissä. Kaksi eristettyä auditointiagenttia läpäisi kalibrointikierroksen 0.2-2, jonka Valto Loikkanen hyväksyi 7.9.2026. Nimettyjä toimija-arvioita ei ole vielä tehty.
+- **Toteutuksen tila — eksplisiittinen fakta:** Menetelmä, laskuri, pisteytysohje, kaksi synteettistä lähdepakettia, lukitus ja vertailutyökalu ovat käytettävissä. Kaksi eristettyä auditointiagenttia läpäisi kalibrointikierroksen 0.2-2, jonka Valto Loikkanen hyväksyi 7.9.2026. Ensimmäinen kuuden toimijan valinta on lukittu ja kahden auditointiagentin hyväksymä kelpoisuusseula valmistui 18.9.2026 ilman pisteitä: yksi toimija etenee ja viisi jäi rajatapauksiksi.
 - **Toimintaympäristö — toteutusvalinta:** Julkinen Tekoälytalous-tietovarasto ja myöhempi verkkosivujulkaisu.
 - **Operatiiviset rajoitteet — operatiivinen rajoite:** Vain julkiset lähteet; ei luottamuksellista yritysdataa; ei automaattista ulkoista julkaisemista; arviointien lähdekatko ja arvioijien sidonnaisuudet kirjataan; julkaisu vaatii riippumattoman ihmiskatselmuksen.
 - **Toteutusviitteet:** [Tutkimuspaketti](../tutkimus/suomen-tekoalyoperaattorimarkkina/README.md), [arviointimalli](../tutkimus/suomen-tekoalyoperaattorimarkkina/toimija-arviointi.yaml), [pisteytysohje](../tutkimus/suomen-tekoalyoperaattorimarkkina/pisteytysohje.md), [laskentasääntö](../tutkimus/suomen-tekoalyoperaattorimarkkina/painotus-ja-laskenta.md) ja [kalibroinnin työpaketti](../tutkimus/suomen-tekoalyoperaattorimarkkina/kalibrointi/README.md).

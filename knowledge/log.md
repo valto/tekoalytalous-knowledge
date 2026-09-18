@@ -1,5 +1,9 @@
 # Tekoälytalous bundle history
 
+## 2026-09-18
+
+- **Ensimmäisen toimijaerän kelpoisuusseula**: Kuuden lukitun toimijan kaikki kuusi vähimmäisehtoa käsiteltiin ajantasaisista julkisista lähteistä. Jokainen eteni vähintään yhteen rajattuun julkaisemattomaan arviointirooliin; pisteitä ei muodostettu ja tulos odottaa kahden eristetyn auditointiagentin tarkistusta.
+
 ## 2026-09-07
 
 - **Ensimmäinen nimetty koe-erä**: Kuuden toimijan rakenteellisesti tasapainoinen koe-erä valittiin ja lukittiin ennen pisteytystä. Valinta ei sisällä yrityspisteitä eikä väitettä tekoälyoperaattoriasemasta.
