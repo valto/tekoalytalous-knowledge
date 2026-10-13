@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "source_repository": "valto/tekoalytalous",
+  "source_commit": "8b6f35d3c8bfedf7843c3002e6a32ecf47def5d8",
+  "source_published_at": "2026-10-13",
+  "generated_at": "2026-10-13T15:17:32+03:00",
+  "content_class": "public-administration-website-topics",
+  "files": [
+    {
+      "path": "knowledge/topics/agenttinen-suomi-julkinen-hallinto.md",
+      "source_content_sha256": "ee8406b53f2e7552837ca021d461548616d5db9514e3640f2c83cce6e3c6f404"
+    },
+    {
+      "path": "knowledge/topics/julkisen-hallinnon-toistuvat-toiminnot.md",
+      "source_content_sha256": "0ef661c09c6fa51953f72d7797562360005d3b0d8e3a807c42b00db67fa7a50a"
+    },
+    {
+      "path": "knowledge/topics/viranomaisagentin-valtuudet-ja-virkavastuu.md",
+      "source_content_sha256": "d00249d8938c4e7e4f4563034ccf2d7a3da4b4c06b13b4bea6a2b5b99c7f6dd4"
+    },
+    {
+      "path": "knowledge/topics/julkisen-hallinnon-agenttien-digisuvereniteetti.md",
+      "source_content_sha256": "9b551bf8e2af689e80762c3782253b7aab28fd8b3a998d83c8f25fd9769fee1e"
+    },
+    {
+      "path": "knowledge/topics/agenttiautomaation-hyotyjen-mittaaminen.md",
+      "source_content_sha256": "853f61fa617f41fc5be0fadf9497db118bf021c28f8ce698b5b6029340c6c5e9"
+    }
+  ]
+}

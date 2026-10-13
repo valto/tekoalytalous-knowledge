@@ -1,5 +1,9 @@
 # Tekoälytalous bundle history
 
+## 2026-10-13
+
+- **Verkkosivujen johdetut tietueet, ehdotus**: Viisi julkisen hallinnon kartta-aihetta, niiden lähteet, näyttötasot ja perustellut ristiinyhteydet tuotu verkkosivuston julkaistusta täsmärevisiosta `8b6f35d3c8bfedf7843c3002e6a32ecf47def5d8`. Aineiston lähdetarkisteet ovat `website-topic-import.json`-tiedostossa. Tämä merkintä ei ole uuden muuttumattoman julkaisun hyväksyntä.
+
 ## 2026-09-18
 
 - **Ensimmäisen toimijaerän kelpoisuusseula**: Kuuden lukitun toimijan kaikki kuusi vähimmäisehtoa käsiteltiin ajantasaisista julkisista lähteistä. Jokainen eteni vähintään yhteen rajattuun julkaisemattomaan arviointirooliin; pisteitä ei muodostettu ja tulos odottaa kahden eristetyn auditointiagentin tarkistusta.
