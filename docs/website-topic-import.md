@@ -38,8 +38,11 @@ että jokaisesta nykyisestä sivusta olisi OKF-tietue.
 
 ## Julkaisun raja
 
-Tietovaraston PR, verkkosivuston jo tapahtunut julkaisu ja uusi muuttumaton
-OKF-julkaisu ovat erillisiä päätöksiä. Tästä muutoksesta valmisteltu ehdokas
-on hyväksyttävä sen täsmällisen manifestitarkisteen ja lähderevision perusteella
-ennen Git-tagin ja GitHub-julkaisun luomista. Julkaisuun ei lisätä tämän
-työn ulkopuolista, keskeneräistä tutkimusta sen verkkosivujulkaisuna.
+Tietovaraston PR, verkkosivuston jo tapahtunut julkaisu ja muuttumaton
+OKF-julkaisu ovat erillisiä päätöksiä. Versio `knowledge-v0.3.0` julkaistiin
+13.10.2026 omistajan nimenomaisella määräyksellä ohittaa erillinen
+PR-katselmus ja julkaista; `approval.json` kertoo, ettei omistaja nähnyt
+lopullista manifestitarkistetta etukäteen. Paketin lähderevisio ja tarkiste
+ovat `knowledge/log.md`-tiedostossa. Julkaisuun sisältyvän tämän työn
+ulkopuolisen tutkimusluonnoksen `publication_status` säilyy `unpublished`:
+sitä ei esitetä verkkosivujulkaisuna.
