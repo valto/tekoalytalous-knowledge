@@ -8,6 +8,8 @@ Tämä Open Knowledge Format 0.2 -tietopaketti sisältää tutkimusta, kirjoituk
 
 ## Sisältöryhmät
 
+- [Julkisen hallinnon kartta-aiheet](topics/index.md) - Sivuston täsmärevisiosta johdetut viisi agentteja ja toistuvia toimintoja käsittelevää aihetta.
+
 - [Tutkimus](research/index.md) - Tutkimuskäsitteet, lähteet, suhteet, näyttötaso ja versiohistoria.
 - [Kirjoitukset](articles/index.md) - Toimitukselliset julkaisut.
 - [Sanasto](glossary/index.md) - Käsitemääritelmät, tunnetut rinnakkaisnimet ja termien perustelut.

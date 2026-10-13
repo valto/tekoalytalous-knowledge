@@ -38,9 +38,11 @@ Tarkistus ei hae verkkosisältöä eikä arvioi väitteiden totuutta. Se tarkist
 
 GitHubin Releases-osiossa julkaistavat nimetyt versiot sisältävät tietopakettiarkiston, tiedostoluettelon, lähderevision, hyväksyntätiedon, tarkistustulokset ja SHA-256-tarkistussummat. Korjaukset julkaistaan uutena versiona; olemassa olevan version tiedostoja ei korvata.
 
-Julkaisuehdokas muodostetaan puhtaasta repositorytilasta erilliseen hakemistoon komennolla `npm run prepare:release`. Julkaiseminen GitHubiin ja ladattujen tiedostojen tarkistus ovat erillisiä, ihmisen hyväksyntään sidottuja vaiheita.
+Julkaisuehdokas muodostetaan puhtaasta repositorytilasta erilliseen, ennestään käyttämättömään hakemistoon komennolla `npm run prepare:release`. Se sisältää arkiston, manifestin, validoinnin, julkaisumuistion ja tarkistussummat **ilman hyväksyntätietuetta**. Julkaiseminen GitHubiin ja ladattujen tiedostojen tarkistus ovat erillisiä, täsmällisen ehdokasmanifestin hyväksyntään sidottuja vaiheita.
 
-Nykyinen varmennettu julkaisu on [knowledge-v0.2.1](https://github.com/valto/tekoalytalous-knowledge/releases/tag/knowledge-v0.2.1). Versio `knowledge-v0.2.0` on säilytetty historiassa mutta merkitty korvatuksi puuttuneen julkaisutekstitiedoston vuoksi.
+Ennen lokakuun julkaisuehdokasta varmennettu julkaisu on [knowledge-v0.2.1](https://github.com/valto/tekoalytalous-knowledge/releases/tag/knowledge-v0.2.1). Versio `knowledge-v0.2.0` on säilytetty historiassa mutta merkitty korvatuksi puuttuneen julkaisutekstitiedoston vuoksi.
+
+Viiden lokakuussa julkaistun julkisen hallinnon aiheen [OKF-tuonti](docs/website-topic-import.md) on erillinen muutos. Mahdollinen `knowledge-v0.3.0` tulee ajantasaiseksi vasta oman hyväksynnän, Git-tagin ja varmennetun GitHub-julkaisun jälkeen.
 
 ## Julkaisu ja vastuu
 

@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { execFileSync } from "node:child_process";
-import { mkdir, readFile, rm, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { basename, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -18,12 +18,14 @@ async function sha256(path) {
   return createHash("sha256").update(await readFile(path)).digest("hex");
 }
 
-export async function prepareRelease({ version, outputDir, approvedBy, approvalNote, generatedAt }) {
+export async function prepareRelease({ version, outputDir, generatedAt }) {
   assert(/^knowledge-v\d+\.\d+\.\d+$/.test(version), "Version must use knowledge-vX.Y.Z");
   assert(resolve(outputDir) !== root && !resolve(outputDir).startsWith(`${root}/`), "Output must be outside the repository");
   assert.equal(run("git", ["status", "--short"]), "", "Repository must be clean");
+  assert.equal(run("git", ["tag", "--list", version]), "", "Release tag already exists");
 
   const sourceCommit = run("git", ["rev-parse", "HEAD"]);
+  generatedAt ??= run("git", ["show", "-s", "--format=%cI", sourceCommit]);
   run("npm", ["test"], { stdio: "inherit" });
   run("npm", ["run", "validate"], { stdio: "inherit" });
 
@@ -34,8 +36,8 @@ export async function prepareRelease({ version, outputDir, approvedBy, approvalN
   assert(tracked.includes("knowledge/index.md"));
 
   const destination = resolve(outputDir, version);
-  await rm(destination, { recursive: true, force: true });
-  await mkdir(destination, { recursive: true });
+  await mkdir(resolve(outputDir), { recursive: true });
+  await mkdir(destination);
   const archiveName = `${version}.tar.gz`;
   const archivePath = join(destination, archiveName);
   execFileSync("git", ["archive", "--format=tar.gz", `--prefix=${version}/`, "-o", archivePath, sourceCommit, ...tracked], { cwd: root });
@@ -50,7 +52,7 @@ export async function prepareRelease({ version, outputDir, approvedBy, approvalN
     source_repository: "valto/tekoalytalous-knowledge",
     source_commit: sourceCommit,
     generated_at: generatedAt,
-    generator: "process:codex-primary-mac",
+    generator: "process:codex-valto-agents-vm",
     concept_count: conceptCount,
     archive: { name: archiveName, sha256: await sha256(archivePath) },
     files: fileInventory,
@@ -58,10 +60,10 @@ export async function prepareRelease({ version, outputDir, approvedBy, approvalN
   };
   await writeFile(join(destination, "manifest.json"), `${JSON.stringify(manifest, null, 2)}\n`);
   await writeFile(join(destination, "validation.json"), `${JSON.stringify({ source_commit: sourceCommit, commands: ["npm test", "npm run validate"], result: "passed", checked_at: generatedAt }, null, 2)}\n`);
-  await writeFile(join(destination, "approval.json"), `${JSON.stringify({ release_id: version, source_commit: sourceCommit, approved_by: approvedBy, approval_note: approvalNote, approved_at: generatedAt, recorded_by: "process:codex-primary-mac" }, null, 2)}\n`);
-  await writeFile(join(destination, "release-notes.md"), `# ${version}\n\nTekoälytalous.fi:n ensimmäinen julkisesta tietovarastosta julkaistu muuttumaton tietopaketti.\n\n- Open Knowledge Format: 0.2\n- Tietueita: ${conceptCount}\n- Lähderevisio: \`${sourceCommit}\`\n- Sisältö: tietopaketti, julkiset tausta-asiakirjat, skeemat ja lisenssit\n- Tarkistus: \`npm test\` ja \`npm run validate\` onnistuivat\n\nJulkaisu ei muuta verkkosivustoa automaattisesti eikä lisensoi ulkoisia lähdeaineistoja uudelleen.\n`);
+  const releaseNotes = await readFile(join(root, "docs", "release-notes", `${version}.md`), "utf8");
+  await writeFile(join(destination, "release-notes.md"), releaseNotes.replaceAll("{{SOURCE_COMMIT}}", sourceCommit).replaceAll("{{CONCEPT_COUNT}}", String(conceptCount)));
 
-  const checksumFiles = [archiveName, "manifest.json", "validation.json", "approval.json", "release-notes.md"];
+  const checksumFiles = [archiveName, "manifest.json", "validation.json", "release-notes.md"];
   const sums = [];
   for (const name of checksumFiles) sums.push(`${await sha256(join(destination, name))}  ${name}`);
   await writeFile(join(destination, "SHA256SUMS"), `${sums.join("\n")}\n`);
@@ -80,8 +82,6 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const result = await prepareRelease({
     version: args.version,
     outputDir: args["output-dir"],
-    approvedBy: args["approved-by"],
-    approvalNote: args["approval-note"],
     generatedAt: args["generated-at"],
   });
   console.log(JSON.stringify(result));

@@ -21,6 +21,7 @@ Yhden tilan saavuttaminen ei automaattisesti tarkoita kahta muuta.
 - Julkinen muutosehdotus ei julkaise sisältöä automaattisesti verkkosivustolle.
 - Generoidun tietueen lähde muutetaan ensin sen nykyisessä ensisijaisessa lähteessä, kunnes kyseisen sisältöluokan siirto on hyväksytty.
 - Talousmallien oletustiedostot säilyvät siirtymävaiheessa verkkosivustosovelluksen hallitsemana lähteenä, vaikka niiden julkinen tilannekuva sisältyy tähän perusversioon.
+- Julkisen hallinnon viisi kartta-aihetta ovat verkkosivuston lähteestä tuotettuja, täsmärevisioon sidottuja OKF-kopioita. Niitä ei muokata käsin; alkuperä ja uusinta on kuvattu [tuontiohjeessa](docs/website-topic-import.md).
 - Yksityisiä tapauskohtaisia aineistoja, henkilötietoja, tunnuksia tai palveluasetuksia ei tuoda tähän repositoryyn.
 
 ## Sisältöluokan siirron hyväksymisehdot
