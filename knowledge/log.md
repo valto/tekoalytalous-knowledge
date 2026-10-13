@@ -3,6 +3,9 @@
 ## 2026-10-13
 
 - **Verkkosivujen johdetut tietueet, ehdotus**: Viisi julkisen hallinnon kartta-aihetta, niiden lähteet, näyttötasot ja perustellut ristiinyhteydet tuotu verkkosivuston julkaistusta täsmärevisiosta `8b6f35d3c8bfedf7843c3002e6a32ecf47def5d8`. Aineiston lähdetarkisteet ovat `website-topic-import.json`-tiedostossa. Tämä merkintä ei ole uuden muuttumattoman julkaisun hyväksyntä.
+- **Muuttumaton julkaisu**: `knowledge-v0.3.0` julkaistu yhdistetystä lähderevisiosta `6367ab095e6250ac4751fb271a0e5c83201c7a7c`; manifestin SHA-256 on `553645520f91d4984511ee7689a40ba3e68b22d1d0c0c3ab94575e78f029d22f`.
+- **Päätöksen rajaus**: Valto Loikkanen määräsi omistajana ohittamaan erillisen PR-katselmuksen ja julkaisemaan. Hän ei nähnyt lopullista manifestitarkistetta ennen määräystä; `approval.json` kertoo tämän ja sitoo määräyksen julkaistuun tarkisteeseen jäljitettävyyttä varten.
+- **Tarkistus**: 31 testiä sekä tietovaraston validointi läpäistiin; GitHubista takaisin ladattujen viiden sisältötiedoston tarkisteet täsmäsivät julkaistuun `SHA256SUMS`-luetteloon.
 
 ## 2026-09-18
 

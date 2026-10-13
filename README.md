@@ -40,9 +40,9 @@ GitHubin Releases-osiossa julkaistavat nimetyt versiot sisältävät tietopakett
 
 Julkaisuehdokas muodostetaan puhtaasta repositorytilasta erilliseen, ennestään käyttämättömään hakemistoon komennolla `npm run prepare:release`. Se sisältää arkiston, manifestin, validoinnin, julkaisumuistion ja tarkistussummat **ilman hyväksyntätietuetta**. Julkaiseminen GitHubiin ja ladattujen tiedostojen tarkistus ovat erillisiä, täsmällisen ehdokasmanifestin hyväksyntään sidottuja vaiheita.
 
-Ennen lokakuun julkaisuehdokasta varmennettu julkaisu on [knowledge-v0.2.1](https://github.com/valto/tekoalytalous-knowledge/releases/tag/knowledge-v0.2.1). Versio `knowledge-v0.2.0` on säilytetty historiassa mutta merkitty korvatuksi puuttuneen julkaisutekstitiedoston vuoksi.
+Uusin varmennettu julkaisu on [knowledge-v0.3.0](https://github.com/valto/tekoalytalous-knowledge/releases/tag/knowledge-v0.3.0). Sen viisi julkisen hallinnon aihetta ovat verkkosivuston julkaistun sisällön johdettuja kopioita. Julkaisun `approval.json` kirjaa omistajan nimenomaisen määräyksen ohittaa erillinen PR-katselmus ja julkaista paketti; omistaja ei katselmoinut lopullista manifestitarkistetta etukäteen. Versio `knowledge-v0.2.0` on säilytetty historiassa mutta merkitty korvatuksi puuttuneen julkaisutekstitiedoston vuoksi.
 
-Viiden lokakuussa julkaistun julkisen hallinnon aiheen [OKF-tuonti](docs/website-topic-import.md) on erillinen muutos. Mahdollinen `knowledge-v0.3.0` tulee ajantasaiseksi vasta oman hyväksynnän, Git-tagin ja varmennetun GitHub-julkaisun jälkeen.
+Viiden lokakuussa julkaistun julkisen hallinnon aiheen [OKF-tuonti](docs/website-topic-import.md) julkaistiin muuttumattomana versiona `knowledge-v0.3.0` 13.10.2026. Sivuston alkuperäinen sisältö pysyy edelleen sivuston hallinnassa.
 
 ## Julkaisu ja vastuu
 

@@ -6,6 +6,6 @@ Viisi 13.10.2026 verkkosivustolla julkaistua julkisen hallinnon aihetta, lähtee
 - Käsitteitä yhteensä: {{CONCEPT_COUNT}}
 - Tietovaraston lähderevisio: `{{SOURCE_COMMIT}}`
 - Sisältö: OKF-tietopaketti, julkiset tausta-asiakirjat, skeemat ja lisenssit. Edellisen muuttumattoman julkaisun jälkeen päähaaraan lisätty julkinen tutkimusluonnos ja sitä tukevat tutkimusasiakirjat sisältyvät arkistoon. Luonnoksen `publication_status` säilyy `unpublished`; sitä ei esitetä verkkosivujulkaisuna.
-- Tarkistus: `npm test` ja `npm run validate` onnistuivat. Julkaisuehdokas odottaa erillistä ihmisen hyväksyntää täsmällistä manifestitarkistetta vastaan.
+- Tarkistus: `npm test` ja `npm run validate` onnistuivat. Omistaja määräsi julkaisemaan paketin ja ohitti erillisen PR-katselmuksen 13.10.2026. Päätös annettiin ennen lopullisen manifestitarkisteen näyttämistä omistajalle; tarkiste ja päätöksen rajaus on kirjattu `approval.json`-tiedostoon.
 
 Julkaisu ei muuta verkkosivustoa automaattisesti eikä lisensoi ulkoisia lähdeaineistoja uudelleen.
